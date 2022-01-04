@@ -1,0 +1,31 @@
+:root {
+    --AzulClaro: #B0BFFF;
+    --AzulOscuro: #0A0926;
+    --FeriaPpal: #3A37E0;
+    
+    --Gris: #C5C5C5;
+    --GrisClaro: #F2F2F2;
+    
+    --AmarilloNovedades: #FBB800;
+    --RojoError: #FB0F00;
+    --AmarilloNovedadesFill: #FFFCF2;
+    --VerdeCompras: #65B32E;
+    --spacerTitulo: 1.6rem;
+    --spacer1: 1.6rem;
+    --spacer2: 0.8rem;
+}
+
+html, body {
+    /* overflow: hidden; */
+    min-height: 100%;
+    background-color: var(--FeriaPpal);
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 62.5%; */
+    color: white;
+}
+
+h1, h2 {
+    color: white;
+}
