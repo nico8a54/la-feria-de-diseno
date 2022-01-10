@@ -1,0 +1,181 @@
+section.hero {
+    position: relative;
+}
+
+    header {
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 40;
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+        padding:  24px 24px 0 24px;
+        
+    }
+
+    img.identificador {
+        /* margin: 15px; */
+        width: 10%;
+        min-width: 32px;
+        max-width: 88px; 
+    }
+
+    #bm-container {
+        width: 25px;
+    }
+
+
+    /* .burger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        height: 18.39px;
+        width: 24px;
+    }
+
+    .burger-menu .menu-line-1 {
+        width: 24px;
+        height: 2px;
+        background-color: white;
+    }
+
+    .burger-menu .menu-line-2 {
+        width: 24px;
+        height: 2px;
+        background-color: white;
+    } */
+
+    .bm-line1, .bm-line2 {
+        transform-box: fill-box;
+        transform-origin: center;
+    }
+    
+    @keyframes playLine1 {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(7.82px) rotate(0deg);
+        }
+        100%{
+            transform: translateY(7.82px) rotate(45deg);
+        }
+    }
+    
+    @keyframes backLine1 {
+        0% {
+            transform: translateY(7.82px) rotate(45deg);
+        }
+        50% {
+            transform: translateY(7.82px) rotate(0deg);
+        }
+        100%{
+            transform: translateY(0px) rotate(0deg);
+        }
+    }
+    
+    @keyframes playLine2 {
+        0% {
+            transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+            transform: translateY(-7.82px) rotate(0deg);
+        }
+        100%{
+            transform: translateY(-7.82px) rotate(-45deg);
+        }
+    }
+    
+    @keyframes backLine2 {
+        0% {
+            transform: translateY(-7.82px) rotate(-45deg);
+        }
+        50% {
+            transform: translateY(-7.82px) rotate(0deg);
+        }
+        100%{
+            transform: translateY(0px) rotate(0deg);
+        }
+    }
+
+
+    .slider-container {
+
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .hero-controls {
+
+            position: absolute;
+            z-index: 10;
+            bottom: 0;
+            right: 0;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 25vh;
+            width: 100%;
+
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-bottom: 50px;
+
+            /* background-color: yellow; */
+        }
+
+            .indicator-slider {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                /* background-color: greenyellow; */
+
+            }
+
+                .indicator-slider .indicator {
+                    display: flex;
+                    height: 2px;
+                    gap: 8px;
+                }
+
+                .line {
+                    height: 2px;
+                    width: 30px;
+                    background-color: white;
+                }
+
+                img.logotipo-feria {
+                    width: 15vw;
+                    max-width: 158px;
+                    min-width: 47px;
+                }
+            
+            .control-slider {
+                /* position: absolute;
+                z-index: 10;
+                bottom: 50px;
+                right: 24px; */
+    
+                display: flex;
+                justify-content: space-between;
+                gap: 16px;
+
+                /* margin-right: 24px;
+                margin-bottom: 50px; */
+            }
+
+                .arrow-left, .arrow-right {
+                    height: 32px;
+                    width: 32px;
+                }
+
+        
+
+        

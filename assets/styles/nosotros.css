@@ -1,0 +1,27 @@
+section.nosotros {
+    position: relative;
+}
+
+    .container-1 {
+        background-color: var(--AzulOscuro);
+        height: 100vh;
+        padding: 50px 24px 50px 24px;
+    }
+        .container-1 .content-1 {
+            position: absolute;
+            z-index: 1;
+        }
+
+            .container-1 .content-1 .blue-line {
+                height: 2px;
+                width: 64px;
+                background-color: var(--FeriaPpal);
+                margin-left: -24PX;
+            }
+
+        .container-1 .foto-nosotros {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }

@@ -1,0 +1,38 @@
+.container-3 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 50px 24px 50px 24px;
+}
+
+    .container-3 .content-1 {
+        position: absolute;
+        z-index: 1;
+    }
+
+        .container-3 .content-1 .blue-line {
+            height: 2px;
+            width: 64px;
+            margin-left: -24PX;
+            background-color: var(--FeriaPpal);
+        }
+
+.container-4 {
+    background-color: var(--AzulOscuro);
+    padding: 50px 24px 50px 24px;
+}
+
+    .uk-card-body {
+        background-color: var(--FeriaPpal);
+    }
+
+        .uk-card-title {
+            font-family: 'Roboto', sans-serif;;
+            font-size: 16px !important;
+            color: white !important;
+        }
+    
+        .uk-card-body p {
+            font-size: 16px !important;
+            color: white !important;
+        }
