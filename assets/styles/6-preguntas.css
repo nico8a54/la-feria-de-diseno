@@ -1,3 +1,62 @@
 .preguntas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 56px 24px;
     background-color: var(--FeriaPpal);
+}
+
+    .preguntas .content-1 h2 {
+        margin: 0 0 5px 0;
+        letter-spacing: 0.05em;
+    }
+
+    .preguntas .content-1 .blue-line {
+        height: 2px;
+        width: 102px;
+        margin-left: -24PX;
+        background-color: white;
+    }
+
+    .preguntas ul li a, .preguntas ul li a:hover {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .uk-accordion-title::before {
+        background-image: url("../img/plus.svg");
+    }
+
+    .uk-open>.uk-accordion-title::before {
+        background-image: url("../img/rest.svg");
+    }
+
+    .preguntas ul li div ul li, .preguntas ul li div p {
+        font-weight: 200;
+    }
+
+    .preguntas ul li div ul li span {
+        font-weight: 300;
+    }
+
+    .preguntas ul {
+        justify-self: start;
+    }
+
+.preguntas a.faq {
+    text-decoration: none;
+    height: 50px;
+    width: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--FeriaPpal);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    align-self: center;
 }

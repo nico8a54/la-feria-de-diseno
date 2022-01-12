@@ -58,7 +58,7 @@
     background-color: var(--AzulOscuro);
 }
 
-    .container-9 h3 {
+    .container-9 h3, .container-9 p {
         margin-bottom: 32px;
     }
 

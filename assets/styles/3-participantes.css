@@ -25,6 +25,7 @@
 .container-4 {
     background-color: var(--AzulOscuro);
     padding: 32px 24px;
+    min-height: 100vh;
 }
     .container-4 p {
         margin-bottom: 32px;
