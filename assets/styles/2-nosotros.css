@@ -8,7 +8,7 @@ section.nosotros {
 
         background-color: var(--AzulOscuro);
         height: 100vh;
-        padding: 50px 24px 50px 24px;
+        padding: 48px 24px 50px 24px;
 
     }
         .container-1 .content-1 {
@@ -16,12 +16,13 @@ section.nosotros {
             z-index: 1;
         }
             .container-1 .content-1 h2 {
-                font-size: 14px;
-                padding-bottom: 12px;
+                font-size: 18px;
+                margin: 16px 0 5px 0;
+                letter-spacing: 0.05em;
             }
             .container-1 .content-1 .blue-line {
                 height: 2px;
-                width: 64px;
+                width: 102px;
                 background-color: var(--FeriaPpal);
                 margin-left: -24PX;
             }
@@ -30,10 +31,10 @@ section.nosotros {
 
             position: absolute;
             right: 24px;
-            bottom: 40px;
-
-            height: 96px;
-            width: 176px;
+            bottom: 48px;
+            padding: 8px 16px;
+            height: 106px;
+            width: 200px;
             background-color: var(--FeriaPpal);
 
             display: flex;
@@ -45,43 +46,40 @@ section.nosotros {
             .container-1 .content-2 p {
                 margin: 0;
                 text-align: right;
-                width: 85%;
-                font-size: 10px;
-                font-weight: 400;
-                line-height: 15px;
+                width: auto;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 110%;
             }
 
         .container-1 .foto-nosotros {
             position: absolute;
-            top: 5%;
+            top: 48px;
             right: 0;
+            width: 75%;
+            height: 75%;
             z-index: 0;
-            width: 80%;
-            height: 80vh;
         }
 
     .container-2 {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         width: 100%;
         height: 100vh;
-        padding: 100px 24px 50px 24px;
+        padding: 102px 24px 96px 24px;
     }
 
         .container-2 p {
+            width: 83%;
+            text-align: center;
             color: var(--AzulOscuro);
         }
 
-        .container-2 .p-1 {
-            text-align: right;
-            font-size: 16px;
-            align-self: flex-end;
-        }
-
         .container-2 a {
-            height: 32px;
-            width: 170px;
+            height: 50px;
+            width: 128px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -90,5 +88,4 @@ section.nosotros {
             font-size: 16px;
             font-weight: 500;
             background-color: var(--FeriaPpal);
-            align-self: center;
         }
