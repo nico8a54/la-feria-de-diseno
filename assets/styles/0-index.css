@@ -15,13 +15,15 @@
     --spacer2: 0.8rem;
 }
 
-div {
+* {
     box-sizing: border-box;
 }
 
 html, body {
     /* overflow: hidden; */
     min-height: 100%;
+    background: #FFF;
+    background-color: #FFF;
     /* background-color: var(--FeriaPpal); */
 }
 html {

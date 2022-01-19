@@ -40,8 +40,15 @@
 
     .preguntas ul li .uk-accordion-content {
         background-color: var(--FeriaPpal);
-        padding: 24px;
+        padding: 24px 32px;
         margin: 0;
+    }
+
+    .preguntas ul li div ul li {
+        margin-top: 16px;
+        /* background-color: greenyellow;s */
+        padding-left: 14px;
+        border-left: 2px solid white;
     }
 
     .preguntas ul li div ul li, .preguntas ul li div p {
@@ -66,7 +73,7 @@
     color: white;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     background-color: var(--FeriaPpal);
     align-self: center;
 }

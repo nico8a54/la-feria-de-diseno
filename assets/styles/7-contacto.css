@@ -1,0 +1,58 @@
+.contacto {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 56px 24px 32px 24px;
+    background-color: var(--FeriaPpal);
+}
+
+    .contacto .content-1 h2 {
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0 0 5px 0;
+        letter-spacing: 0.05em;
+        color: white;
+    }
+
+    .contacto .content-1 .blue-line {
+        height: 2px;
+        width: 102px;
+        margin-left: -24PX;
+        background-color: white;
+    }
+
+    .contacto svg {
+        height: 36px;
+        width: 53.47px;
+    }
+
+    .contacto a.btn-accordion {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--FeriaPpal);
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: white;
+        width: 256px;
+        height: 50px;
+    }
+
+    .contacto div a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .contacto p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+    }
