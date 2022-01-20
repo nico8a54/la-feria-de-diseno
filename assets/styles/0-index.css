@@ -19,18 +19,25 @@
     box-sizing: border-box;
 }
 
-html {
-    
+body::-webkit-scrollbar{
+	width: 0px;
 }
 
-html, body {
-    overflow-x: hidden;
-    overflow-y: scroll;
+html {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow: auto;
     height: 100%;
     /* overflow: hidden; */
     min-height: 100%;
-    background: #FFF;
-    background-color: #FFF;
+    scrollbar-color: #F2F2F2 #323232;
+    scrollbar-width: none;
+    /* background: #FFF;
+    background-color: #FFF; */
     /* background-color: var(--FeriaPpal); */
 }
 html {
