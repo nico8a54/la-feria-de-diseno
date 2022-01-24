@@ -24,9 +24,15 @@
     <link rel="stylesheet" href="./assets/styles/6-preguntas.css">
     <link rel="stylesheet" href="./assets/styles/7-contacto.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+
+    
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
 </head>
 <body>
@@ -163,81 +169,72 @@
         </div>
         <div class="container-4">
             <p>Estos son los protagonistas de esta edición.</p>
-            
-            <div uk-slider="center: true; autoplay: true">
-                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-            
-                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
-                        <li>
-                            <div class="uk-card uk-card-large uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img src="./assets/img/tarjeta_participantes_mobiliario_001_desktop.jpg" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">1. MOBILIARIO</h3>
-                                    <div class=""></div>
-                                    <p>Residencial, institucional, exterior, urbano, cocinas, carpintería, arquitectónico.</p>
-                                    <a href="#" class="uk-button uk-button-text">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-card uk-card-large uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img src="./assets/img/tarjeta_participantes_industriascreativas_002_desktop.jpg" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">2. INDUSTRIAS CREATIVAS</h3>
-                                    <p>Diseño gráfico, audiovisual, diseño publicitario, marketing digital, 3D.</p>
-                                    <a href="#" class="uk-button uk-button-text">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-card uk-card-large uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img src="./assets/img/tarjeta_participantes_interiorismo_003_desktop.jpg" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">3. INTERIORISMO</h3>
-                                    <p>Diseño de espacios, iluminación, domótica, decoración y complementos, paisajismo.</p>
-                                    <a href="#" class="uk-button uk-button-text">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-card  uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img src="./assets/img/tarjeta_participantes_acabados_004_desktop.jpg" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">4. ACABADOS</h3>
-                                    <p>Pisos, paredes, baños, grifería, pintura, ventanería, mesones, puertas.</p>
-                                    <a href="#" class="uk-button uk-button-text">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-card uk-card-default">
-                                <div class="uk-card-media-top">
-                                    <img src="./assets/img/fondo_participantes_001_desktop.jpg" alt="">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title">5. ARQUITECTURA</h3>
-                                    <p>Diseño arquitectónico, firmas, constructoras.</p>
-                                    <a href="#" class="uk-button uk-button-text">VER MÁS</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-            
-                    <!-- <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a> -->
-            
+            <div class="scroll-x">
+                <div class="cards">
+                    <div class="card">
+                        <div class="uk-cover-container img-container">
+                            <img src="./assets/img/tarjeta_participantes_mobiliario_001_desktop.jpg" alt="" uk-cover>
+                        </div>
+                        <div class="bodycard">
+                            <h3 class="card-title">1. MOBILIARIO</h3>
+                            <div class="white-line"></div>
+                            <p>Residencial, institucional, exterior, urbano, cocinas, carpintería, arquitectónico.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="uk-cover-container img-container">
+                            <img src="./assets/img/tarjeta_participantes_interiorismo_003_desktop.jpg" alt="" uk-cover>
+                        </div>
+                        <div class="bodycard">
+                            <h3 class="card-title">2. INTERIORISMO</h3>
+                            <div class="white-line"></div>
+                            <p>Diseño de espacios, iluminación, domótica, decoración y complementos, paisajismo.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="uk-cover-container img-container">
+                            <img src="./assets/img/tarjeta_participantes_acabados_004_desktop.jpg" alt="" uk-cover>
+                        </div>
+
+                        <div class="bodycard">
+                            <h3 class="card-title">3. ACABADOS</h3>
+                            <div class="white-line"></div>
+                            <p>Pisos, paredes, baños, grifería, pintura, ventanería, mesones, puertas.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="uk-cover-container img-container">
+                            <img src="./assets/img/tarjeta_participantes_mobiliario_001_desktop.jpg" alt="" uk-cover>
+                        </div>
+
+                        <div class="bodycard">
+                            <h3 class="card-title">4. ARQUITECTURA</h3>
+                            <div class="white-line"></div>
+                            <p>Diseño arquitectónico, firmas, constructoras.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="uk-cover-container img-container">
+                            <img src="./assets/img/tarjeta_participantes_industriascreativas_002_desktop.jpg" alt="" uk-cover>
+                        </div>
+
+                        <div class="bodycard">
+                            <h3 class="card-title">5. INDUS. CREATIVAS</h3>
+                            <div class="white-line"></div>
+                            <p>Diseño gráfico, audiovisual, diseño publicitario, marketing digital, 3D.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+
                 </div>
-            
-                <!-- <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul> -->
-            
             </div>
         </div>
     </section>
@@ -281,12 +278,30 @@
             <p>Nuestra feria congrega a personas de diferentes industrias y profesionales.</p>
             <h4>Industrias</h4>
             <ul>
-                <li>Banca</li>
-                <li>Maderas</li>
-                <li>Acabados</li>
-                <li>Retail</li>
+                <li>Metalmecanica</li>
+                <li>Muebles</li>
+                <li>Publicidad</li>
                 <li>Restaurantes</li>
-                <li>Propiedad Raiz</li>
+                <li>Tecnología</li>
+                <li>Acabados</li>
+                <li>Paisajismo</li>
+                <li>Audiovisual</li>
+                <li>Insumos</li>
+                <li>Iluminación</li>
+                <li>Ingeniería</li>
+                <li>Banca</li>
+                <li>Interiorismo</li>
+                <li>Academia</li>
+                <li>Arquitectura</li>
+                <li>Construcción</li>
+                <li>Diseño de espacios</li>
+                <li>Diseño digital</li>
+                <li>Diseño gráfico</li>
+                <li>Diseño industrial</li>
+                <li>Diseño de modas</li>
+                <li>Hoteles</li>
+                <li>Madera</li>
+                <li>Marketing</li>
             </ul>
             <h4>Profesionales</h4>
             <ul>
@@ -453,7 +468,64 @@
             <a href="mailto:produccion@laferiadediseno.com">produccion@laferiadediseno.com</a>
         </div>
 
-        <a class="btn-accordion" href="">Participa</a>
+        <div class="accordion">
+            <a class="btn-accordion">Participa</a>
+            <div class="form">
+                <form action="">
+                    <div class="mdc-text-field mdc-text-field--outlined nombre">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Nombre</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-text-field mdc-text-field--outlined empresa">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Empresa</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-text-field mdc-text-field--outlined ciudad">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Ciudad</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-text-field mdc-text-field--outlined correo">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Correo</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-text-field mdc-text-field--outlined celular">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Celular</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
 
         <p>SÍGUENOS</p>
 

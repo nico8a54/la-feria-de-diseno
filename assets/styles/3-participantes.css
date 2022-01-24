@@ -23,8 +23,11 @@
         }
 
 .container-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: var(--AzulOscuro);
-    padding: 32px 24px;
+    padding: 86px 24px;
     min-height: 100vh;
 }
     .container-4 p {
@@ -32,17 +35,78 @@
         font-weight: 300;
     }
 
-    .uk-card-body {
-        background-color: var(--FeriaPpal);
+    .container-4 .scroll-x {
+        margin: 0px -24px;
+        padding: 24px 0;
+        width: 100vw;
+        
+        overflow-x: scroll;
+        overflow-y: hidden;
+        /* background-color: red; */
     }
 
-        .uk-card-title {
-            font-family: 'Roboto', sans-serif;;
-            font-size: 16px !important;
-            color: white !important;
+        .scroll-x .cards {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 24px;
+            padding: 0 24px;
+            height: max-content;
+            width: max-content;
         }
-    
-        .uk-card-body p {
-            font-size: 16px !important;
-            color: white !important;
-        }
+
+            .cards .card {
+                height: max-content;
+                width: 60vw;
+                /* background-color: blue; */
+            }
+
+                .card .img-container {
+                    height: 40vw;
+                }
+
+                .card .bodycard {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 16px;
+                    height: 70vw;
+                    background-color: var(--FeriaPpal);
+                }
+
+                    .bodycard .card-title {
+                        font-family: 'Roboto', sans-serif;;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: white;
+                    }
+
+                    .bodycard .white-line {
+                        width: 50px;
+                        height: 2px;
+                        background-color: white;
+                        margin: 8px 0;
+                    }
+
+                    .bodycard p {
+                        font-family: 'Roboto', sans-serif;;
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: white;
+                    }
+
+                    .bodycard a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        background-color: white;
+                        color: var(--FeriaPpal);
+                        font-size: 16px;
+                        font-weight: 500;
+                        width: 100%;
+                        padding: 8px 0;
+                    }
+
+        
