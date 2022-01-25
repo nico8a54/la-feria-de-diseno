@@ -29,8 +29,9 @@
     }
 
     .preguntas ul li a, .preguntas ul li a:hover {
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 600;
         color: var(--AzulOscuro);
         padding: 0 24px;
     }

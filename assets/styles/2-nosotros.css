@@ -16,8 +16,7 @@ section.nosotros {
             z-index: 1;
         }
             .container-1 .content-1 h2 {
-                font-size: 18px;
-                margin: 16px 0 5px 0;
+                margin: 16px 0;
                 letter-spacing: 0.05em;
             }
             .container-1 .content-1 .blue-line {
@@ -46,10 +45,6 @@ section.nosotros {
             .container-1 .content-2 p {
                 margin: 0;
                 text-align: left;
-                width: auto;
-                font-size: 16px;
-                font-weight: 300;
-                line-height: 110%;
             }
 
         .container-1 .foto-nosotros {
@@ -80,6 +75,7 @@ section.nosotros {
         }
 
         .container-2 div p {
+            font-weight: 300;
             width: 100%;
             text-align: center;
             color: var(--AzulOscuro);

@@ -16,7 +16,7 @@
     }
 
         .container-8 .content-1 h2 {
-            margin: 0 0 5px 0;
+            margin: 0 0 16px 0;
             letter-spacing: 0.05em;
         }
 
@@ -67,8 +67,18 @@
         margin-bottom: 32px;
     }
 
+    .container-9 div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-left: 24px;
+        margin-bottom: 32px;
+        width: 100%;
+        /* background-color: red; */
+    }
+
     .container-9 ul {
-        margin: 32px 0;
+        margin: 0;
         list-style: none;
     }
 

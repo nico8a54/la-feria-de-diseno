@@ -10,9 +10,6 @@
 }
 
     .contacto .content-1 h2 {
-        font-weight: 400;
-        font-size: 18px;
-        margin: 0 0 5px 0;
         letter-spacing: 0.05em;
         color: white;
     }
@@ -48,6 +45,10 @@
         height: 50px;
     }
 
+    .contacto .accordion .form {
+        display: none;
+    }
+
     .contacto .accordion .form form {
         display: flex;
         flex-direction: column;
@@ -65,8 +66,6 @@
         font-weight: 300;
     }
 
-    .contacto p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
+    .contacto .h5 {
+        margin-bottom: 16px;
     }

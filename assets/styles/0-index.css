@@ -58,18 +58,31 @@ h1, h2 {
     color: white;
 }
 
+.h2-titulos-seccion {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0;
     color: white;
 }
 
 h4 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
     color: white;
 }

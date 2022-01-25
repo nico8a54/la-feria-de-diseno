@@ -11,8 +11,7 @@
     }
 
         .container-3 .content-1 h2 {
-            margin: 16px 0 5px 0;
-            letter-spacing: 0.05em;
+            margin: 16px 0;
         }
 
         .container-3 .content-1 .blue-line {
@@ -62,7 +61,7 @@
             }
 
                 .card .img-container {
-                    height: 50vw;
+                    height: 75vw;
                 }
 
                 .card .bodycard {
