@@ -69,3 +69,8 @@
     .contacto .h5 {
         margin-bottom: 16px;
     }
+
+    .contacto div .redes-sociales {
+        display: flex;
+        gap: 16px;
+    }
