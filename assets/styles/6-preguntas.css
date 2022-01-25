@@ -8,10 +8,15 @@
     background-color: white;
 }
 
+    .preguntas .content-1 {
+        margin-bottom: 32px;
+    }
+
     .preguntas .content-1 h2 {
+        font-family: 'Nunito Sans', sans-serif;
         font-weight: 700;
         font-size: 18px;
-        margin: 0 0 5px 24px;
+        margin: 0 0 16px 24px;
         letter-spacing: 0.05em;
         color: var(--FeriaPpal);
     }
@@ -38,14 +43,20 @@
         background-image: url("../img/rest.svg");
     }
 
+    .uk-hr, hr {
+        border-top: 2px solid var(--FeriaPpal);
+        color: var(--FeriaPpal);
+        margin: 20px 0 0 24px;
+    }
+
     .preguntas ul li .uk-accordion-content {
         background-color: var(--FeriaPpal);
-        padding: 24px 32px;
-        margin: 0;
+        padding: 24px;
+        margin: 0 0 0 24px;
     }
 
     .preguntas ul li div ul li {
-        margin-top: 16px;
+        /* margin-top: 16px; */
         /* background-color: greenyellow;s */
         padding-left: 14px;
         border-left: 2px solid white;
@@ -64,12 +75,15 @@
     }
 
 .preguntas a.faq {
-    text-decoration: none;
-    height: 50px;
-    width: 256px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50px;
+    width: 256px;
+    margin-top: 28px;
+    text-decoration: none;
+    
+    
     color: white;
     text-decoration: none;
     font-size: 16px;

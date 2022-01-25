@@ -54,7 +54,7 @@
     align-items: flex-start;
     min-height: 100vh;
     width: 100%;
-    padding: 64px 24px 50px 24px;
+    padding: 64px 24px;
     background-color: var(--AzulOscuro);
 }
 
@@ -68,6 +68,7 @@
     }
 
     .container-9 ul {
+        margin: 32px 0;
         list-style: none;
     }
 
@@ -96,11 +97,12 @@
 
 
     .container-9 a {
-        height: 50px;
-        width: 192px;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 50px;
+        width: 192px;
+        margin-top: 32px;
         color: white;
         text-decoration: none;
         font-size: 16px;
