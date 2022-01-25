@@ -108,20 +108,28 @@ p, li {
     backdrop-filter: saturate(100%) blur(20px); */
 }
 
+.navigator img {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    width: 15vw;
+}
+
 .navigator a {
     text-decoration: none;
-    color: var(--color-azul-claro);
-    font-size: 16px;
-    font-weight: 300;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
     justify-content: left;
     width: 200px;
 }
 
 .navigator a:hover {
     text-decoration: none;
-    color: var(--color-white);
-    font-size: 16px;
-    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .uk-nav-parent-icon > .uk-parent > a {
