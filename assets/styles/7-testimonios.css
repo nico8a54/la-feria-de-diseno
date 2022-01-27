@@ -43,7 +43,7 @@
 
                 .container-5 .scroll-x .cards .card {
                     height: max-content;
-                    width: 75vw;
+                    width: 80vw;
                     /* background-color: blue; */
                 }
 
@@ -57,7 +57,7 @@
                         justify-content: space-between;
                         align-items: flex-start;
                         padding: 24px;
-                        height: 307px;
+                        height: 350px;
                         background-color: var(--FeriaPpal);
                     }
 

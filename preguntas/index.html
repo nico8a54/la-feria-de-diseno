@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>La Feria de Diseño | Preguntas frecuentes</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    
+    <link rel="stylesheet" href="../assets/styles/0-index.css">
+    <link rel="stylesheet" href="./assets/styles/1-hero.css">
+    <link rel="stylesheet" href="../assets/styles/2-nosotros.css">
+    
+    <!-- <link rel="stylesheet" href="./assets/styles/3-participantes.css">
+    <link rel="stylesheet" href="./assets/styles/4-servicios.css">
+    <link rel="stylesheet" href="./assets/styles/5-asistentes.css">
+    
+    <link rel="stylesheet" href="./assets/styles/7-testimonios.css"> -->
+    <link rel="stylesheet" href="./assets/styles/6-preguntas.css">
+    <link rel="stylesheet" href="../assets/styles/8-contacto.css">
+
+    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+
+    
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+
+    <section id="hero" class="hero">
+
+        <div id="navigator" class="navigator">
+            <a href="#hero" uk-scroll>Inicio</a>
+            <a href="#nosotros" uk-scroll>Nosotros</a>
+            <a href="#participantes-2021" uk-scroll>Participantes 2021</a>
+            <!-- <a href="#servicios" uk-scroll>Servicios</a> -->
+            <a href="#asistentes" uk-scroll>Asistentes</a>
+            <a href="#preguntas" uk-scroll>Preguntas</a>
+            <a href="#testimonios" uk-scroll>Testimonios</a>
+            <a href="#contacto" uk-scroll>Contacto</a>
+            <img class="logotipo-feria" src="../assets/img/logotipo-feria.svg" alt="" srcset="">
+        </div>
+
+        <header id="header">
+            <div class="identificador">
+                <svg width="88" height="60" viewBox="0 0 88 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H4.76794V27.5414H23.0497V31.7624H0V0Z" fill="white"/>
+                    <path d="M23.0498 0H69.9669V4.17127H27.8123V13.9282H69.9669V18.0111H27.8123V31.7624H23.0498V0Z" fill="white"/>
+                    <path d="M23.0498 27.4971H34.2598C43.8288 27.4971 51.0001 34.254 51.0001 43.4197C51.0001 52.4915 43.8785 59.254 34.2598 59.254H23.0498V27.4971ZM27.8123 31.7623V54.9667H34.3482C40.978 54.9667 46.0995 49.9335 46.0995 43.3976C46.1199 41.8531 45.8292 40.3204 45.2446 38.8907C44.6601 37.4609 43.7937 36.1635 42.6971 35.0757C41.6005 33.9879 40.2962 33.132 38.8618 32.5589C37.4275 31.9858 35.8924 31.7074 34.3482 31.7402L27.8123 31.7623Z" fill="white"/>
+                    <path d="M77.1325 13.9448H69.9502V34.6244H77.1325C83.3314 34.6244 87.9999 30.2045 87.9999 24.315C87.9999 18.4255 83.3314 13.9448 77.1325 13.9448ZM83.7623 24.315C83.7647 25.1753 83.5952 26.0275 83.2637 26.8214C82.9322 27.6153 82.4454 28.335 81.8319 28.9382C81.2184 29.5414 80.4906 30.0159 79.6912 30.3339C78.8918 30.652 78.0369 30.8071 77.1767 30.7901H74.0938V17.7846H77.1712C78.0391 17.759 78.9031 17.9099 79.7109 18.2281C80.5188 18.5463 81.2536 19.0252 81.8709 19.6358C82.4882 20.2464 82.9751 20.9759 83.3021 21.7802C83.6291 22.5846 83.7895 23.4469 83.7734 24.315H83.7623Z" fill="white"/>
+                </svg>
+            </div>
+            <div id="bm-container">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 32.6416L47 32.6416" stroke="white" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" class="bm-line2"/>
+                    <path d="M3 17L47 17" stroke="white" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" class="bm-line1"/>
+                </svg>
+            </div>
+        </header>
+
+        <div id="slider-hero" class="slider-container" uk-slideshow="autoplay: true" uk-slideshow>
+
+            <ul class="uk-slideshow-items" style="height: 100%;">
+                <li style="position: absolute; z-index: 30;">
+                    <img src="./assets/img/Fondo_FAQ_Desktop.jpg" alt="" uk-cover>
+                    <div class="uk-position-center uk-text-center-left uk-light" style="width: 100%; display: flex; flex-direction: column; margin-left: 24px;">
+                        <h2>PREGUNTAS<br>
+                            <strong>FRECUENTES</strong>
+                        </h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="preguntas" class="preguntas">
+        <div>
+            <ul uk-accordion>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Qué beneficios tiene participar en la feria?</a>
+                    <hr>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li><span>Reconocimiento</span> de tu marca para clientes y posibles clientes.</li>
+                            <li><span>Exposición</span> frente a un público B2B nacional e internacional.</li>
+                            <li><span>Actualización</span> en tendencias y nuevos actores del sector.</li>
+                            <li><span>Oportunidad</span>  de generar conexiones y negociaciones con otras marcas del sector.</li>
+                            <li><span>Aumento</span> en el networking o red de contactos.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Cuál es el perfil de los expositores?</a>
+                    <hr>
+                    <div class="uk-accordion-content">
+                        <p>Empresas, marcas o independientes que se encuentren en las categorías de:</p>
+                        <ul class="uk-list">
+                            <li>Arquitectura, acabados arquitectónicos y firmas de arquitectos.</li>
+                            <li>Mobiliario institucional, de hogar, recreo, empresas relacionadas con insumos de madera, iluminación y luminarias decorativas.</li>
+                            <li>Interiorismo, diseñadores de interiores.</li>
+                            <li>Domótica y tecnologia.</li>
+                            <li>Diseño de experiencias</li>
+                            <li>Diseño gráfico, audiovisual, agencias de diseño, agencias de publicidad, fotografia e ilustración.</li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Cuál es el lugar del evento?</a>
+                    <hr>
+                    <div class="uk-accordion-content map-accordion">
+                        <div class="map-container">
+                            <h4>MEDELLÍN</h4>
+                            <p>
+                                Medellín Es una ciudad ubicada al noroccidente de Colombia, con casi 4 millones de habitantes. Hace parte del Valle de Aburrá, junto con otros municipios.<br></br>
+                                
+                                Su clima es templado-cálido con una temperatura entre 25-30 Grados centígrados (77 a 86 grados Fahrenheit)<br></br>
+                                
+                                Plaza Mayor Medellín es el recinto ferial mas grande de la ciudad, está ubicado en el occidente de Medellín: Calle 41#55-53. La Feria De Diseño se realizará en el Recinto de Exposiciones, la cual hace parte de Plaza Mayor.
+                            </p>
+                        </div>
+                        <div id='map' style='width: 100%; height: 500px;'></div>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Qué industrias participarán en la feria?</a>
+                    <hr>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>
+                                <strong>Mobiliario</strong><br></br>
+                                Mobiliario residencial, institucional, urbano, mobiliario exterior, cocinas, carpintería arquitectónica e iluminación. 
+                            </li>
+                            <li>
+                                <strong>Arquitectura</strong><br></br>
+                                Diseño arquitectónico, firmas y constructoras. 
+                            </li>
+                            <li>
+                                <strong>Interiorismo</strong><br></br>
+                                Diseño interior, domótica, decoración y complementos, paisajismo y electrodomésticos.
+                            </li>
+                            <li>
+                                <strong>Acabados</strong><br></br>
+                                Pisos, paredes, baños, griferías, pintura y ventanería, mesones y puertas.
+                            </li>
+                            <li>
+                                <strong>Servicios</strong><br></br>
+                                Diseño grafico, audiovisual, renderización, diseño digital, diseño publicitario, diseño interior, diseño arquitectónico.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Qué modalidades de participación hay en la feria?</a>
+                    <hr>
+                    <div class="uk-accordion-content">
+                        <p>Dentro de La Feria de Diseño hay muchas opciones para participar con tus marcas:</p>
+                        <ul class="uk-list">
+                            <li>
+                                <strong>Inversión stand</strong><br></br>
+                                Espacios disponibles desde 12m2 en la muestra comercial.
+                            </li>
+                            <li>
+                                <strong>Activación-experiencia</strong><br></br>
+                                Con tu marca podrás generar una experiencia que genere mayor conexión con tus clientes y visitantes.
+                            </li>
+                            <li>
+                                <strong>Servicios</strong><br></br>
+                                Diseño grafico, audiovisual, renderización, diseño digital, diseño publicitario, diseño interior, diseño arquitectónico.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Cómo participar?</a>
+                    <hr>
+                    <div class="uk-accordion-content">
+                        <p>Nuestra muestra comercial esta compuesta por stands ubicados en los pabellones Blanco, Verde y Hall Principal.</p>
+                        <ul class="uk-list">
+                            <li>
+                                <strong>Pabellón Blanco</strong><br></br>
+                                Encontrarás los espacios más generosos de La Feria en categorías como Arquitectura, Mobiliario, Iluminación, Interiorismo, Diseño industrial y Domótica.<br></br>
+                                Stands desde 20 metros cuadrados.
+                            </li>
+                            <li>
+                                <strong>Pabellón Verde</strong><br></br>
+                                En este pabellón se ubican marcas de Mobiliario, iluminación, interiorismo, diseño industrial y domótica. Stands desde 15 metros cuadrados.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Cómo llegar?</a>
+                    <hr>
+                    <div class="uk-accordion-content map-accordion">
+                        <div class="map-container como-llegar-1">
+                            <h5>Biblioteca</h5>
+                            <p>
+                                Un medio amigable para circular por la ciudad y llegar a Plaza Mayor, tomando la cicloruta de la Av. San Juan. 100 biciparqueaderos disponibles.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./assets/img/como-llegar-1.svg" alt="" srcset="">
+                        </div>
+                        <div class="map-container como-llegar-2">
+                            <h5>Metro</h5>
+                            <p>
+                                Exposiciones y Alpujarra son las dos estaciones más cercanas a Plaza Mayor. 
+                            </p>
+                        </div>
+                        <div style="background-color: #6A66E2;">
+                            <img src="./assets/img/como-llegar-2.svg" alt="" srcset="">
+                        </div>
+                        <div class="map-container como-llegar-3">
+                            <h5>Metroplus</h5>
+                            <p>
+                                Estación Plaza Mayor con acceso directo al lugar.
+                            </p>
+                        </div>
+                        <div style="background-color: #9592EA;">
+                            <img src="./assets/img/como-llegar-3.svg" alt="" srcset="">
+                        </div>
+                        <div class="map-container como-llegar-4">
+                            <h5>Rutas de Buses</h5>
+                            <p>
+                                Que circulen por la Avenida Ferrocarril hasta la calle 33: 1811, T4 016, T4 019
+                            </p>
+                        </div>
+                        <div style="background-color: #BFBDF3;">
+                            <img src="./assets/img/como-llegar-4.svg" alt="" srcset="">
+                        </div>
+                        <div class="map-container como-llegar-5">
+                            <h5>Carro</h5>
+                            <p>
+                                Tomar la Avenida Ferrocarril sentido norte-sur, antes de la glorieta de Exposiciones.
+                            </p>
+                        </div>
+                        <div style="background-color: #EAE9FB;">
+                            <img src="./assets/img/como-llegar-5.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Tienen convenios con hoteles para los asistentes?</a>
+                    <hr>
+                    <div class="uk-accordion-content">
+                        <div>
+                            <h4>Hotel Dan Carlton Medellin</h4>
+                            <div></div>
+                            <a href="">Ir al sitio</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="content-1">
+            <h2 class="h2-titulos-seccion">CONTACTO</h2>
+            <div class="blue-line"></div>
+        </div>
+
+        <svg width="88" height="60" viewBox="0 0 88 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H4.76794V27.5414H23.0497V31.7624H0V0Z" fill="white"/>
+            <path d="M23.0498 0H69.9669V4.17127H27.8123V13.9282H69.9669V18.0111H27.8123V31.7624H23.0498V0Z" fill="white"/>
+            <path d="M23.0498 27.4971H34.2598C43.8288 27.4971 51.0001 34.254 51.0001 43.4197C51.0001 52.4915 43.8785 59.254 34.2598 59.254H23.0498V27.4971ZM27.8123 31.7623V54.9667H34.3482C40.978 54.9667 46.0995 49.9335 46.0995 43.3976C46.1199 41.8531 45.8292 40.3204 45.2446 38.8907C44.6601 37.4609 43.7937 36.1635 42.6971 35.0757C41.6005 33.9879 40.2962 33.132 38.8618 32.5589C37.4275 31.9858 35.8924 31.7074 34.3482 31.7402L27.8123 31.7623Z" fill="white"/>
+            <path d="M77.1325 13.9448H69.9502V34.6244H77.1325C83.3314 34.6244 87.9999 30.2045 87.9999 24.315C87.9999 18.4255 83.3314 13.9448 77.1325 13.9448ZM83.7623 24.315C83.7647 25.1753 83.5952 26.0275 83.2637 26.8214C82.9322 27.6153 82.4454 28.335 81.8319 28.9382C81.2184 29.5414 80.4906 30.0159 79.6912 30.3339C78.8918 30.652 78.0369 30.8071 77.1767 30.7901H74.0938V17.7846H77.1712C78.0391 17.759 78.9031 17.9099 79.7109 18.2281C80.5188 18.5463 81.2536 19.0252 81.8709 19.6358C82.4882 20.2464 82.9751 20.9759 83.3021 21.7802C83.6291 22.5846 83.7895 23.4469 83.7734 24.315H83.7623Z" fill="white"/>
+        </svg>
+
+        <div>
+            <p class="h5">Espacios y participación</p>
+            <a href="mailto:juana.montoya@laferiadediseno.com">juana.montoya@laferiadediseno.com</a>
+            <a href="tel:+57 313 637 3318">+57 313 637 3318</a>
+        </div>
+
+        <div>
+            <p class="h5">Producción General</p>
+            <a href="mailto:produccion@laferiadediseno.com">produccion@laferiadediseno.com</a>
+        </div>
+
+        <div class="accordion">
+            <a class="btn-accordion">Participa</a>
+            <div class="form">
+                <form action="">
+                    <div class="mdc-text-field mdc-text-field--outlined nombre">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Nombre</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-text-field mdc-text-field--outlined empresa">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Empresa</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-text-field mdc-text-field--outlined ciudad">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Ciudad</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-text-field mdc-text-field--outlined correo">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Correo</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-text-field mdc-text-field--outlined celular">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Celular</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+
+        <div>
+            <p class="h5">SÍGUENOS</p>
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/laferiadediseno/" target="_blank">
+                    <img src="../assets/img/instagram.svg" alt="" srcset="">
+                </a>
+                <a href="https://www.facebook.com/laferiadedisenomed" target="_blank">
+                    <img src="../assets/img/facebook.svg" alt="" srcset="">
+                </a>
+                <a href="https://www.linkedin.com/company/laferiadedisenocolombia/" target="_blank">
+                    <img src="../assets/img/tiktok.svg" alt="" srcset="">
+                </a>
+                <a href="https://www.linkedin.com/company/laferiadedisenocolombia/" target="_blank">
+                    <img src="../assets/img/Linkedin.svg" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javascript" src="../assets/js/index.js"></script>
+    <script type="text/javascript" src="../assets/js/menu.js"></script>
+    <script type="text/javascript" src="./assets/js/map.js"></script>
+</body>
+</html>

@@ -74,3 +74,25 @@
         display: flex;
         gap: 16px;
     }
+
+
+    .mdc-text-field--outlined {
+        height: 34px;
+        overflow: visible;
+        width: 200px;
+    }
+
+    /* .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+        color: var(--AzulClaro);
+        font-size: 14px;
+    }
+    
+    .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label
+    
+    */
+
+
+
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+        border-color: var(--AzulClaro);
+    }

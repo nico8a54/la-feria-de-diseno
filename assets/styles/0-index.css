@@ -65,6 +65,13 @@ h1, h2 {
     margin-bottom: 16px;
 }
 
+h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
 .h5 {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;

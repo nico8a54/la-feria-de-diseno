@@ -36,6 +36,14 @@
         padding: 0 24px;
     }
 
+    ul.uk-list {
+        margin-top: 0;
+    }
+
+    .uk-list > * > ul, .uk-list > :nth-child(n+2) {
+        margin-top: 32px;
+    }
+
     .uk-accordion-title::before {
         background-image: url("../img/plus.svg");
     }
@@ -61,6 +69,14 @@
         /* background-color: greenyellow;s */
         padding-left: 14px;
         border-left: 2px solid white;
+    }
+
+    .preguntas ul li div div h4 {
+        margin-bottom: 32px;
+    }
+
+    .preguntas ul li div p {
+        margin-bottom: 32px;
     }
 
     .preguntas ul li div ul li, .preguntas ul li div p {
