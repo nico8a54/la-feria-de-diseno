@@ -115,6 +115,49 @@
         background-color: #EAE9FB;
     }
 
+    .preguntas ul li .hotels {
+        background-color: gray;
+        padding: 0;
+        /* height: auto; */
+    }
+
+    .preguntas ul li .uk-accordion-content .hotel-accordion {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    .preguntas ul li div .hotel-accordion .hotel-title {
+        position: static;
+        z-index: 1;
+        justify-content: flex-start;
+    }
+
+    .preguntas ul li div .hotel-accordion div h4 {
+        margin-bottom: 16px;
+    }
+
+    .preguntas ul li div .hotel-accordion div .blue-line {
+        background-color: white;
+        width: 80px;
+        height: 2px;
+    }
+
+    .preguntas ul li div .hotel-accordion a {
+        position: static;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        width: 128px;
+        height: 50px;
+        background-color: var(--FeriaPpal);
+    }
+
     .preguntas ul li div ul li {
         /* margin-top: 16px; */
         /* background-color: greenyellow;s */
