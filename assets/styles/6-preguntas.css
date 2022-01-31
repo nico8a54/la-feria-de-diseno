@@ -56,6 +56,7 @@
         border-top: 2px solid var(--FeriaPpal);
         color: var(--FeriaPpal);
         margin: 20px 0 0 24px;
+        background-color: var(--FeriaPpal);
     }
 
     .preguntas ul li .uk-accordion-content {
