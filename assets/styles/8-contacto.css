@@ -26,6 +26,23 @@
         width: 53.47px;
     }
 
+    .contacto .datos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto div a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .contacto .h5 {
+        margin-bottom: 16px;
+    }
+
     .contacto .accordion {
         background-color: white;
     }
@@ -56,18 +73,6 @@
         padding: 24px;
         justify-content: flex-start;
         /* background-color: red; */
-    }
-
-    .contacto div a {
-        text-decoration: none;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 14px;
-        font-weight: 300;
-    }
-
-    .contacto .h5 {
-        margin-bottom: 16px;
     }
 
     .contacto div .redes-sociales {

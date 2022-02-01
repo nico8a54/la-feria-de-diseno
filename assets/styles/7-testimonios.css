@@ -1,5 +1,6 @@
 .testimonios {
-    background-color: var(--AzulOscuro);
+    background-color: white;
+    box-shadow: inset 0px 11px 20px rgba(0, 0, 0, 0.1);
 }
 
     .testimonios .container-5 {
@@ -17,7 +18,7 @@
                 font-family: 'Nunito Sans', sans-serif;
                 font-size: 18px;
                 font-weight: 700;
-                color: white;
+                color: var(--FeriaPpal);
                 margin-bottom: 16px;
             }
         
