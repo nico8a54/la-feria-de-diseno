@@ -48,7 +48,7 @@
                 }
 
                     .container-5 .scroll-x .cards .card .img-container {
-                        height: 75vw;
+                        height: 100vw;
                     }
 
                     .container-5 .scroll-x .cards .card .bodycard {
@@ -57,7 +57,7 @@
                         justify-content: space-between;
                         align-items: flex-start;
                         padding: 24px;
-                        height: 350px;
+                        height: 450px;
                         background-color: var(--FeriaPpal);
                     }
 
