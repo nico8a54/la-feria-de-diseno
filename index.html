@@ -7,6 +7,8 @@
 
     <title>La Feria de Diseño</title>
 
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
 
@@ -29,7 +31,7 @@
     <link rel="stylesheet" href="./assets/styles/8-patrocinadores.css">
     <link rel="stylesheet" href="./assets/styles/8-contacto.css">
 
-    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
@@ -247,7 +249,7 @@
                             <div>
                                 <h3 class="card-title">5. DISEÑO DIGITAL</h3>
                                 <div class="white-line"></div>
-                                <p>Diseño gráfico, audiovisual, diseño publicitario, marketing digital, 3D.</p>
+                                <p>Diseño gráfico, audiovisual, diseño publicitaro, fotografía, marketing digital, 3D.</p>
                             </div>
                             <a href="#">Ver más</a>
                         </div>
@@ -298,7 +300,6 @@
             <div>
                 <h4>Industrias</h4>
                 <ul>
-                    
                     <li>Acabados</li>
                     <li>Academia</li>
                     <li>Arquitectura</li>
@@ -338,7 +339,7 @@
                     <li>Publicistas</li>
                 </ul>
             </div>
-            <h4 style="text-align: center; width: 100%;">¡Asegura tu entrada<br>a La Feria de Diseño!</h4>
+            <h4 style="text-align: center; width: 100%;">¡Asegura tu entrada<br>a La Feria De Diseño!</h4>
             <a href="">Comprar Tiquete</a>
         </div>
     </section>
@@ -351,7 +352,7 @@
             </div>
             <ul uk-accordion>
                 <li>
-                    <a class="uk-accordion-title" href="#">¿Beneficios de participar?</a>
+                    <a class="uk-accordion-title" href="#">¿Qué beneficios tiene participar en la feria?</a>
                     <hr>
                     <div class="uk-accordion-content">
                         <ul class="uk-list">
@@ -364,34 +365,198 @@
                     </div>
                 </li>
                 <li>
-                    <a class="uk-accordion-title" href="#">¿Perfil de expositores?</a>
-                    <hr>
-                    <div class="uk-accordion-content">
-                        <p>Empresas, marcas o independientes que se encuentren en las categorías de:</p>
-                        <ul class="uk-list">
-                            <li>Arquitectura, acabados arquitectónicos y firmas de arquitectos.</li>
-                            <li>Mobiliario institucional, de hogar, recreo, empresas relacionadas con insumos de madera, iluminación y luminarias decorativas.</li>
-                            <li>Interiorismo, diseñadores de interiores.</li>
-                            <li>Domótica y tecnologia.</li>
-                            <li>Diseño de experiencias</li>
-                            <li>Diseño gráfico, audiovisual, agencias de diseño, agencias de publicidad, fotografia e ilustración.</li>
-                        </ul>
-                    </div>
-                    
-                </li>
-                <li>
                     <a class="uk-accordion-title" href="#">¿Cuál es el lugar del evento?</a>
                     <hr>
-                    <div class="uk-accordion-content">
-                        <p>
-                            Plaza Mayor Medellín es el recinto ferial más grande de la ciudad, está ubicado en el occidente de Medellín: Calle 41# 55-53. La Feria De Diseño se realizará en el Recinto de Exposiciones, que hace parte de Plaza Mayor.
-                        </p>
+                    <div class="uk-accordion-content map-accordion">
+                        <div class="map-container">
+                            <h4>MEDELLÍN</h4>
+                            <p>
+                                Medellín Es una ciudad ubicada al noroccidente de Colombia, con casi 4 millones de habitantes. Hace parte del Valle de Aburrá, junto con otros municipios.<br></br>
+                                
+                                Su clima es templado-cálido con una temperatura entre 25-30 Grados centígrados (77 a 86 grados Fahrenheit)<br></br>
+                                
+                                Plaza Mayor Medellín es el recinto ferial mas grande de la ciudad, está ubicado en el occidente de Medellín: Calle 41#55-53. La Feria De Diseño se realizará en el Recinto de Exposiciones, la cual hace parte de Plaza Mayor.
+                            </p>
+                            <div id='map' style='width: 100%; height: 50vh;'></div>
+                        </div>
+                        
                     </div>
-                    
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Qué industrias participarán en la feria?</a>
+                    <hr>
+                    <div class="uk-accordion-content">
+                        <ul class="uk-list">
+                            <li>
+                                <strong>Mobiliario</strong><br></br>
+                                Mobiliario residencial, institucional, urbano, mobiliario exterior, cocinas, carpintería arquitectónica e iluminación. 
+                            </li>
+                            <li>
+                                <strong>Arquitectura</strong><br></br>
+                                Diseño arquitectónico, firmas y constructoras. 
+                            </li>
+                            <li>
+                                <strong>Interiorismo</strong><br></br>
+                                Diseño interior, domótica, decoración y complementos, paisajismo y electrodomésticos.
+                            </li>
+                            <li>
+                                <strong>Acabados</strong><br></br>
+                                Pisos, paredes, baños, griferías, pintura y ventanería, mesones y puertas.
+                            </li>
+                            <li>
+                                <strong>Servicios</strong><br></br>
+                                Diseño grafico, audiovisual, renderización, diseño digital, diseño publicitario, diseño interior, diseño arquitectónico.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Qué modalidades de participación hay en la feria?</a>
+                    <hr>
+                    <div class="uk-accordion-content">
+                        <p>Dentro de La Feria de Diseño hay muchas opciones para participar con tus marcas:</p>
+                        <ul class="uk-list">
+                            <li>
+                                <strong>Inversión stand</strong><br></br>
+                                Espacios disponibles desde 12m2 en la muestra comercial.
+                            </li>
+                            <li>
+                                <strong>Activación-experiencia</strong><br></br>
+                                Con tu marca podrás generar una experiencia que genere mayor conexión con tus clientes y visitantes.
+                            </li>
+                            <li>
+                                <strong>Servicios</strong><br></br>
+                                Diseño grafico, audiovisual, renderización, diseño digital, diseño publicitario, diseño interior, diseño arquitectónico.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Cómo participar?</a>
+                    <hr>
+                    <div class="uk-accordion-content">
+                        <p>Nuestra muestra comercial esta compuesta por stands ubicados en los pabellones Blanco, Verde y Hall Principal.</p>
+                        <ul class="uk-list">
+                            <li>
+                                <strong>Pabellón Blanco</strong><br></br>
+                                Encontrarás los espacios más generosos de La Feria en categorías como Arquitectura, Mobiliario, Iluminación, Interiorismo, Diseño industrial y Domótica.<br></br>
+                                Stands desde 20 metros cuadrados.
+                            </li>
+                            <li>
+                                <strong>Pabellón Verde</strong><br></br>
+                                En este pabellón se ubican marcas de Mobiliario, iluminación, interiorismo, diseño industrial y domótica. Stands desde 15 metros cuadrados.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Cómo llegar?</a>
+                    <hr>
+                    <div class="uk-accordion-content map-accordion">
+                        <div class="map-container como-llegar-1">
+                            <h5>Bicicleta</h5>
+                            <p>
+                                Un medio amigable para circular por la ciudad y llegar a Plaza Mayor, tomando la cicloruta de la Av. San Juan. 100 biciparqueaderos disponibles.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./preguntas/assets/img/como-llegar-1.svg" alt="" srcset="">
+                        </div>
+                        <div class="map-container como-llegar-2">
+                            <h5>Metro</h5>
+                            <p>
+                                Exposiciones y Alpujarra son las dos estaciones más cercanas a Plaza Mayor. 
+                            </p>
+                        </div>
+                        <div style="background-color: #6A66E2;">
+                            <img src="./preguntas/assets/img/como-llegar-2.svg" alt="" srcset="">
+                        </div>
+                        <div class="map-container como-llegar-3">
+                            <h5>Metroplus</h5>
+                            <p>
+                                Estación Plaza Mayor con acceso directo al lugar.
+                            </p>
+                        </div>
+                        <div style="background-color: #9592EA;">
+                            <img src="./preguntas/assets/img/como-llegar-3.svg" alt="" srcset="">
+                        </div>
+                        <div class="map-container como-llegar-4">
+                            <h5>Rutas de Buses</h5>
+                            <p>
+                                Que circulen por la Avenida Ferrocarril hasta la calle 33: 1811, T4 016, T4 019
+                            </p>
+                        </div>
+                        <div style="background-color: #BFBDF3;">
+                            <img src="./preguntas/assets/img/como-llegar-4.svg" alt="" srcset="">
+                        </div>
+                        <div class="map-container como-llegar-5">
+                            <h5>Carro</h5>
+                            <p>
+                                Tomar la Avenida Ferrocarril sentido norte-sur, antes de la glorieta de Exposiciones.
+                            </p>
+                        </div>
+                        <div style="background-color: #EAE9FB;">
+                            <img src="./preguntas/assets/img/como-llegar-5.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">¿Tienen convenios con hoteles para los asistentes?</a>
+                    <hr>
+                    <div class="uk-accordion-content hotels">
+                        <div class="uk-cover-container hotel-accordion">
+                            <img src="./preguntas/assets/img/hoteles/Fondo_DanCarltonMedellin_Mobile.jpg" alt="" srcset="" uk-cover>
+                            <div class="hotel-title">
+                                <h4>Hotel Dan Carlton Medellin</h4>
+                                <div class="blue-line"></div>
+                            </div>
+                            <a href="">Ir al sitio</a>
+                        </div>
+                        <div class="uk-cover-container hotel-accordion">
+                            <img src="./preguntas/assets/img/hoteles/Fondo_DanCarltonBelford_Mobile.jpg" alt="" srcset="" uk-cover>
+                            <div class="hotel-title">
+                                <h4>Hotel Dan Carlton Belfort</h4>
+                                <div class="blue-line"></div>
+                            </div>
+                            <a href="">Ir al sitio</a>
+                        </div>
+                        <div class="uk-cover-container hotel-accordion">
+                            <img src="./preguntas/assets/img/hoteles/Fondo_SanFernando_Mobile.jpg" alt="" srcset="" uk-cover>
+                            <div class="hotel-title">
+                                <h4>Hotel San Fernando plaza</h4>
+                                <div class="blue-line"></div>
+                            </div>
+                            <a href="">Ir al sitio</a>
+                        </div>
+                        <div class="uk-cover-container hotel-accordion">
+                            <img src="./preguntas/assets/img/hoteles/Fondo_ClickClack_Mobile.jpg" alt="" srcset="" uk-cover>
+                            <div class="hotel-title">
+                                <h4>The Click Clack hotel</h4>
+                                <div class="blue-line"></div>
+                            </div>
+                            <a href="">Ir al sitio</a>
+                        </div>
+                        <div class="uk-cover-container hotel-accordion">
+                            <img src="./preguntas/assets/img/hoteles/Fondo_IBIS_Mobile.jpg" alt="" srcset="" uk-cover>
+                            <div class="hotel-title">
+                                <h4>IBIS</h4>
+                                <div class="blue-line"></div>
+                            </div>
+                            <a href="">Ir al sitio</a>
+                        </div>
+                        <div class="uk-cover-container hotel-accordion">
+                            <img src="./preguntas/assets/img/hoteles/Fondo_INNTU_Mobile.jpg" alt="" srcset="" uk-cover>
+                            <div class="hotel-title">
+                                <h4>INNTU Hotel</h4>
+                                <div class="blue-line"></div>
+                            </div>
+                            <a href="">Ir al sitio</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
-        <a class="faq" href="./preguntas/">Preguntas Frecuentes</a>
+        <!-- <a class="faq" href="./preguntas/">Preguntas Frecuentes</a> -->
     </section>
 
     <section id="testimonios" class="testimonios">
@@ -600,5 +765,6 @@
     <script type="text/javascript" src="./assets/js/index.js"></script>
     <script type="text/javascript" src="./assets/js/menu.js"></script>
     <script type="text/javascript" src="./assets/js/hero.js"></script>
+    <script type="text/javascript" src="./preguntas/assets/js/map.js"></script>
 </body>
 </html>
