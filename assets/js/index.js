@@ -20,3 +20,22 @@ mdc.textField.MDCTextField.attachTo(document.querySelector('.empresa'));
 mdc.textField.MDCTextField.attachTo(document.querySelector('.ciudad'));
 mdc.textField.MDCTextField.attachTo(document.querySelector('.correo'));
 mdc.textField.MDCTextField.attachTo(document.querySelector('.celular'));
+
+
+const   btnMenu = document.querySelector('#menu'),
+        menuContent = document.querySelector('.menu-content');
+        menuItems = document.getElementsByClassName('menu-item');
+
+btnMenu.addEventListener('click', () =>{
+    menuContent.classList.toggle('menu-active');
+});
+
+menuItems.item(1).addEventListener('click', () => {
+  menuContent.classList.toggle('menu-active');
+});
+menuItems.item(2).addEventListener('click', () => {
+  menuContent.classList.toggle('menu-active');
+});
+menuItems.item(3).addEventListener('click', () => {
+  menuContent.classList.toggle('menu-active');
+});
