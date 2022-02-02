@@ -1,0 +1,27 @@
+.participantes-mobiliario {
+    /* background-color: red; */
+}
+
+.participantes-mobiliario div {
+    border: none;
+}
+
+.participantes-mobiliario div button {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    border: none;
+    background-color: none;
+    background-image: url("../img/Bisou_mobiliario.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.participantes-mobiliario div div {
+    background-color: var(--FeriaPpal);
+}
+
+.participantes-mobiliario div div ul li a {
+    color: white;
+}

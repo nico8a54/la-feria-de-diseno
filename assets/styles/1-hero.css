@@ -152,7 +152,7 @@ section.hero {
                 }
 
                 img.logotipo-feria {
-                    height: 32px;
+                    height: 13vw;
                     /* width: 15vw;
                     max-width: 158px;
                     min-width: 47px; */
@@ -175,79 +175,6 @@ section.hero {
                 .arrow-left, .arrow-right {
                     height: 32px;
                     width: 32px;
-                }
-
-                /* .menu-content{
-                    
-                    position: fixed;
-                    bottom: 20px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                } */
-                
-                .menu-item {
-                    width: 13vw;
-                    height: 13vw;
-                    max-width: 72px;
-                    max-height: 72px;
-                    background: var(--AzulClaro);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-                    cursor: pointer;
-                    position: fixed;
-                    bottom: 54px;
-                    right: 24px;
-                    transition: transform 300ms;
-                }
-                
-                .menu-item:hover {
-                    background: white;
-                }
-
-                #menu.menu-item svg {
-                    height: 70%;
-                    width: 70%;
-                    transition: transform 300ms;
-                }
-                
-                .menu-item img, .menu-item svg {
-                    height: 55%;
-                    width: 55%;
-                    transition: transform 300ms;
-                }
-                
-                #menu {
-                    display: flex;
-                    box-sizing: content-box;
-                    border: 6px solid var(--FeriaPpal);
-                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-                    z-index: 10;
-                    background-color: var(--FeriaPpal);
-                    transform: translate(6px, 6px);
-                }
-                
-                .menu-active #menu {
-                    border: 6px solid white;
-                    background-color: white;
-                }
-
-                .menu-active #menu svg path, .menu-active #menu svg rect {
-                    stroke: var(--FeriaPpal);
-                }
-                
-                .menu-active .menu-item:nth-child(2) {
-                    transform: translateY(-100px);
-                }
-                
-                .menu-active .menu-item:nth-child(3) {
-                    transform: translate(-70.7px,-70.7px)
-                }
-                
-                .menu-active .menu-item:nth-child(4) {
-                    transform: translateX(-100px);
                 }
 
         

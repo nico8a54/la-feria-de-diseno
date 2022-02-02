@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    padding: 56px 0px;
+    padding: 24px 0px;
     background-color: white;
 }
 
@@ -32,7 +32,7 @@
         font-family: 'Nunito Sans', sans-serif;
         font-size: 16px;
         font-weight: 600;
-        color: var(--FeriaPpal);
+        color: var(--AzulOscuro);
         padding: 0 24px;
     }
 
@@ -45,15 +45,15 @@
     }
 
     .uk-accordion-title::before {
-        background-image: url("../img/plus.svg");
+        background-image: url("../../../assets/img/plus.svg");
     }
 
     .uk-open>.uk-accordion-title::before {
-        background-image: url("../img/rest.svg");
+        background-image: url("../../../assets/img/rest.svg");
     }
 
     .uk-hr, hr {
-        border-top: 1px solid var(--AzulClaro);
+        border-top: 2px solid var(--FeriaPpal);
         color: var(--FeriaPpal);
         margin: 20px 0 0 24px;
         background-color: var(--FeriaPpal);
@@ -117,7 +117,7 @@
     }
 
     .preguntas ul li .hotels {
-        /* background-color: gray; */
+        background-color: gray;
         padding: 0;
         /* height: auto; */
     }

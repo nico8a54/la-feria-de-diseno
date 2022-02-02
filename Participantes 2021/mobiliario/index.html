@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../../assets/styles/normalize.css">
     
-    <link rel="stylesheet" href="../assets/styles/0-index.css">
-    <link rel="stylesheet" href="../assets/styles/1-hero.css">
-    <link rel="stylesheet" href="../assets/styles/2-nosotros.css">
+    <link rel="stylesheet" href="../../assets/styles/0-index.css">
+    <link rel="stylesheet" href="./assets/styles/1-hero.css">
+    <link rel="stylesheet" href="../../assets/styles/2-nosotros.css">
+    <link rel="stylesheet" href="./assets/styles/3-participantes.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="../../assets/styles/8-contacto.css">
     
     <!-- <link rel="stylesheet" href="./assets/styles/3-participantes.css">
     <link rel="stylesheet" href="./assets/styles/4-servicios.css">
@@ -40,19 +42,21 @@
     
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
+
 <body data-spy="scroll" data-target="#navbar-example">
+
     <section id="hero" class="hero">
 
         <div id="navigator" class="navigator">
-            <a href="#hero" uk-scroll>Inicio</a>
-            <a href="#nosotros" uk-scroll>Nosotros</a>
-            <a href="#participantes-2021" uk-scroll>Participantes 2021</a>
+            <a href="../../">Inicio</a>
+            <a href="../../#nosotros">Nosotros</a>
+            <a href="../../#participantes-2021">Participantes 2021</a>
             <!-- <a href="#servicios" uk-scroll>Servicios</a> -->
-            <a href="#asistentes" uk-scroll>Asistentes</a>
-            <a href="#preguntas" uk-scroll>Preguntas</a>
-            <a href="#testimonios" uk-scroll>Testimonios</a>
+            <a href="../../#asistentes">Asistentes</a>
+            <a href="../../#preguntas">Preguntas</a>
+            <a href="../../#testimonios">Testimonios</a>
             <a href="#contacto" uk-scroll>Contacto</a>
-            <img class="logotipo-feria" src="../assets/img/logotipo-feria.svg" alt="" srcset="">
+            <img class="logotipo-feria" src="../../assets/img/logotipo-feria.svg" alt="" srcset="">
         </div>
 
         <header id="header">
@@ -76,7 +80,7 @@
 
             <ul class="uk-slideshow-items" style="height: 100%;">
                 <li style="position: absolute; z-index: 30;">
-                    <img src="../assets/img/Fondo_NuestraHistoria_desktop.jpg" alt="" uk-cover>
+                    <img src="../../assets/img/tarjeta_participantes_mobiliario_001_desktop.jpg" alt="" uk-cover>
                     <div class="uk-position-center uk-text-center-left uk-light" style="width: 100%; display: flex; flex-direction: column; margin-left: 24px;">
                         <h2>LOS<br>
                             PROTAGONISTAS EN <strong>MOBILIARIO</strong><br>
@@ -87,65 +91,26 @@
             </ul>
         </div>
     </section>
-    <!-- <div class="wrapper" >
 
-        <nav class="nav__wrapper" id="navbar-example">
-          <ul class="nav">
-    
-            <li role="presentation" class="active">
-              <a href="#section1">
-                <span class="nav__counter">2013 / 14</span>
-              </a>
-            </li>
-    
-            <li role="presentation">
-              <a href="#section2">
-                <span class="nav__counter">2015 / 16</span>
-              </a>
-            </li>
-    
-            <li role="presentation">
-              <a href="#section3">
-                <span class="nav__counter">2017/18</span>
-              </a>
-            </li>
-            
-            <li role="presentation">
-              <a href="#section4">
-                <span class="nav__counter">2019</span>
-              </a>
-            </li>
-            
-            <li role="presentation">
-              <a href="#section5">
-                <span class="nav__counter">2021</span>
-              </a>
-            </li>
+    <section id="participantes-mobiliario" class="participantes-mobiliario">
+      <div class="boundary-align uk-panel uk-placeholder">
+
+        <button type="button">
+        </button>
+        <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+          <div>
+            <h4>Estilo Bisou</h4>
+            <div class="blue-line"></div>
+          </div>
+          <ul class="uk-nav uk-dropdown-nav">
+              <li>Calle 25A #43B - 39, Medellín</li>
+              <li><a href="tel:+573213009573">+57 321-300-9573</a></li>
+              <li><a href="https://www.instagram.com/estilobisou/">@estilobisou</a></li>
           </ul>
-        </nav>
-    
-        <section class="section section1" id="section1">
-          Scroll down or use the nav.
-        </section>
-    
-        <section class="section section2" id="section2">
-          Section 2
-        </section>
-    
-        <section class="section section3" id="section3">
-          Section 3
-        </section>
-    
-        <section class="section section4" id="section4">
-          Section 4
-        </section>
-    
-        <section class="section section5" id="section5">
-          Section 5
-        </section>
-    
-    
-    </div> -->
+        </div>
+      </div>
+    </section>
+
     <section id="contacto" class="contacto">
         <div class="content-1">
             <h2 class="h2-titulos-seccion">CONTACTO</h2>
@@ -233,20 +198,19 @@
             <p class="h5">SÍGUENOS</p>
             <div class="redes-sociales">
                 <a href="https://www.instagram.com/laferiadediseno/" target="_blank">
-                    <img src="../assets/img/instagram.svg" alt="" srcset="">
+                    <img src="../../assets/img/instagram.svg" alt="" srcset="">
                 </a>
                 <a href="https://www.facebook.com/laferiadedisenomed" target="_blank">
-                    <img src="../assets/img/facebook.svg" alt="" srcset="">
+                    <img src="../../assets/img/facebook.svg" alt="" srcset="">
                 </a>
                 <a href="https://www.linkedin.com/company/laferiadedisenocolombia/" target="_blank">
-                    <img src="../assets/img/Linkedin.svg" alt="" srcset="">
+                    <img src="../../assets/img/Linkedin.svg" alt="" srcset="">
                 </a>
             </div>
         </div>
 
     </section>
-    <script type="text/javascript" src="../assets/js/index.js"></script>
-    <script type="text/javascript" src="../assets/js/menu.js"></script>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="../../assets/js/index.js"></script>
+    <script type="text/javascript" src="../../assets/js/menu.js"></script>
 </body>
 </html>
