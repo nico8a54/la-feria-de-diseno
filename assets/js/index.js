@@ -25,6 +25,8 @@ mdc.textField.MDCTextField.attachTo(document.querySelector('.celular'));
 const   btnMenu = document.querySelector('#menu'),
         menuContent = document.querySelector('.menu-content');
         menuItems = document.getElementsByClassName('menu-item');
+        menuBlur = document.getElementById("menuBlur");
+        menuCircles = document.getElementsByClassName("circle");
 
 btnMenu.addEventListener('click', () =>{
     menuContent.classList.toggle('menu-active');
@@ -58,12 +60,20 @@ document.body.addEventListener('scroll', () => {
     menuItems.item(1).style.position = "fixed";
     menuItems.item(2).style.position = "fixed";
     menuItems.item(3).style.position = "fixed";
+    menuCircles.item(0).style.position = "fixed";
+    menuCircles.item(1).style.position = "fixed";
+    menuCircles.item(2).style.position = "fixed";
+    menuBlur.style.position = "fixed";
   }
   else {
     btnMenu.style.position = "absolute";
     menuItems.item(1).style.position = "absolute";
     menuItems.item(2).style.position = "absolute";
     menuItems.item(3).style.position = "absolute";
+    menuCircles.item(0).style.position = "absolute";
+    menuCircles.item(1).style.position = "absolute";
+    menuCircles.item(2).style.position = "absolute";
+    menuBlur.style.position = "absolute";
   }
 });
 // Menu para moviles, scroll FIN

@@ -3,5 +3,14 @@ const map = new mapboxgl.Map({
 container: 'map', // container ID
 style: 'mapbox://styles/gaviria-dev/ckywu4ii9003614oniql2ajbe', // style URL
 center: [-75.5763433085143, 6.243131576738486], // starting position [lng, lat]
-zoom: 16 // starting zoom
+zoom: 15 // starting zoom
 });
+
+// Set marker options.
+const marker = new mapboxgl.Marker({
+    color: "#3A37E0",
+    draggable: true
+    }).setLngLat([-75.5763433085143, 6.243131576738486])
+    .addTo(map);
+
+map.addControl(new mapboxgl.FullscreenControl());

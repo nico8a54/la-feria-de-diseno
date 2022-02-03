@@ -1,6 +1,6 @@
 .asistentes {
     position: relative;
-    padding-top: 64px;
+    /* padding-top: 64px; */
 }
 
 .container-8 {
@@ -31,7 +31,7 @@
         position: absolute;
         z-index: 1;
         right: 24px;
-        top: 24px;
+        top: -60px;
         padding: 16px;
         height: 86px;
         width: 222px;
