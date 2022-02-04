@@ -44,14 +44,14 @@
 
                 .container-5 .scroll-x .cards .card {
                     position: relative;
-                    height: 180vw;
-                    width: 80vw;
+                    height: 36rem;
+                    width: 16rem;
                     background-color: blue;
                     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
                 }
 
                     .container-5 .scroll-x .cards .card .img-container {
-                        height: 80vw;
+                        height: 16rem;
                     }
 
                     .p-hidden {
@@ -70,16 +70,16 @@
                         flex-direction: column;
                         justify-content: space-between;
                         align-items: flex-start;
-                        padding: 24px;
+                        padding: 1.5rem;
                         height: auto;
-                        min-height: 100vw;
-                        max-height: 100vw;
+                        min-height: 20rem;
+                        max-height: 20rem;
                         background-color: var(--FeriaPpal);
                         transition: max-height 300ms ease-out;
                     }
 
                         .container-5 .scroll-x .cards .expand .bodycard {
-                            max-height: 150vw;
+                            max-height: 30rem;
                             height: max-content;
                             /* transition: max-height 300ms ease-in; */
                         }
@@ -110,21 +110,21 @@
 
                         .container-5 .scroll-x .cards .card .bodycard .title-control-container .card-title {
                             font-family: 'Nunito Sans', sans-serif;
-                            font-size: 18px;
+                            font-size: 1.125rem;
                             font-weight: 700;
                             color: white;
                         }
 
                         .container-5 .scroll-x .cards .card .bodycard  .white-line {
-                            width: 50px;
-                            height: 2px;
+                            width: 3.125rem;
+                            height: 0.125rem;
                             background-color: white;
-                            margin: 8px 0 24px 0;
+                            margin: 0.5rem 0 1.5rem 0;
                         }
 
                         .container-5 .scroll-x .cards .card .bodycard p {
                             font-family: 'Roboto', sans-serif;
-                            font-size: 14px;
+                            font-size: 0.875rem;
                             font-weight: 300;
                             font-style: italic;
                             color: white;

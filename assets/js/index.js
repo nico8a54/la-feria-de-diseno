@@ -86,5 +86,5 @@ cards.addEventListener('click', (e) => {
   } else {
     
   }
-  console.log(e.target.parentElement);
+  // console.log(e.target.parentElement);
 });

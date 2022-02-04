@@ -56,12 +56,12 @@
 
             .cards .card {
                 height: max-content;
-                width: 75vw;
+                width: 15rem;
                 /* background-color: blue; */
             }
 
                 .card .img-container {
-                    height: 75vw;
+                    height: 15rem;
                 }
 
                 .card .bodycard {
@@ -69,28 +69,28 @@
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: flex-start;
-                    padding: 16px;
-                    height: 194px;
+                    padding: 1rem;
+                    height: 12.125rem;
                     background-color: var(--FeriaPpal);
                 }
 
                     .bodycard .card-title {
                         font-family: 'Roboto', sans-serif;;
-                        font-size: 16px;
+                        font-size: 1rem;
                         font-weight: 500;
                         color: white;
                     }
 
                     .bodycard .white-line {
-                        width: 50px;
-                        height: 2px;
+                        width: 3.125rem;
+                        height: 0.125rem;
                         background-color: white;
-                        margin: 8px 0 16px 0;
+                        margin: 0.5rem 0 1rem 0;
                     }
 
                     .bodycard p {
                         font-family: 'Roboto', sans-serif;;
-                        font-size: 14px;
+                        font-size: 0.875rem;
                         font-weight: 300;
                         color: white;
                     }
@@ -102,10 +102,10 @@
                         text-decoration: none;
                         background-color: white;
                         color: var(--FeriaPpal);
-                        font-size: 16px;
+                        font-size: 1rem;
                         font-weight: 500;
                         width: 100%;
-                        padding: 8px 0;
+                        padding: 0.5rem 0;
                     }
 
         
