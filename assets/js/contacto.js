@@ -20,3 +20,4 @@ mdc.textField.MDCTextField.attachTo(document.querySelector('.ciudad'));
 mdc.textField.MDCTextField.attachTo(document.querySelector('.correo'));
 mdc.textField.MDCTextField.attachTo(document.querySelector('.celular'));
 mdc.textField.MDCTextField.attachTo(document.querySelector('.instagram'));
+mdc.select.MDCSelect.attachTo(document.querySelector('.categoria'));
