@@ -2,6 +2,21 @@
     /* background-color: red; */
 }
 
+.atras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: auto;
+    margin: 0 24px 64px 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--FeriaPpal);
+    align-self: center;
+}
+
 .participantes-mobiliario .uk-panel {
     /* background-color: red; */
     border: none;
@@ -39,16 +54,44 @@
 }
 
 .participantes-mobiliario div .uk-dropdown {
-    /* clip-path: polygon(0 0, 100% 0, 0% 38.8%, 25% 63.1%, 19.1% 97.6%); */
     box-sizing: border-box;
     position: static;
     float: left;
     padding: 48px 24px;
     margin: 12px calc(120px - 50vw);
-    /* margin: 12px 52px; */
     width: 100vw !important;
-    height: 311px;
+    height: auto;
     background-color: var(--FeriaPpal);
+}
+
+.participantes-mobiliario div .uk-dropdown div .white-line {
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    margin-top: 16px;
+    margin-left: -24px;
+}
+
+.participantes-mobiliario div .uk-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.participantes-mobiliario div .uk-dropdown ul li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    width: 100%;
+}
+
+.participantes-mobiliario div .uk-dropdown ul li img {
+    width: 16px;
 }
 
 .participantes-mobiliario div div ul li a {
