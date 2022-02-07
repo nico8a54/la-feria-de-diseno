@@ -71,12 +71,12 @@
         flex-direction: column;
         align-items: center;
         gap: 16px;
-        padding: 24px;
+        padding: 0 24px 24px 24px;
         justify-content: flex-start;
         /* background-color: red; */
     }
 
-    .contacto .accordion .form form div div div label {
+    .contacto .accordion .form form div div div label, .mdc-select:not(.mdc-select--disabled) .mdc-floating-label {
         font-size: 12px;
         color: var(--AzulClaro);
     }
@@ -90,30 +90,26 @@
     .mdc-text-field--outlined {
         height: 34px;
         /* overflow: visible; */
-        width: 200px;
+        width: 100%;
     }
 
-    /* .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
-        color: var(--AzulClaro);
-        font-size: 14px;
-    }
-    
-    .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label
-    
-    */ 
     .mdc-text-field__input {
         color: red;
         font-size: 14px;
     }
 
+    .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
+        color: var(--AzulOscuro);
+    }
+
     /* Label TextField */
-    .mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+    .mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above, .mdc-select--outlined .mdc-select__anchor .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
         transform: translateY(-24px) scale(0.75);
         color: var(--FeriaPpal) !important;
     }
 
     /* Border TextField Active */
-    .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing, .mdc-select--outlined:not(.mdc-select--disabled).mdc-select--focused .mdc-notched-outline .mdc-notched-outline__leading, .mdc-select--outlined:not(.mdc-select--disabled).mdc-select--focused .mdc-notched-outline .mdc-notched-outline__notch, .mdc-select--outlined:not(.mdc-select--disabled).mdc-select--focused .mdc-notched-outline .mdc-notched-outline__trailing {
         border-color: var(--FeriaPpal);
     }
 
@@ -124,5 +120,53 @@
     }
 
     .mdc-select--outlined {
+        width: 100%;
+    }
+    .mdc-select--outlined:not(.mdc-select--disabled) .mdc-select__anchor {
+        height: 34px;
+    }
 
+
+
+    .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__leading, .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__notch, .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__trailing {
+        border-color: var(--FeriaPpal);
+    }
+
+    .mdc-select:not(.mdc-select--disabled) .mdc-select__dropdown-icon {
+        fill: var(--AzulClaro);
+    }
+
+    .mdc-select:not(.mdc-select--disabled).mdc-select--focused .mdc-select__dropdown-icon {
+        fill: var(--FeriaPpal);
+    }
+
+    .mdc-select__menu ul li span {
+        color: var(--AzulOscuro);
+    }
+
+    .checkbox-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .checkbox-container label {
+        font-size: 14px;
+        color: var(--AzulOscuro);
+    }
+
+    .mdc-checkbox .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background .mdc-checkbox__checkmark {
+        width: auto;
+        height: auto;
+    }
+
+    .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate="true"]:enabled ~ .mdc-checkbox__background {
+        border-color: var(--FeriaPpal);
+        background-color: var(--FeriaPpal);
+    }
+
+    .mdc-checkbox .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate):not([data-indeterminate="true"]) ~ .mdc-checkbox__background {
+        border-color: var(--FeriaPpal);
+        border-width: 1px;
     }
