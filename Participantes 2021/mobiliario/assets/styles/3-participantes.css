@@ -5,7 +5,7 @@
 .participantes-mobiliario .uk-panel {
     /* background-color: red; */
     border: none;
-    padding: 12px 0;
+    padding: 64px 40px;
     width: 320px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -45,6 +45,7 @@
     float: left;
     padding: 48px 24px;
     margin: 12px calc(160px - 50vw);
+    /* margin: 12px 52px; */
     width: 100vw !important;
     height: 311px;
     background-color: var(--FeriaPpal);

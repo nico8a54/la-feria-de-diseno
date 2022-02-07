@@ -27,20 +27,20 @@
             background-color: var(--FeriaPpal);
         }
 
-    .asistentes .content-2 {
-        position: absolute;
-        z-index: 1;
-        right: 24px;
-        bottom: 64px;
-        padding: 16px;
-        height: 86px;
-        width: 222px;
-        background-color: var(--FeriaPpal);
+        .container-8 .content-2 {
+            position: absolute;
+            z-index: 1;
+            right: 24px;
+            bottom: 64px;
+            padding: 16px;
+            height: 86px;
+            width: 222px;
+            background-color: var(--FeriaPpal);
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
     .asistentes .content-2 p {
         margin: 0;

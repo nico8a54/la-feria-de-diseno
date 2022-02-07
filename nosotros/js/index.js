@@ -21,6 +21,9 @@ const timeline3 = document.getElementById("timeline-3");
 const timeline4 = document.getElementById("timeline-4");
 const timeline5 = document.getElementById("timeline-5");
 
+
+// window.addEventListener('load')
+
 window.addEventListener('resize', () => {
     let whidthPage = document.documentElement.clientWidth;
     console.log(document.documentElement.clientWidth);
