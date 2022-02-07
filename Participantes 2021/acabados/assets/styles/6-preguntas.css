@@ -1,0 +1,205 @@
+.preguntas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 24px 0px;
+    background-color: white;
+}
+
+    .preguntas .content-1 {
+        margin-bottom: 32px;
+    }
+
+    .preguntas .content-1 h2 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0 0 16px 24px;
+        letter-spacing: 0.05em;
+        color: var(--FeriaPpal);
+    }
+
+    .preguntas .content-1 .blue-line {
+        height: 2px;
+        width: 102px;
+        margin-left: -24PX;
+        background-color: var(--FeriaPpal);
+    }
+
+    .preguntas ul li a, .preguntas ul li a:hover {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--AzulOscuro);
+        padding: 0 24px;
+    }
+
+    ul.uk-list {
+        margin-top: 0;
+    }
+
+    .uk-list > * > ul, .uk-list > :nth-child(n+2) {
+        margin-top: 32px;
+    }
+
+    .uk-accordion-title::before {
+        background-image: url("../../../assets/img/plus.svg");
+    }
+
+    .uk-open>.uk-accordion-title::before {
+        background-image: url("../../../assets/img/rest.svg");
+    }
+
+    .uk-hr, hr {
+        border-top: 2px solid var(--FeriaPpal);
+        color: var(--FeriaPpal);
+        margin: 20px 0 0 24px;
+        background-color: var(--FeriaPpal);
+    }
+
+    .preguntas ul li .uk-accordion-content {
+        background-color: var(--FeriaPpal);
+        padding: 24px;
+        margin: 0 0 0 24px;
+    }
+
+    .preguntas ul li .map-accordion {
+        padding: 0;
+    }
+
+    .preguntas ul li .map-accordion .map-container {
+        padding: 24px;
+    }
+
+    .preguntas ul li .map-accordion div img {
+        width: 100%;
+    }
+
+    .como-llegar-1 {
+        background-color: var(--FeriaPpal);
+    }
+    .como-llegar-2 {
+        /* height: 250px;
+        background-image: url("../img/como-llegar-2.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom; */
+        background-color: #6A66E2;
+    }
+    .como-llegar-3 {
+        /* height: 230px;
+        background-image: url("../img/como-llegar-3.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom; */
+        background-color: #9592EA;
+    }
+    .como-llegar-4 {
+        /* height: 240px;
+        background-image: url("../img/como-llegar-4.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom; */
+        background-color: #BFBDF3;
+    }
+    .como-llegar-4 h5, .como-llegar-4 p, .como-llegar-5 h5, .como-llegar-5 p {
+        color: var(--AzulOscuro);
+    }
+    .como-llegar-5 {
+        /* height: 250px;
+        background-image: url("../img/como-llegar-5.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom; */
+        background-color: #EAE9FB;
+    }
+
+    .preguntas ul li .hotels {
+        background-color: gray;
+        padding: 0;
+        /* height: auto; */
+    }
+
+    .preguntas ul li .uk-accordion-content .hotel-accordion {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    .preguntas ul li div .hotel-accordion .hotel-title {
+        position: static;
+        z-index: 1;
+        justify-content: flex-start;
+    }
+
+    .preguntas ul li div .hotel-accordion div h4 {
+        margin-bottom: 16px;
+    }
+
+    .preguntas ul li div .hotel-accordion div .blue-line {
+        background-color: white;
+        width: 80px;
+        height: 2px;
+    }
+
+    .preguntas ul li div .hotel-accordion a {
+        position: static;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        width: 128px;
+        height: 50px;
+        background-color: var(--FeriaPpal);
+    }
+
+    .preguntas ul li div ul li {
+        /* margin-top: 16px; */
+        /* background-color: greenyellow;s */
+        padding-left: 14px;
+        border-left: 2px solid white;
+    }
+
+    .preguntas ul li div div h4 {
+        margin-bottom: 32px;
+    }
+
+    .preguntas ul li div p {
+        margin-bottom: 32px;
+    }
+
+    .preguntas ul li div ul li, .preguntas ul li div p {
+        font-weight: 200;
+    }
+
+    .preguntas ul li div ul li span {
+        font-weight: 300;
+    }
+
+    .preguntas ul {
+        justify-self: start;
+    }
+
+.preguntas a.faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 256px;
+    margin-top: 28px;
+    text-decoration: none;
+    
+    
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--FeriaPpal);
+    align-self: center;
+}

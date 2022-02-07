@@ -19,3 +19,4 @@ mdc.textField.MDCTextField.attachTo(document.querySelector('.empresa'));
 mdc.textField.MDCTextField.attachTo(document.querySelector('.ciudad'));
 mdc.textField.MDCTextField.attachTo(document.querySelector('.correo'));
 mdc.textField.MDCTextField.attachTo(document.querySelector('.celular'));
+mdc.textField.MDCTextField.attachTo(document.querySelector('.instagram'));

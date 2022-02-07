@@ -70,9 +70,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 16px;
         padding: 24px;
         justify-content: flex-start;
         /* background-color: red; */
+    }
+
+    .contacto .accordion .form form div div div label {
+        font-size: 12px;
+        color: var(--AzulClaro);
     }
 
     .contacto div .redes-sociales {
@@ -99,5 +105,5 @@
 
 
     .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
-        border-color: var(--AzulClaro);
+        border-color: var(--FeriaPpal);
     }
