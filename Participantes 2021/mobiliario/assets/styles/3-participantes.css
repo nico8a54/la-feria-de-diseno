@@ -44,7 +44,7 @@
     position: static;
     float: left;
     padding: 48px 24px;
-    margin: 12px calc(160px - 50vw);
+    margin: 12px calc(120px - 50vw);
     /* margin: 12px 52px; */
     width: 100vw !important;
     height: 311px;
