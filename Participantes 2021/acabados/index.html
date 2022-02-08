@@ -182,13 +182,13 @@
             <path d="M77.1325 13.9448H69.9502V34.6244H77.1325C83.3314 34.6244 87.9999 30.2045 87.9999 24.315C87.9999 18.4255 83.3314 13.9448 77.1325 13.9448ZM83.7623 24.315C83.7647 25.1753 83.5952 26.0275 83.2637 26.8214C82.9322 27.6153 82.4454 28.335 81.8319 28.9382C81.2184 29.5414 80.4906 30.0159 79.6912 30.3339C78.8918 30.652 78.0369 30.8071 77.1767 30.7901H74.0938V17.7846H77.1712C78.0391 17.759 78.9031 17.9099 79.7109 18.2281C80.5188 18.5463 81.2536 19.0252 81.8709 19.6358C82.4882 20.2464 82.9751 20.9759 83.3021 21.7802C83.6291 22.5846 83.7895 23.4469 83.7734 24.315H83.7623Z" fill="white"/>
         </svg>
 
-        <div>
+        <div class="datos">
             <p class="h5">Espacios y participación</p>
             <a href="mailto:juana.montoya@laferiadediseno.com">juana.montoya@laferiadediseno.com</a>
             <a href="tel:+57 313 637 3318">+57 313 637 3318</a>
         </div>
 
-        <div>
+        <div class="datos">
             <p class="h5">Producción General</p>
             <a href="mailto:produccion@laferiadediseno.com">produccion@laferiadediseno.com</a>
         </div>
@@ -196,13 +196,13 @@
         <div class="accordion">
             <a class="btn-accordion">Participa</a>
             <div class="form">
-                <form action="">
+                <form>
                     <div class="mdc-text-field mdc-text-field--outlined nombre">
-                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <input class="mdc-text-field__input" id="text-field-hero-input" required>
                         <div class="mdc-notched-outline">
                           <div class="mdc-notched-outline__leading"></div>
                           <div class="mdc-notched-outline__notch">
-                            <label for="text-field-hero-input" class="mdc-floating-label">Nombre</label>
+                            <label for="text-field-hero-input" class="mdc-floating-label">Nombre y Apellido</label>
                           </div>
                           <div class="mdc-notched-outline__trailing"></div>
                         </div>
@@ -228,7 +228,7 @@
                         </div>
                     </div>
                     <div class="mdc-text-field mdc-text-field--outlined correo">
-                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <input class="mdc-text-field__input" id="text-field-hero-input" required>
                         <div class="mdc-notched-outline">
                           <div class="mdc-notched-outline__leading"></div>
                           <div class="mdc-notched-outline__notch">
@@ -247,27 +247,105 @@
                           <div class="mdc-notched-outline__trailing"></div>
                         </div>
                     </div>
+                    <div class="mdc-text-field mdc-text-field--outlined instagram">
+                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                          <div class="mdc-notched-outline__leading"></div>
+                          <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Instagram</label>
+                          </div>
+                          <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-select mdc-select--outlined categoria">
+                        <div class="mdc-select__anchor" aria-labelledby="outlined-select-label">
+                          <span class="mdc-notched-outline">
+                            <span class="mdc-notched-outline__leading"></span>
+                            <span class="mdc-notched-outline__notch">
+                              <span id="outlined-select-label" class="mdc-floating-label">Categoría</span>
+                            </span>
+                            <span class="mdc-notched-outline__trailing"></span>
+                          </span>
+                          <span class="mdc-select__selected-text-container">
+                            <span id="demo-selected-text" class="mdc-select__selected-text"></span>
+                          </span>
+                          <span class="mdc-select__dropdown-icon">
+                            <svg
+                                class="mdc-select__dropdown-icon-graphic"
+                                viewBox="7 10 10 5" focusable="false">
+                              <polygon
+                                  class="mdc-select__dropdown-icon-inactive"
+                                  stroke="none"
+                                  fill-rule="evenodd"
+                                  points="7 10 12 15 17 10">
+                              </polygon>
+                              <polygon
+                                  class="mdc-select__dropdown-icon-active"
+                                  stroke="none"
+                                  fill-rule="evenodd"
+                                  points="7 15 12 10 17 15">
+                              </polygon>
+                            </svg>
+                          </span>
+                        </div>
+                        <!-- Other elements from the select remain. -->
+                        <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth">
+                            <ul class="mdc-list">
+                                <li class="mdc-list-item mdc-list-item--selected" data-value="" aria-selected="true"></li>
+                                <li class="mdc-list-item" data-value="mobiliario">
+                                  <span class="mdc-list-item__text">Mobiliario</span>
+                                </li>
+                                <li class="mdc-list-item" data-value="interiorismo">
+                                    <span class="mdc-list-item__text">Interiorismo</span>
+                                </li>
+                                <li class="mdc-list-item" data-value="acabados">
+                                    <span class="mdc-list-item__text">Acabados</span>
+                                </li>
+                                <li class="mdc-list-item" data-value="arquitectura">
+                                    <span class="mdc-list-item__text">Arquitectura</span>
+                                </li>
+                                <li class="mdc-list-item" data-value="diseno-digital">
+                                    <span class="mdc-list-item__text">Diseño Digital</span>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="mdc-checkbox politica">
+                            <input type="checkbox"
+                                   class="mdc-checkbox__native-control"
+                                   id="checkbox-1"/>
+                            <div class="mdc-checkbox__background">
+                              <svg class="mdc-checkbox__checkmark"
+                                   viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path"
+                                      fill="none"
+                                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                              </svg>
+                              <div class="mdc-checkbox__mixedmark"></div>
+                            </div>
+                            <div class="mdc-checkbox__ripple"></div>
+                            <div class="mdc-checkbox__focus-ring"></div>
+                        </div>
+                        <label for="checkbox-1">He leído y acepto la <a href="https://drive.google.com/file/d/1xBX9Druu3QUlFlnZqhzOxpKKnQ6EL4oc/view?usp=sharing" target="_blank">Política de Privacidad</a> *</label>
+                    </div>
+                    <input class="enviar" type="button" onclick="sendForm()" value="Enviar">
                 </form>
             </div>
         </div>
-        
-
         <div>
             <p class="h5">SÍGUENOS</p>
             <div class="redes-sociales">
                 <a href="https://www.instagram.com/laferiadediseno/" target="_blank">
                     <img src="../../assets/img/instagram.svg" alt="" srcset="">
                 </a>
-                <a href="https://www.facebook.com/laferiadedisenomed" target="_blank">
-                    <img src="../../assets/img/facebook.svg" alt="" srcset="">
-                </a>
                 <a href="https://www.linkedin.com/company/laferiadedisenocolombia/" target="_blank">
                     <img src="../../assets/img/Linkedin.svg" alt="" srcset="">
                 </a>
             </div>
         </div>
-
     </section>
+    
     <script type="text/javascript" src="../../assets/js/contacto.js"></script>
     <script type="text/javascript" src="../../assets/js/menu.js"></script>
 </body>
