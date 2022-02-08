@@ -52,34 +52,6 @@ const sendForm = async () => {
       //     canal: formCanal.value
       // }
 
-    // Autenticacion de API
-    let myHeaders = new Headers();
-    myHeaders.append("Authorization", "Basic YTUwYmNjYjIyYmZjMTI1MDk3M2FmNmY3N2Y4NjEzODU6NjQzYTk2ZWFhZDZlODk5ZjI1MmI5NWRjNDNlYjZiM2I=");
-    myHeaders.append("Content-Type", "application/json");
-    myHeaders.append('Access-Control-Allow-Origin', 'https://nico8a54.github.io/la-feria-de-diseno/');
-    myHeaders.append('Access-Control-Allow-Credentials', 'true');
-
-    let raw = JSON.stringify(formObject);
-
-    let requestOptions = {
-        credentials: 'include',
-        method: 'POST',
-        headers: myHeaders,
-        body: raw,
-        redirect: 'follow',
-    };
-
-    let sendResponse = await fetch("https://api.mailjet.com/v3/REST/contact", requestOptions);
-    let sendResponseJSON = await sendResponse.json();
-    
-    if (sendResponseJSON.Count >= 1) {
-      alert("Registrado correctamente!");
-    }
-    
-    else {
-        alert("Error al enviar formulario ", JSON.stringify(sendResponseJSON));
-    }
-
   }
 
   else {
