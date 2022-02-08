@@ -797,9 +797,9 @@
         <div class="accordion">
             <a class="btn-accordion">Participa</a>
             <div class="form">
-                <form action="">
+                <form>
                     <div class="mdc-text-field mdc-text-field--outlined nombre">
-                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <input class="mdc-text-field__input" id="text-field-hero-input" required>
                         <div class="mdc-notched-outline">
                           <div class="mdc-notched-outline__leading"></div>
                           <div class="mdc-notched-outline__notch">
@@ -829,7 +829,7 @@
                         </div>
                     </div>
                     <div class="mdc-text-field mdc-text-field--outlined correo">
-                        <input class="mdc-text-field__input" id="text-field-hero-input">
+                        <input class="mdc-text-field__input" id="text-field-hero-input" required>
                         <div class="mdc-notched-outline">
                           <div class="mdc-notched-outline__leading"></div>
                           <div class="mdc-notched-outline__notch">
@@ -928,8 +928,13 @@
                             <div class="mdc-checkbox__ripple"></div>
                             <div class="mdc-checkbox__focus-ring"></div>
                         </div>
-                        <label for="checkbox-1">Política de tratamiento de datos</label>
+                        <label for="checkbox-1">He leído y acepto la <a href="https://drive.google.com/file/d/1xBX9Druu3QUlFlnZqhzOxpKKnQ6EL4oc/view?usp=sharing" target="_blank">Política de Privacidad</a> *</label>
                     </div>
+                    <!-- <button class="mdc-button mdc-button--outlined enviar">
+                        <span class="mdc-button__ripple"></span>
+                        <span class="mdc-button__label">Enviar</span>
+                    </button> -->
+                    <input class="enviar" type="button" onclick="sendForm()" value="Enviar">
                 </form>
             </div>
         </div>

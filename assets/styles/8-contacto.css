@@ -1,3 +1,8 @@
+:root {
+    --mdc-theme-primary: #3A37E0;
+    --mdc-theme-secondary: #3A37E0;
+}
+
 .contacto {
     box-sizing: border-box;
     display: flex;
@@ -158,6 +163,13 @@
         color: var(--AzulOscuro);
     }
 
+    .checkbox-container label a {
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--FeriaPpal);
+    }
+
     .mdc-checkbox .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background .mdc-checkbox__checkmark {
         width: auto;
         height: auto;
@@ -165,10 +177,53 @@
 
     .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background, .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate="true"]:enabled ~ .mdc-checkbox__background {
         border-color: var(--FeriaPpal);
-        background-color: var(--FeriaPpal);
     }
 
     .mdc-checkbox .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate):not([data-indeterminate="true"]) ~ .mdc-checkbox__background {
+        border-color: var(--FeriaPpal) !important;
+        border-width: 1px;
+    }
+
+    /* .mdc-button--outlined:not(:disabled) {
+        color: var(--FeriaPpal);
+    }
+
+    .mdc-button--outlined .mdc-button__ripple {
+        border-radius: 0;
+        border-color: var(--FeriaPpal);
+    }
+
+    .mdc-button__label {
+        text-transform: none;
+    } */
+    /* .enviar {
+        all: unset;
+    } */
+
+    .enviar {
+        display: flex;
+        align-self: flex-start;
+        outline: none;
+        box-sizing: border-box;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--FeriaPpal);
+        width: auto;
+        padding: 16px 42px;
+        border-radius: 0;
         border-color: var(--FeriaPpal);
         border-width: 1px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: white;
+        background: none;
+        background-image: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        appearance: none;
+        box-shadow: none;
     }
