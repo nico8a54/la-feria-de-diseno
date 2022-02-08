@@ -25,33 +25,55 @@ acc[0].addEventListener("click", function() {
   }
 });
 
-// mdc.ripple.MDCRipple.attachTo(document.querySelector('.enviar'));
-// const enviar = document.querySelector('.enviar');
-
+// Enviar formulario a MailJet
 const sendForm = async () => {
   // console.log(nombre.value, empresa.value, ciudad.value, correo.value, celular.value, instagram.value, categoria.value, politica.checked);
-  if ((politica.checked) && (nombre.value) && (correo.value) && (categoria.value != "")) {
-
+  if ((politica.checked) && (nombre.value) && (correo.value)) {
 
     const formObject = {
       IsExcludedFromCampaigns: "true",
-      Name: nombre.value,
-      Email: correo.value
+      nombre: nombre.value,
+      email: correo.value,
+      empresa: empresa.value,
+      ciudad: ciudad.value,
+      celular: celular.value,
+      instagram: instagram.value,
+      categoria: categoria.value
     }
 
-      // attributes:{
-      //     nombre: formNombre.value,
-      //     apellidos: formApellido.value,
-      //     tipoDocumento: formTipoDocumento.value,
-      //     numDocumento: formNumDocumento.value,
-      //     empresa: formEmpresa.value,
-      //     canal: formCanal.value
-      // }
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
 
+    let raw = JSON.stringify(formObject);
+
+    let requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    try {
+
+      let responseCreateContact = await fetch("https://gv2934l68j.execute-api.sa-east-1.amazonaws.com/default", requestOptions);
+      let responseCreateContactJSON = await responseCreateContact.json();
+      let responseBody = JSON.parse(responseCreateContactJSON.body);
+
+      if (responseBody.StatusCode == 400) {
+        console.log("Ups, ha ocurrido un error");
+      }
+      else {
+        console.log("Te has registrado correctamente!");
+      }
+
+    } catch (err) {
+
+      console.log(err);
+
+    }
   }
 
   else {
     alert("Rellena los espacios requeridos.");
   }
-  
 }
