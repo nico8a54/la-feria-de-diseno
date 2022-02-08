@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="./assets/styles/7-testimonios.css">
     <link rel="stylesheet" href="./assets/styles/8-patrocinadores.css">
     <link rel="stylesheet" href="./assets/styles/8-contacto.css">
+    <link rel="stylesheet" media="screen and (min-width: 640px) "href="./assets/styles/responsiveMedium.css">
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
 
@@ -135,10 +136,10 @@
         </div>
     </section>
 
-    <section id="nosotros" class="nosotros">
+    <section class="nosotros">
         <div class="container-1">
             <div class="foto-nosotros uk-cover-container">
-                <img src="./assets/img/hero_nosotros_001_desktop.jpg" alt="" uk-cover>
+                <img class="img-nosotros" src="./assets/img/hero_nosotros_001_desktop.jpg" alt="" uk-cover>
             </div>
 
             <div class="content-1">
@@ -168,14 +169,19 @@
             </div>
         </div>
         <div class="container-2">
-            <div>
-                <p>
-                    La Feria De Diseño es un escosistema que conecta oportunidades con personas dentro de una plataforma comercial e inspiradora generando un diálogo y conocimiento entre emprendedores, productores, marcas y expertos.
-                </p>
-                <p>
-                    Durante 3 días, los participantes se reúnen para conectarse, generar negocios y actualizarse en tendencias.
-                </p>
+            <div class="nosotrosP_container">
+                <div class="nosotrosP1">
+                    <p>
+                        La Feria De Diseño es un escosistema que conecta oportunidades con personas dentro de una plataforma comercial e inspiradora generando un diálogo y conocimiento entre emprendedores, productores, marcas y expertos.
+                    </p>
+                </div>
+                <div class="nosotrosP2">
+                    <p>
+                        Durante 3 días, los participantes se reúnen para conectarse, generar negocios y actualizarse en tendencias.
+                    </p>
+                </div>
             </div>
+        
             <a href="/nosotros/">Ver más</a>
         </div>
     </section>
@@ -746,33 +752,34 @@
         </div>
     </section>
 
-    <section id="patrocinadores" class="patrocinadores">
+    <section class="patrocinadores">
         <div class="content-1">
             <h2 class="h2-titulos-seccion">PATROCINADORES</h2>
             <div class="blue-line"></div>
         </div>
-        <div class="logos">
-            <div>
+        <div class="patrocinadoresMainContainer">
+            <div class="patrocinadores_container">
                 <p>Aliado estratégico</p>
-                <img src="./assets/img/logos-patrocinadores/Alcaldía_de_Medelín.svg" alt="">
+                <img class="logoImg1" src="./assets/img/logos-patrocinadores/Alcaldía_de_Medelín.svg" alt="">
             </div>
-            <div>
+            <div class="patrocinadores_container">
                 <p>Apoyan</p>
-                <div>
-                    <img src="./assets/img/logos-patrocinadores/Duratex.svg" alt="">
-                    <img src="./assets/img/logos-patrocinadores/Bioclimática.svg" alt="">
-                    <img src="./assets/img/logos-patrocinadores/Neolith.svg" alt="">
+                <div id="gridLogos">
+                    <img class="logoImg" src="./assets/img/logos-patrocinadores/Duratex.svg" alt="">
+                    <img class="logoImg" src="./assets/img/logos-patrocinadores/Bioclimática.svg" alt="">
+                    <img class="logoImg" src="./assets/img/logos-patrocinadores/Neolith.svg" alt="">
                 </div>
             </div>
-            <div>
+            <div class="patrocinadores_container">
                 <p>Creen en nosotros</p>
-                <div>
-                    <img src="./assets/img/logos-patrocinadores/Purezza.svg" alt="">
-                    <img src="./assets/img/logos-patrocinadores/UPB.svg" alt="">
-                    <img src="./assets/img/logos-patrocinadores//Satto.svg" alt="">
+                <div  id="gridLogos">
+                    <img class="logoImg" src="./assets/img/logos-patrocinadores//Satto.svg" alt="">
+                    <img class="logoImg" src="./assets/img/logos-patrocinadores/Purezza.svg" alt="">
+                    <img class="logoImg" src="./assets/img/logos-patrocinadores/UPB.svg" alt="">
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section id="contacto" class="contacto">
@@ -954,6 +961,7 @@
         </div>
 
     </section>
+
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
     <script type="text/javascript" src="./assets/js/btn-support.js"></script>

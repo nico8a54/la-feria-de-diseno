@@ -50,7 +50,7 @@
 
     .contacto .accordion {
         background-color: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.125);
     }
 
     .contacto a.btn-accordion {
@@ -184,6 +184,20 @@
         border-width: 1px;
     }
 
+    .mdc-select__menu ul li span {
+        color: var(--FeriaPpal);
+        font-size: 14px;
+    }
+
+    .mdc-list {
+        transform-origin: center top;
+        margin-left: 8px;
+        left: 0px;
+        top: 0px;
+        width: auto;
+        /* max-height: 237.575px; */
+    }
+
     /* .mdc-button--outlined:not(:disabled) {
         color: var(--FeriaPpal);
     }
@@ -199,6 +213,7 @@
     /* .enviar {
         all: unset;
     } */
+
 
     .enviar {
         display: flex;
