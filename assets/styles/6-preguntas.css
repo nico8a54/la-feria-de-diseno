@@ -45,7 +45,7 @@
         font-family: 'Nunito Sans', sans-serif;
         font-size: 16px;
         font-weight: 600;
-        color: var(--FeriaPpal);
+        color: var(--AzulOscuro);
     }
       
     .active, .accordion:hover {
@@ -73,7 +73,7 @@
         background-color: var(--FeriaPpal);
         max-height: 0;
         overflow: hidden;
-        border-bottom: 1px solid var(--FeriaPpal);
+        border-top: 1px solid var(--FeriaPpal);
         transition: max-height 0.2s ease-out;
     }
 
@@ -179,35 +179,32 @@
     }
 
     .panel .hotel-accordion {
-        padding: 24px;
+        padding: 56px 24px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 32px;
-        height: 234px;
+        height: auto;
+        min-height: 234px;
     }
 
-    .panel .hotel-accordion div {
+    .panel .hotel-accordion .hotel-title {
         position: static;
         z-index: 1;
-        justify-content: flex-start;
     }
 
-    .panel .hotel-accordion div .hotel-title {
-        
-    }
-
-    .panel .hotel-accordion div .hotel-title h4 {
+    .panel .hotel-accordion .hotel-title h4 {
         margin-bottom: 16px;
     }
 
-    .panel .hotel-accordion div .hotel-title .blue-line {
+    .panel .hotel-accordion .hotel-title .blue-line {
         background-color: white;
         width: 80px;
         height: 2px;
+        margin-left: -24px;
     }
 
-    .panel .hotel-accordion div a {
+    .panel .hotel-accordion a {
         position: static;
         z-index: 1;
         display: flex;
