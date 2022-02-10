@@ -1,6 +1,24 @@
+p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.numeros-p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .wrapper {
     min-height: 100vh;
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto", serif;
     font-weight: 300;
     color: #fff;
     position: relative;
@@ -8,47 +26,50 @@
   
   .section {
     height: 100vh;
-    font-size: 40px;
-    font-weight: 100;
+    /* font-size: 40px;
+    font-weight: 100; */
     background-color: #22A7F0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  /* 
-  section:nth-child(1) {
-    background: white;
-  }
-  section:nth-child(2) {
-    background: #F64747;
-  }
-  section:nth-child(3) {
-    background: #22A7F0;
-  }
-  section:nth-child(4) {
-    background: #F9690E;
-  }
-  section:nth-child(5) {
-    background: #9B59B6;
-  }
-  section:nth-child(6) {
-    background: #03C9A9;
-  }
-  section:nth-child(7) {
-    background: #ffcc00;
-  } */
-  
+
+.section1 {
+    background: #403ADA;
+}
+.section2 {
+  background: #6A66E2;
+}
+.section3 {
+  background: #9592EA;
+}
+.section4 {
+  background: #BFBDF3;
+}
+.section5 {
+  background: #EAE9FB;
+}
+
+.columnas-data {
+  display: flex;
+  gap: 22px;
+}
+
+.columna-1, .columna-2{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
   .nav__wrapper {
     position: fixed;
     height: 100%;
-    padding: 30px;
+    /* padding: 30px; */
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
   }
   .nav {
-    margin: 0 0 100px 30px;
+    margin: 0 0 0px 24px;
   }
   .nav__counter {
     font-size: 24px;
