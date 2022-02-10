@@ -39,10 +39,11 @@
 
     
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-
 </head>
 <body>
-    
+    <div id="spinner">
+        <lottie-player class="lottie" src="https://assets8.lottiefiles.com/packages/lf20_gsmmiunf.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+    </div>
     <section id="hero" class="hero">
 
         <div id="navigator" class="navigator">
@@ -336,303 +337,294 @@
         </div>
     </section>
 
-    <section id="preguntas" class="preguntas">
+    <section class="preguntas">
         <div>
             <div class="content-1">
                 <h2>PREGUNTAS</h2>
                 <div class="blue-line"></div>
             </div>
-            <ul uk-accordion>
-                <li>
-                    <a class="uk-accordion-title" href="#">¿Cómo adquirir la boleta de ingreso?</a>
-                    <hr>
-                    <div class="uk-accordion-content">
-                        <ul class="uk-list">
-                            <li>
-                                <strong>Compra tus entradas directamente en este sitio a partir del 15 de febrero.</strong>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">¿Qué beneficios tiene participar en la feria?</a>
-                    <hr>
-                    <div class="uk-accordion-content">
-                        <ul class="uk-list">
-                            <li><span>Reconocimiento</span> de tu marca para clientes y posibles clientes.</li>
-                            <li><span>Exposición</span> frente a un público B2B nacional e internacional enfocado en el cierre de negocios.</li>
-                            <li><span>Actualización</span> en tendencias y nuevos actores del sector.</li>
-                            <li><span>Oportunidad</span>  de generar conexiones y negociaciones con otras marcas del sector.</li>
-                            <li><span>Vitrina</span>  exhibición de tus productos nuevos, líneas destacadas y servicios.</li>
-                            <li><span>Aumento</span> en el networking o red de contactos.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">¿Cuál es el lugar del evento?</a>
-                    <hr>
-                    <div class="uk-accordion-content map-accordion">
-                        <div class="map-container">
-                            <h4>MEDELLÍN</h4>
-                            <p>
-                                Medellín Es una ciudad ubicada al noroccidente de Colombia, con casi 4 millones de habitantes. Hace parte del Valle de Aburrá, junto con otros municipios.<br></br>
-                                
-                                Su clima es templado-cálido con una temperatura entre <strong>25-30 Grados centígrados</strong> (77 a 86 grados Fahrenheit)<br></br>
-                                
-                                <strong>Plaza Mayor Medellín</strong> es el recinto ferial más grande de la ciudad, está ubicado en el occidente de Medellín: <strong>Calle 41#55-53</strong>. La Feria De Diseño se realizará en el Recinto de Exposiciones, la cual hace parte de Plaza Mayor.
-                            </p>
-                            <div id='map' style='width: 100%; height: 50vh;'></div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">¿Qué industrias participarán en la feria?</a>
-                    <hr>
-                    <div class="uk-accordion-content">
-                        <ul class="uk-list">
-                            <li>
-                                <strong>Mobiliario</strong><br></br>
-                                Mobiliario residencial, institucional, urbano, mobiliario exterior, cocinas, carpintería arquitectónica e iluminación. 
-                            </li>
-                            <li>
-                                <strong>Arquitectura</strong><br></br>
-                                Diseño arquitectónico, firmas y constructoras. 
-                            </li>
-                            <li>
-                                <strong>Interiorismo</strong><br></br>
-                                Diseño interior, domótica, decoración y complementos, paisajismo y electrodomésticos.
-                            </li>
-                            <li>
-                                <strong>Acabados</strong><br></br>
-                                Pisos, paredes, baños, griferías, pintura y ventanería, mesones y puertas.
-                            </li>
-                            <li>
-                                <strong>Diseño Digital</strong><br></br>
-                                Diseño grafico, audiovisual, renderización, diseño digital, diseño publicitario, diseño interior, diseño arquitectónico.
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">¿Qué modalidades de participación hay en la feria?</a>
-                    <hr>
-                    <div class="uk-accordion-content">
+            
+            <div>
+                <button class="accordion">¿Cómo adquirir la boleta de ingreso?</button>
+                <div class="panel">
+                    <ul>
+                        <li>
+                            <strong>Compra tus entradas directamente en este sitio a partir del 15 de febrero.</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="accordion">¿Qué beneficios tiene participar en la feria?</button>
+                <div class="panel">
+                    <ul>
+                        <li><span>Reconocimiento</span> de tu marca para clientes y posibles clientes.</li>
+                        <li><span>Exposición</span> frente a un público B2B nacional e internacional enfocado en el cierre de negocios.</li>
+                        <li><span>Actualización</span> en tendencias y nuevos actores del sector.</li>
+                        <li><span>Oportunidad</span>  de generar conexiones y negociaciones con otras marcas del sector.</li>
+                        <li><span>Vitrina</span>  exhibición de tus productos nuevos, líneas destacadas y servicios.</li>
+                        <li><span>Aumento</span> en el networking o red de contactos.</li>
+                    </ul>
+                </div>
+
+                <button class="accordion">¿Cuál es el lugar del evento?</button>
+                <div class="panel">
+                    <div class="container">
+                        <h4>MEDELLÍN</h4>
                         <p>
-                            Dentro de La Feria de Diseño hay muchas opciones para participar con tus marcas:
+                            Medellín Es una ciudad ubicada al noroccidente de Colombia, con casi 4 millones de habitantes. Hace parte del Valle de Aburrá, junto con otros municipios.<br></br>
+                            
+                            Su clima es templado-cálido con una temperatura entre <strong>25-30 Grados centígrados</strong> (77 a 86 grados Fahrenheit)<br></br>
+                            
+                            <strong>Plaza Mayor Medellín</strong> es el recinto ferial más grande de la ciudad, está ubicado en el occidente de Medellín: <strong>Calle 41#55-53</strong>. La Feria De Diseño se realizará en el Recinto de Exposiciones, la cual hace parte de Plaza Mayor.
                         </p>
-                        <ul class="uk-list">
-                            <li>
-                                <strong>ESPACIO MUESTRA COMERCIAL</strong>
-                                <br></br>
-                                Con un stand para exhibir tus productos o presentar tus servicios, en los pabellones Blanco, Verde, Azul y Hall Principal.
-                                <br></br>
-                                <strong>Valor m² $378.000 COP + IVA</strong>
-                                <br></br><br>
-                                <strong>Incluye:</strong>
-                                <ul class="uk-list">
-                                    <li>
-                                        Toma eléctrico con salida doble a 110v + Delimitación del espacio + Escarapelas de expositor + Manillas de montaje + Invitaciones.
-                                    </li>
-                                </ul>
-                                <br>
-                                <strong>*Cantidades sujetas a m²</strong>
-                                <ul class="uk-list">
-                                    <li>
-                                        Contenido de tu marca en nuestras plataformas sociales.
-                                    </li>
-                                    <li>
-                                        Tu marca en Directorio Comercial de La Feria 2022.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong>SPONSOR</strong>
-                                <br></br>
-                                Una inversión para crecer juntos: inclusión en el Plan de Comunicaciones (pasacalles, avisos de prensa y canales propios de La Feria).
-                                <br></br>
-                                <strong>Valor sujeto a negociación específica.</strong>
-                                <br></br><br>
-                                <strong>Incluye:</strong>
-                                <ul class="uk-list">
-                                    <li>
-                                        Contenido de tu marca en el Plan de Comunicaciones como Patrocinador + en nuestra página web + plataformas de La Feria.
-                                    </li>
-                                    <li>
-                                        Tu marca en Directorio Comercial de La Feria 2022.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong>ACTIVACIÓN DE MARCA</strong>
-                                <br></br>
-                                Un espacio en la muestra comercial para comunicar de una forma diferente tu marca (sampling de producto, instalación, contenido atractivo).
-                                <br></br>
-                                <strong>Valor desde $5.000.000 + IVA.</strong>
-                                <br></br><br>
-                                <strong>Incluye:</strong>
-                                <ul class="uk-list">
-                                    <li>
-                                        Espacio para la realización de la activación.
-                                    </li>
-                                    <li>
-                                        Publicación de la marca en redes sociales de La Feria.
-                                    </li>
-                                </ul>
-                                <br></br>
-                                <p>Puedes hacer sampling, degustaciones, presencia de la marca que conecte creativamente con el público.</p>
-                            </li>
-                            <li>
-                                <strong>REVISTA</strong>
-                                <br></br>
-                                Por medio de una pauta o artículo relacionados con el diseño en todas sus categorías.
-                                <br></br>
-                                <strong>Valor $3.000.000 + IVA</strong>
-                                <br></br><br>
-                                <strong>Incluye:</strong>
-                                <ul class="uk-list">
-                                    <li>
-                                        Un aviso o pauta de 1 página en la revista impresa.
-                                    </li>
-                                    <li>
-                                        Esta revista se envía en versión digital a nuestras bases de datos de visitantes de ediciones anteriores y de 2021: 28.000 contactos aprox*.
-                                    </li>
-                                </ul>
-                                <br>
-                                <strong>*Autorizados previamente con Habeas Data</strong>
-                            </li>
-                        </ul>
+                        <div id='map' style='width: 100%; height: 50vh;'></div>
                     </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">¿Cómo participar?</a>
-                    <hr>
-                    <div class="uk-accordion-content">
-                        <p>Nuestra muestra comercial está compuesta por stands ubicados en los pabellones Blanco, Verde, Azul y Hall Principal.</p>
-                        <ul class="uk-list">
-                            <li>
-                                <strong>Pabellones Blanco, Verde, y Azul</strong>
-                                <br></br>
-                                Encontrarás marcas de Mobiliario, Iluminación, Interiorismo, Diseño Arquitectónico, Diseño Industrial, Domótica.
-                            </li>
-                            <li>
-                                <strong>Hall VIP del Verde:</strong> Diseño Digital, Agencias de Publicidad, Web, entre otros.
-                            </li>
-                            <li>
-                                <strong>Hall Principal:</strong> Un espacio para compartir el conocimiento a través de la academia con la participación de diferentes instituciones educativas.
-                            </li>
-                            <li>
-                                <strong>Terraza:</strong> Vive nuestra experiencia gastronómica con amigos y partners al aire libre en nuestra Terraza.
-                            </li>
-                            <li>
-                                <strong>Salón de Conferencias:</strong> Refresca tus conocimientos con charlas, conferencias y talleres.
-                            </li>
-                        </ul>
+                </div>
+
+                <button class="accordion">¿Qué industrias participarán en la feria?</button>
+                <div class="panel">
+                    <ul>
+                        <li>
+                            <strong>Mobiliario</strong><br></br>
+                            Mobiliario residencial, institucional, urbano, mobiliario exterior, cocinas, carpintería arquitectónica e iluminación. 
+                        </li>
+                        <li>
+                            <strong>Arquitectura</strong><br></br>
+                            Diseño arquitectónico, firmas y constructoras. 
+                        </li>
+                        <li>
+                            <strong>Interiorismo</strong><br></br>
+                            Diseño interior, domótica, decoración y complementos, paisajismo y electrodomésticos.
+                        </li>
+                        <li>
+                            <strong>Acabados</strong><br></br>
+                            Pisos, paredes, baños, griferías, pintura y ventanería, mesones y puertas.
+                        </li>
+                        <li>
+                            <strong>Diseño Digital</strong><br></br>
+                            Diseño grafico, audiovisual, renderización, diseño digital, diseño publicitario, diseño interior, diseño arquitectónico.
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="accordion">¿Qué modalidades de participación hay en la feria?</button>
+                <div class="panel">
+                    <p class="primary">
+                        Dentro de La Feria de Diseño hay muchas opciones para participar con tus marcas:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>ESPACIO MUESTRA COMERCIAL</strong>
+                            <br></br>
+                            Con un stand para exhibir tus productos o presentar tus servicios, en los pabellones Blanco, Verde, Azul y Hall Principal.
+                            <br></br>
+                            <strong>Valor m² $378.000 COP + IVA</strong>
+                            <br></br><br>
+                            <strong>Incluye:</strong>
+                            <ul>
+                                <li>
+                                    Toma eléctrico con salida doble a 110v + Delimitación del espacio + Escarapelas de expositor + Manillas de montaje + Invitaciones.
+                                </li>
+                            </ul>
+                            <br>
+                            <strong>*Cantidades sujetas a m²<br></strong>
+                            <ul>
+                                <li>
+                                    Contenido de tu marca en nuestras plataformas sociales.
+                                </li>
+                                <li>
+                                    Tu marca en Directorio Comercial de La Feria 2022.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>SPONSOR</strong>
+                            <br></br>
+                            Una inversión para crecer juntos: inclusión en el Plan de Comunicaciones (pasacalles, avisos de prensa y canales propios de La Feria).
+                            <br></br>
+                            <strong>Valor sujeto a negociación específica.</strong>
+                            <br></br><br>
+                            <strong>Incluye:</strong>
+                            <ul>
+                                <li>
+                                    Contenido de tu marca en el Plan de Comunicaciones como Patrocinador + en nuestra página web + plataformas de La Feria.
+                                </li>
+                                <li>
+                                    Tu marca en Directorio Comercial de La Feria 2022.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>ACTIVACIÓN DE MARCA</strong>
+                            <br></br>
+                            Un espacio en la muestra comercial para comunicar de una forma diferente tu marca (sampling de producto, instalación, contenido atractivo).
+                            <br></br>
+                            <strong>Valor desde $5.000.000 + IVA.</strong>
+                            <br></br><br>
+                            <strong>Incluye:</strong>
+                            <ul>
+                                <li>
+                                    Espacio para la realización de la activación.
+                                </li>
+                                <li>
+                                    Publicación de la marca en redes sociales de La Feria.
+                                </li>
+                            </ul>
+                            <br></br>
+                            <p>Puedes hacer sampling, degustaciones, presencia de la marca que conecte creativamente con el público.</p>
+                        </li>
+                        <li>
+                            <strong>REVISTA</strong>
+                            <br></br>
+                            Por medio de una pauta o artículo relacionados con el diseño en todas sus categorías.
+                            <br></br>
+                            <strong>Valor $3.000.000 + IVA</strong>
+                            <br></br><br>
+                            <strong>Incluye:</strong>
+                            <ul>
+                                <li>
+                                    Un aviso o pauta de 1 página en la revista impresa.
+                                </li>
+                                <li>
+                                    Esta revista se envía en versión digital a nuestras bases de datos de visitantes de ediciones anteriores y de 2021: 28.000 contactos aprox*.
+                                </li>
+                            </ul>
+                            <br>
+                            <strong>*Autorizados previamente con Habeas Data</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="accordion">¿Cómo participar?</button>
+                <div class="panel">
+                    <p class="primary">Nuestra muestra comercial está compuesta por stands ubicados en los pabellones Blanco, Verde, Azul y Hall Principal.</p>
+                    <ul>
+                        <li>
+                            <strong>Pabellones Blanco, Verde, y Azul</strong>
+                            <br></br>
+                            Encontrarás marcas de Mobiliario, Iluminación, Interiorismo, Diseño Arquitectónico, Diseño Industrial, Domótica.
+                        </li>
+                        <li>
+                            <strong>Hall VIP del Verde:</strong> Diseño Digital, Agencias de Publicidad, Web, entre otros.
+                        </li>
+                        <li>
+                            <strong>Hall Principal:</strong> Un espacio para compartir el conocimiento a través de la academia con la participación de diferentes instituciones educativas.
+                        </li>
+                        <li>
+                            <strong>Terraza:</strong> Vive nuestra experiencia gastronómica con amigos y partners al aire libre en nuestra Terraza.
+                        </li>
+                        <li>
+                            <strong>Salón de Conferencias:</strong> Refresca tus conocimientos con charlas, conferencias y talleres.
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="accordion">¿Cómo puedo acceder a la Agenda Académica?</button>
+                <div class="panel">
+                    <ul>
+                        <li>
+                            Comprando el ticket de ingreso, podrás tener acceso a todo el contenido de la Agenda Académica.<br></br>
+                            <strong>Habrá un valor extra para las charlas y conferencias destacadas.</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="accordion">¿Cómo llegar?</button>
+                <div class="panel">
+                    <div class="como-llegar como-llegar-1">
+                        <h5>Bicicleta</h5>
+                        <p>
+                            Un medio amigable para circular por la ciudad y llegar a Plaza Mayor, tomando la cicloruta de la Av. San Juan. 100 biciparqueaderos disponibles.
+                        </p>
                     </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">¿Cómo puedo acceder a la Agenda Académica?</a>
-                    <hr>
-                    <div class="uk-accordion-content">
-                        <ul class="uk-list">
-                            <li>
-                                Comprando el ticket de ingreso, podrás tener acceso a todo el contenido de la Agenda Académica.<br></br>
-                                <strong>Habrá un valor extra para las charlas y conferencias destacadas.</strong>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">¿Cómo llegar?</a>
-                    <hr>
-                    <div class="uk-accordion-content map-accordion">
-                        <div class="map-container como-llegar-1">
-                            <h5>Bicicleta</h5>
-                            <p>
-                                Un medio amigable para circular por la ciudad y llegar a Plaza Mayor, tomando la cicloruta de la Av. San Juan. 100 biciparqueaderos disponibles.
-                            </p>
-                        </div>
-                        <div>
-                            <img src="./preguntas/assets/img/como-llegar-1.svg" alt="" srcset="">
-                        </div>
-                        <div class="map-container como-llegar-2">
-                            <h5>Metro</h5>
-                            <p>
-                                Exposiciones y Alpujarra son las dos estaciones más cercanas a Plaza Mayor. 
-                            </p>
-                        </div>
-                        <div style="background-color: #6A66E2;">
-                            <img src="./preguntas/assets/img/como-llegar-2.svg" alt="" srcset="">
-                        </div>
-                        <div class="map-container como-llegar-3">
-                            <h5>Metroplus</h5>
-                            <p>
-                                Estación Plaza Mayor con acceso directo al lugar.
-                            </p>
-                        </div>
-                        <div style="background-color: #9592EA;">
-                            <img src="./preguntas/assets/img/como-llegar-3.svg" alt="" srcset="">
-                        </div>
-                        <div class="map-container como-llegar-4">
-                            <h5>Rutas de Buses</h5>
-                            <p>
-                                Que circulen por la Avenida Ferrocarril hasta la calle 33: 1811, T4 016, T4 019
-                            </p>
-                        </div>
-                        <div style="background-color: #BFBDF3;">
-                            <img src="./preguntas/assets/img/como-llegar-4.svg" alt="" srcset="">
-                        </div>
-                        <div class="map-container como-llegar-5">
-                            <h5>Carro</h5>
-                            <p>
-                                Tomar la Avenida Ferrocarril sentido norte-sur, antes de la glorieta de Exposiciones.
-                            </p>
-                        </div>
-                        <div style="background-color: #EAE9FB;">
-                            <img src="./preguntas/assets/img/como-llegar-5.svg" alt="" srcset="">
+                    <div class="animation como-llegar-1">
+                        <div class="container-lottie-left">
+                            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_vhmkbnfl.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">¿Tienen convenios con hoteles para los asistentes?</a>
-                    <hr>
-                    <div class="uk-accordion-content hotels">
-                        <div class="uk-cover-container hotel-accordion">
-                            <img src="./preguntas/assets/img/hoteles/Fondo_DanCarltonMedellin_Mobile.jpg" alt="" srcset="" uk-cover>
-                            <div class="hotel-title">
-                                <h4>Hotel Dan Carlton Medellin</h4>
-                                <div class="blue-line"></div>
-                            </div>
-                            <a href="">Ir al sitio</a>
-                        </div>
-                        <div class="uk-cover-container hotel-accordion">
-                            <img src="./preguntas/assets/img/hoteles/Fondo_DanCarltonBelford_Mobile.jpg" alt="" srcset="" uk-cover>
-                            <div class="hotel-title">
-                                <h4>Hotel Dan Carlton Belfort</h4>
-                                <div class="blue-line"></div>
-                            </div>
-                            <a href="">Ir al sitio</a>
-                        </div>
-                        <div class="uk-cover-container hotel-accordion">
-                            <img src="./preguntas/assets/img/hoteles/Fondo_SanFernando_Mobile.jpg" alt="" srcset="" uk-cover>
-                            <div class="hotel-title">
-                                <h4>Hotel San Fernando plaza</h4>
-                                <div class="blue-line"></div>
-                            </div>
-                            <a href="">Ir al sitio</a>
-                        </div>
-                        <div class="uk-cover-container hotel-accordion">
-                            <img src="./preguntas/assets/img/hoteles/Fondo_ClickClack_Mobile.jpg" alt="" srcset="" uk-cover>
-                            <div class="hotel-title">
-                                <h4>The Click Clack hotel</h4>
-                                <div class="blue-line"></div>
-                            </div>
-                            <a href="">Ir al sitio</a>
+                    <div class="como-llegar como-llegar-2">
+                        <h5>Metro</h5>
+                        <p>
+                            Exposiciones y Alpujarra son las dos estaciones más cercanas a Plaza Mayor. 
+                        </p>
+                    </div>
+                    <div class="animation como-llegar-2">
+                        <div class="container-lottie-center">
+                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_r3uazftg.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
                         </div>
                     </div>
-                </li>
-            </ul>
+                    <div class="como-llegar como-llegar-3">
+                        <h5>Metroplus</h5>
+                        <p>
+                            Estación Plaza Mayor con acceso directo al lugar.
+                        </p>
+                    </div>
+                    <div class="animation como-llegar-3">
+                        <div class="container-lottie-center">
+                            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_5rrjaxzl.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+                        </div>
+                    </div>
+                    <div class="como-llegar como-llegar-4">
+                        <h5>Rutas de Buses</h5>
+                        <p>
+                            Que circulen por la Avenida Ferrocarril hasta la calle 33: 1811, T4 016, T4 019
+                        </p>
+                    </div>
+                    <div class="animation como-llegar-4">
+                        <div class="container-lottie-right">
+                            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_0doqq1fz.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+                        </div>
+                    </div>
+                    <div class="como-llegar como-llegar-5">
+                        <h5>Carro</h5>
+                        <p>
+                            Tomar la Avenida Ferrocarril sentido norte-sur, antes de la glorieta de Exposiciones.
+                        </p>
+                    </div>
+                    <div class="animation como-llegar-5">
+                        <div class="container-lottie-left">
+                            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_vzuqpwpe.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="accordion">¿Tienen convenios con hoteles para los asistentes?</button>
+                <div class="panel">
+                    <div class="uk-cover-container hotel-accordion">
+                        <img src="./preguntas/assets/img/hoteles/Fondo_DanCarltonMedellin_Mobile.jpg" alt="" srcset="" uk-cover>
+                        <div class="hotel-title">
+                            <h4>Hotel Dan Carlton Medellin</h4>
+                            <div class="blue-line"></div>
+                        </div>
+                        <a href="">Ir al sitio</a>
+                    </div>
+                    <div class="uk-cover-container hotel-accordion">
+                        <img src="./preguntas/assets/img/hoteles/Fondo_DanCarltonBelford_Mobile.jpg" alt="" srcset="" uk-cover>
+                        <div class="hotel-title">
+                            <h4>Hotel Dan Carlton Belfort</h4>
+                            <div class="blue-line"></div>
+                        </div>
+                        <a href="">Ir al sitio</a>
+                    </div>
+                    <div class="uk-cover-container hotel-accordion">
+                        <img src="./preguntas/assets/img/hoteles/Fondo_SanFernando_Mobile.jpg" alt="" srcset="" uk-cover>
+                        <div class="hotel-title">
+                            <h4>Hotel San Fernando plaza</h4>
+                            <div class="blue-line"></div>
+                        </div>
+                        <a href="">Ir al sitio</a>
+                    </div>
+                    <div class="uk-cover-container hotel-accordion">
+                        <img src="./preguntas/assets/img/hoteles/Fondo_ClickClack_Mobile.jpg" alt="" srcset="" uk-cover>
+                        <div class="hotel-title">
+                            <h4>The Click Clack hotel</h4>
+                            <div class="blue-line"></div>
+                        </div>
+                        <a href="">Ir al sitio</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- <a class="faq" href="./preguntas/">Preguntas Frecuentes</a> -->
     </section>
 
     <section id="testimonios" class="testimonios">
@@ -799,7 +791,7 @@
             <a href="mailto:produccion@laferiadediseno.com">produccion@laferiadediseno.com</a>
         </div>
 
-        <div class="accordion">
+        <div class="accordion-contact">
             <a class="btn-accordion">Participa</a>
             <div class="form">
                 <form>
@@ -954,7 +946,28 @@
         </div>
 
     </section>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = 2*panel.scrollHeight + "px";
+              console.log(panel.scrollHeight);
+            }
+          });
+        }
+    </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
+    <script type="text/javascript" src="./assets/js/spinner.js"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
     <script type="text/javascript" src="./assets/js/btn-support.js"></script>
     <script type="text/javascript" src="./assets/js/menu.js"></script>

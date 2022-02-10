@@ -16,7 +16,7 @@ const politica = new MDCCheckbox(document.querySelector('.politica'));
 var acc = document.getElementsByClassName("btn-accordion");
 
 acc[0].addEventListener("click", function() {
-  this.classList.toggle("active");
+  // this.classList.toggle("active");
   var panel = this.nextElementSibling;
   if (panel.style.display === "block") {
     panel.style.display = "none";

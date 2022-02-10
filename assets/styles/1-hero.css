@@ -1,6 +1,7 @@
 section.hero {
     position: relative;
     height: 100%;
+    background-color: var(--AzulOscuro);
 }
 
     header {
