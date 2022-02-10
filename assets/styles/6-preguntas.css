@@ -187,23 +187,27 @@
         height: 234px;
     }
 
-    .panel .hotel-accordion .hotel-title {
+    .panel .hotel-accordion div {
         position: static;
         z-index: 1;
         justify-content: flex-start;
     }
 
-    .panel .hotel-accordion div h4 {
+    .panel .hotel-accordion div .hotel-title {
+        
+    }
+
+    .panel .hotel-accordion div .hotel-title h4 {
         margin-bottom: 16px;
     }
 
-    .panel .hotel-accordion div .blue-line {
+    .panel .hotel-accordion div .hotel-title .blue-line {
         background-color: white;
         width: 80px;
         height: 2px;
     }
 
-    .panel .hotel-accordion a {
+    .panel .hotel-accordion div a {
         position: static;
         z-index: 1;
         display: flex;
