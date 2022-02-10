@@ -25,7 +25,7 @@
     border: none;
     padding: 0;
     width: 15em;
-    margin: 2.5em 0;
+    margin: 3em 0;
     box-sizing: border-box;
 }
 
@@ -107,7 +107,7 @@ button[aria-expanded="true"] .triangle {
     position: absolute;
     opacity: 1;
     left: calc(50% - 0.375em);
-    bottom: -1.5625em;
+    bottom: -1.5em;
     width: 0;
     height: 0;
     transition: opacity 150ms ease-in;
