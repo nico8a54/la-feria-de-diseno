@@ -1,0 +1,31 @@
+@media only screen and (min-width: 1400px) {
+
+    /* SECCION NOSOTROS */
+    .bck_nosotros {
+        width: 80%;
+        height: 110vh;
+        background-color: var(--AzulOscuro);
+        padding: 128pxpx;
+    }
+    .title_container {
+        top: 128px;
+    }
+    .title_container h2 {
+        padding-left: var(--PaddingLaptop);
+    }
+    .legend_container {
+        left: auto;
+        bottom: 96px;
+        right: var(--PaddingLaptop);
+    }
+    .nosotros_img-container {
+        position: static;
+        width: 60%;
+        height: 100%;
+    }
+
+    /* SECCION PARTICIPANTES-1 */
+    .section_participantes-1 {
+        height: 90vh;       
+    }
+}

@@ -12,7 +12,7 @@ section.nosotros {
         padding-right: 0;
         background-color: var(--AzulOscuro);
     }
-        .content-1 {
+        .container-1 .content-1 {
             position: absolute;
             display: flex;
             flex-direction: column;

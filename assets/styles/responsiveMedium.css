@@ -1,41 +1,47 @@
 @media only screen and (min-width: 640px) {
 
     /* Seccion Nosotros */
-    .container-1 {
-        justify-content: center;
-        align-items: center;
+    .bck_nosotros {
+        width: 100%;
+        height: 100%;
         background-color: var(--AzulOscuro);
+        padding: 64px;
     }
-    .container-1 .content-1 h2 {
+    .title_container h2 {
+        padding-left: var(--PaddingTablet);
+    }
+    .legend_container {
+        left: auto;
+        right: var(--PaddingTablet);
+    }
+    .nosotros_img-container {
+        position: static;
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /* Seccion Nosotros White */
+    .nosotros_container {
+    padding: 64px var(--PaddingTablet);
+    padding-top: 96px;
+}
+    .paragraph_container {
+        gap: 128px;
+    }
+    .paragraph_1 {
+        width: 50%;
+        align-self: flex-end;
+        text-align: end;
+    }
+    .paragraph_2 {
+        display: flex;
+        width: 50%;
         margin-left: 48px;
     }
-    .container-1 .content-2 {
-        right: 48px;
-        left: auto; 
 
+    /* SECCION PARTICIPANTES-1 */
+    .section_participantes-1 {
+        height: 90vh;
     }
-    .container-1 .foto-nosotros {
-        width: 70%;
-        height: 100%;
-        z-index: 0;
-    }
-
-    .container-2 {
-        gap: 96px;
-        padding: 128px 48px;
-    }
-    .nosotrosP_container {
-        gap: 96px;
-    }
-        .nosotrosP1 {
-            width: 60%;
-            align-self: flex-end;
-            text-align: right;
-        }
-        .nosotrosP2 {
-            width: 60%;
-            align-self: flex-start;
-            margin-left: 96px;
-        }
-     
 }
