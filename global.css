@@ -7,10 +7,19 @@
     --AzulClaro: #B0BFFF;
     --AzulOscuro: #0A0926;
     --FeriaPpal: #3A37E0;
+    --PaddingVertical: 5.6rem;
+    --PaddingHorizontal: 2.4rem;
+    --FontSizeRoot: 62.5%;
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--FontSizeRoot);
+    color: white;
 }
 
 /* Tipografias INICIO */
@@ -28,12 +37,12 @@ h2 {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 3.2rem;
-    font-weight: 300;
+    font-weight: 200;
     margin: 0;
     color: white;
 }
 
-h3 {
+h3, .h3 {
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
@@ -53,7 +62,7 @@ h4 {
     color: white;
 }
 
-h5, .h5 {
+h5, .h5, .h5:hover {
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
@@ -73,7 +82,7 @@ p, li {
     color: white;
 }
 
-.p2 {
+.p2, .p2:hover {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -83,7 +92,7 @@ p, li {
     color: white;
 }
 
-.p3 {
+.p3, .p3:hover {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -94,12 +103,35 @@ p, li {
 }
 
 .btn-text {
+    text-decoration: none;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 1.6rem;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
     color: white;
 }
 
