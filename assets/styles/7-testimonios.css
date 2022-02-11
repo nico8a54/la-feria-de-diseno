@@ -14,7 +14,7 @@
                 margin-bottom: 6px;
             }
 
-            .testimonios .container-5 .content-1 h2 {
+            .testimonios .container-5 .content-1 h3 {
                 font-family: 'Nunito Sans', sans-serif;
                 font-size: 18px;
                 font-weight: 700;
@@ -44,14 +44,14 @@
 
                 .container-5 .scroll-x .cards .card {
                     position: relative;
-                    height: 36rem;
-                    width: 16rem;
+                    height: 57.6rem;
+                    width: 25.6rem;
                     background-color: blue;
                     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
                 }
 
                     .container-5 .scroll-x .cards .card .img-container {
-                        height: 16rem;
+                        height: 25.6rem;
                     }
 
                     .p-hidden {
@@ -70,16 +70,16 @@
                         flex-direction: column;
                         justify-content: space-between;
                         align-items: flex-start;
-                        padding: 1.5rem;
+                        padding: 3.2rem 2.4rem;
                         height: auto;
-                        min-height: 20rem;
-                        max-height: 20rem;
+                        min-height: 32rem;
+                        max-height: 32rem;
                         background-color: var(--FeriaPpal);
                         transition: max-height 300ms ease-out;
                     }
 
                         .container-5 .scroll-x .cards .expand .bodycard {
-                            max-height: 30rem;
+                            max-height: 48rem;
                             height: max-content;
                             /* transition: max-height 300ms ease-in; */
                         }
@@ -110,21 +110,21 @@
 
                         .container-5 .scroll-x .cards .card .bodycard .title-control-container .card-title {
                             font-family: 'Nunito Sans', sans-serif;
-                            font-size: 1.125rem;
+                            font-size: 1.8rem;
                             font-weight: 700;
                             color: white;
                         }
 
                         .container-5 .scroll-x .cards .card .bodycard  .white-line {
-                            width: 3.125rem;
-                            height: 0.125rem;
+                            width: 5rem;
+                            height: 0.2rem;
                             background-color: white;
-                            margin: 0.5rem 0 1.5rem 0;
+                            margin: 0.8rem 0 2.4rem 0;
                         }
 
                         .container-5 .scroll-x .cards .card .bodycard p {
                             font-family: 'Roboto', sans-serif;
-                            font-size: 0.875rem;
+                            font-size: 1.4rem;
                             font-weight: 300;
                             font-style: italic;
                             color: white;

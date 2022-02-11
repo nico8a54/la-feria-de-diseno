@@ -48,7 +48,7 @@
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            gap: 24px;
+            gap: 2.4rem;
             padding: 0 24px;
             height: max-content;
             width: max-content;
@@ -56,12 +56,12 @@
 
             .cards .card {
                 height: max-content;
-                width: 15rem;
+                width: 24rem;
                 /* background-color: blue; */
             }
 
                 .card .img-container {
-                    height: 15rem;
+                    height: 24rem;
                 }
 
                 .card .bodycard {
@@ -69,28 +69,28 @@
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: flex-start;
-                    padding: 1rem;
-                    height: 12.125rem;
+                    padding: 1.6rem;
+                    height: 19.4rem;
                     background-color: var(--FeriaPpal);
                 }
 
                     .bodycard .card-title {
                         font-family: 'Roboto', sans-serif;;
-                        font-size: 1rem;
+                        font-size: 1.6rem;
                         font-weight: 500;
                         color: white;
                     }
 
                     .bodycard .white-line {
-                        width: 3.125rem;
-                        height: 0.125rem;
+                        width: 5rem;
+                        height: 0.2rem;
                         background-color: white;
-                        margin: 0.5rem 0 1rem 0;
+                        margin: 0.8rem 0 1.6rem 0;
                     }
 
                     .bodycard p {
                         font-family: 'Roboto', sans-serif;;
-                        font-size: 0.875rem;
+                        font-size: 1.4rem;
                         font-weight: 300;
                         color: white;
                     }
@@ -102,10 +102,8 @@
                         text-decoration: none;
                         background-color: white;
                         color: var(--FeriaPpal);
-                        font-size: 1rem;
+                        font-size: 1.6rem;
                         font-weight: 500;
                         width: 100%;
-                        padding: 0.5rem 0;
+                        padding: 0.8rem 0;
                     }
-
-        

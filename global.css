@@ -1,0 +1,106 @@
+@import url("./assets/styles/global/spinner.css");
+@import url("./assets/styles/global/menu.css");
+@import url("./assets/styles/global/btn-support.css");
+@import url("./assets/styles/global/contacto.css");
+
+:root {
+    --AzulClaro: #B0BFFF;
+    --AzulOscuro: #0A0926;
+    --FeriaPpal: #3A37E0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Tipografias INICIO */
+
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin: 0;
+    color: white;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+}
+
+h5, .h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: white;
+}
+
+p, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+}
+
+.p2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.p3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.btn-text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+}
+
+/* Tipografias FIN */
