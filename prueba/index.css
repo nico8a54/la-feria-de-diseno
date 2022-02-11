@@ -35,21 +35,24 @@ p {
     align-items: center;
   }
 
+
 .section1 {
+  background: #0A0926;
+}
+
+.section2 {
     background: #403ADA;
 }
-.section2 {
+.section3 {
   background: #6A66E2;
 }
-.section3 {
+.section4 {
   background: #9592EA;
 }
-.section4 {
+.section5 {
   background: #BFBDF3;
 }
-.section5 {
-  background: #EAE9FB;
-}
+
 
 .columnas-data {
   display: flex;
