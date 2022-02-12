@@ -2,29 +2,28 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: var(--PaddingHorizontal);
     min-height: 100vh;
-    padding: 56px 0px;
+    padding: var(--PaddingVertical) 0;
     background-color: white;
 }
 
-    .preguntas .content-1 {
-        margin-bottom: 32px;
-    }
+#map a {
+    display: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
 
     .preguntas .content-1 h3 {
-        font-family: 'Nunito Sans', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        margin: 0 0 16px 24px;
-        letter-spacing: 0.05em;
+        margin: 0 0 16px var(--PaddingHorizontal);
         color: var(--FeriaPpal);
     }
 
     .preguntas .content-1 .blue-line {
         height: 2px;
-        width: 102px;
-        margin-left: -24PX;
+        width: 80px;
+        margin-left: calc( 0rem - var(--PaddingHorizontal));
         background-color: var(--FeriaPpal);
     }
 
@@ -33,19 +32,16 @@
         align-items: center;
         justify-content: space-between;
         gap: 24px;
-        background-color: white;
-        cursor: pointer;
-        padding: 16px 24px;
+        
+        padding: 16px var(--PaddingHorizontal);
         width: 100%;
         border: none;
         text-align: left;
         outline: none;
-        font-size: 15px;
         transition: 0.4s;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
         color: var(--AzulOscuro);
+        background-color: white;
+        cursor: pointer;
     }
       
     .active, .accordion:hover {
@@ -68,7 +64,7 @@
         display: flex;
         flex-direction: column;
         padding: 0;
-        margin: 0 0 0 24px;
+        margin: 0 0 0 var(--PaddingHorizontal);
         height: max-content;
         background-color: var(--FeriaPpal);
         max-height: 0;
@@ -173,9 +169,7 @@
     
 
     .preguntas ul li .hotels {
-        /* background-color: gray; */
         padding: 0;
-        /* height: auto; */
     }
 
     .panel .hotel-accordion {
@@ -186,6 +180,24 @@
         gap: 32px;
         height: auto;
         min-height: 234px;
+
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .panel .hotel-1 {
+        background-image: url("../../preguntas/assets/img/hoteles/Fondo_DanCarltonMedellin_Mobile.jpg");
+    }
+
+    .panel .hotel-2 {
+        background-image: url("../../preguntas/assets/img/hoteles/Fondo_DanCarltonBelford_Mobile.jpg");
+    }
+    .panel .hotel-3 {
+        background-image: url("../../preguntas/assets/img/hoteles/Fondo_SanFernando_Mobile.jpg");
+    }
+    .panel .hotel-4 {
+        background-image: url("../../preguntas/assets/img/hoteles/Fondo_ClickClack_Mobile.jpg");
     }
 
     .panel .hotel-accordion .hotel-title {
@@ -260,4 +272,257 @@
     font-weight: 600;
     background-color: var(--FeriaPpal);
     align-self: center;
+}
+
+
+@media screen and (min-width: 640px) {
+    .preguntas {
+        padding: var(--PaddingVertical) var(--PaddingHorizontal);
+    }
+    
+        .preguntas .content-1 h3 {
+            margin: 0 0 16px 0;
+        }
+    
+        .preguntas .content-1 .blue-line {
+            height: 3px;
+            width: 200px;
+        }
+    
+        .accordion {
+            padding: 32px 0;
+        }
+          
+        .active, .accordion:hover {
+            background-color: white;
+        }
+        
+        .accordion:after {
+            font-weight: 600;
+            font-size: 32px;
+        }
+        
+        .panel {
+            margin: 0;
+            border-top: 2px solid var(--FeriaPpal);
+        }
+    
+        .panel ul li {
+            position: relative;
+            font-weight: 200;
+            padding-left: 14px;
+            border-left: 0px solid white;
+        }
+
+        .panel ul li ul li {
+            padding-left: 0;
+        }
+
+        .panel ul li::before {
+            content: "";
+            display: block;
+            border-top: 2px solid white;
+            height: 0px;
+            width: 96px;
+            position: absolute;
+            top: 50%;
+            left: -96px;
+        }
+
+        .panel ul li ul li::before {
+            display: none;
+        }
+    
+        .panel p {
+            font-weight: 200;
+        }
+    
+        .panel .primary {
+            padding: 64px 27px 0 110px;
+        }
+    
+        .panel ul, .panel .container {
+            list-style: none;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            margin: 0;
+            padding: 64px 27px 64px 96px;
+        }
+    
+        .panel ul ul {
+            padding: 0;
+        }
+    
+        .panel .como-llegar {
+            padding: 40px 24px;
+        }
+    
+        .panel .animation {
+            position: relative;
+            overflow: hidden;
+            height: 270px;
+            width: 100%;
+        }
+    
+        .panel .container-lottie-left {
+            max-width: none;
+            position: absolute;
+            height: 270px;
+            width: 1200px;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    
+        .panel .container-lottie-right {
+            max-width: none;
+            position: absolute;
+            height: 270px;
+            width: 1200px;
+            right: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    
+        .panel .container-lottie-center {
+            max-width: none;
+            position: absolute;
+            height: 270px;
+            width: 1200px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    
+        .panel .container-lottie lottie-player {
+            /* transform: scale(2); */
+            height: 270px;
+            width: 1200px;
+        }
+    
+        .como-llegar-1 {
+            background-color: var(--FeriaPpal);
+        }
+        .como-llegar-2 {
+            background-color: #6A66E2;
+        }
+        .como-llegar-3 {
+            background-color: #9592EA;
+        }
+        .como-llegar-4 {
+            background-color: #BFBDF3;
+        }
+        .como-llegar-5 {
+            background-color: #EAE9FB;
+        }
+        .como-llegar-4 h5, .como-llegar-4 p, .como-llegar-5 h5, .como-llegar-5 p {
+            color: var(--AzulOscuro);
+        }
+        
+    
+        .preguntas ul li .hotels {
+            padding: 0;
+        }
+
+        .panel .hotel-accordion {
+            padding: var(--PaddingVertical) var(--PaddingHorizontal);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+            height: 382px;
+            min-height: 234px;
+        }
+
+        .panel .hotel-1 {
+            background-image: url("../../preguntas/assets/img/hoteles/Fondo_DanCarltonMedellin_Mobile.jpg");
+        }
+    
+        .panel .hotel-2 {
+            flex-direction: row-reverse;
+            background-image: url("../../preguntas/assets/img/hoteles/Fondo_DanCarltonBelford_Desktop_Tablet.jpg");
+        }
+
+        .panel .hotel-3 {
+            background-image: url("../../preguntas/assets/img/hoteles/Fondo_SanFernando_Mobile.jpg");
+        }
+        .panel .hotel-4 {
+            flex-direction: row-reverse;
+            background-image: url("../../preguntas/assets/img/hoteles/Fondo_ClickClack_Desktop-Tablet.jpg");
+        }
+    
+        
+    
+        .panel .hotel-accordion .hotel-title {
+            position: static;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .panel .hotel-accordion .hotel-title h4 {
+            margin-bottom: 16px;
+        }
+    
+        .panel .hotel-accordion .hotel-title .blue-line {
+            background-color: white;
+            width: 232px;
+            height: 2px;
+            margin-left: calc( 0rem - var(--PaddingHorizontal));
+        }
+
+            .panel .hotel-2 .hotel-title .blue-line, .panel .hotel-4 .hotel-title .blue-line {
+                align-self: flex-end;
+                margin-left: 0;
+                margin-right: calc( 0rem - var(--PaddingHorizontal));
+            }
+    
+        .panel .hotel-accordion a {
+            position: static;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            width: 152px;
+            height: 72px;
+            background-color: var(--FeriaPpal);
+        }
+    
+        .preguntas ul li div ul li {
+            /* margin-top: 16px; */
+            /* background-color: greenyellow;s */
+            padding-left: 14px;
+            border-left: 2px solid white;
+        }
+    
+        .preguntas ul li div div h4 {
+            margin-bottom: 32px;
+        }
+    
+        .preguntas ul li div p {
+            margin-bottom: 32px;
+        }
+    
+        .preguntas ul li div ul li, .preguntas ul li div p {
+            font-weight: 200;
+        }
+    
+        .preguntas ul li div ul li span {
+            font-weight: 300;
+        }
+    
+        .preguntas ul {
+            justify-self: start;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .preguntas {
+        flex-direction: row;
+    }
 }
