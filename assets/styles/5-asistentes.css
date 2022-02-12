@@ -1,13 +1,12 @@
 .asistentes {
     position: relative;
-    /* padding-top: 64px; */
 }
 
 .container-8 {
     position: relative;
-    height: 100vh;
+    height: 177vw;
     width: 100%;
-    padding: 64px 24px 50px 24px;
+    padding: var(--PaddingVertical) var(--PaddingHorizontal);
 }
 
     .container-8 .content-1 {
@@ -15,23 +14,22 @@
         z-index: 1;
     }
 
-        .container-8 .content-1 h2 {
-            margin: 0 0 16px 0;
-            letter-spacing: 0.05em;
+        .container-8 .content-1 h3 {
+            margin-bottom: 1.6rem;
         }
 
         .container-8 .content-1 .blue-line {
             height: 2px;
-            width: 102px;
-            margin-left: -24PX;
+            width: 80px;
+            margin-left: calc( 0rem - var(--PaddingHorizontal));
             background-color: var(--FeriaPpal);
         }
 
         .container-8 .content-2 {
             position: absolute;
             z-index: 1;
-            right: 24px;
-            bottom: 64px;
+            right: var(--PaddingHorizontal);
+            bottom: var(--PaddingVertical);
             padding: 16px;
             height: 86px;
             width: 222px;
@@ -42,10 +40,15 @@
             justify-content: center;
         }
 
-    .asistentes .content-2 p {
-        margin: 0;
-        text-align: right;
-        font-weight: 300;
+        .asistentes .container-8 .content-2 p {
+            text-align: right;
+        }
+
+    .container-8 img {
+        top: 50%;
+        left: inherit;
+        right: 0;
+        transform: translate(23.5%,-50%);
     }
 
 .container-9 {
@@ -54,7 +57,7 @@
     align-items: flex-start;
     min-height: 100vh;
     width: 100%;
-    padding: 128px 24px;
+    padding: var(--PaddingVertical) var(--PaddingHorizontal);
     background-color: var(--AzulOscuro);
 }
 
@@ -67,34 +70,33 @@
         margin-bottom: 32px;
     }
 
-    .container-9 div {
+    .container-9 div:nth-child(3) {
         display: flex;
         flex-direction: column;
         gap: 16px;
         padding-left: 24px;
         margin-bottom: 32px;
         width: 100%;
-        /* background-color: red; */
     }
 
     .container-9 ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         margin: 0;
         list-style: none;
+        
     }
 
     .container-9 ul li {
         display: flex;
         align-items: center;
         margin-bottom: 4px;
-        font-size: 14px;
-        font-weight: 300;
-        /* list-style-type: square; */
     }
 
     .container-9 ul li::before {
         content: "■";
         color: var(--FeriaPpal);
-        font-weight: bold;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -105,26 +107,244 @@
         margin-left: -1em;
     }
 
+    .container-9 div:nth-child(4){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
-    .container-9 a {
+    .container-9 div h4 {
+        text-align: center;
+    }
+
+    .container-9 div a, .container-9 div a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 50px;
         width: 100%;
-        margin-top: 64px;
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
+        margin-top: var(--PaddingVertical);
         background-color: var(--FeriaPpal);
         align-self: center;
     }
 
 @media screen and (min-width: 640px) and (max-width: 1279px) {
+    
+    .container-8 .content-1 .blue-line {
+        height: 3px;
+        width: 200px;
+    }
+
+    .container-8 .content-2 {
+        padding: 32px;
+        height: 129px;
+        width: 291px;
+    }
+    
+        .container-9 h3 {
+            margin-bottom: 48px;
+        }
+    
+        .container-9 p {
+            font-weight: 200;
+            margin-bottom: 0;
+        }
+    
+        .container-9 div:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-left: 24px;
+            margin: 96px 0;
+            width: 100%;
+            height: 272px;
+        }
+    
+        .container-9 ul {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 0;
+            list-style: none;
+            height: 272px;
+        }
+    
+        .container-9 ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            width: 200px;
+        }
+    
+        .container-9 ul li::before {
+            content: "■";
+            color: var(--FeriaPpal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 18.39px;
+            margin: 0;
+            margin-right: 1rem;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+
+    
+        .container-9 a, .container-9 div a:hover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 100%;
+            margin-top: 64px;
+            background-color: var(--FeriaPpal);
+            align-self: center;
+        }
 
 }
 
 @media screen and (min-width: 1280px) {
+
+    .container-8 {
+        position: relative;
+        overflow: visible;
+        height: 481px;
+        width: 100%;
+        padding: var(--PaddingVertical) var(--PaddingHorizontal);
+    }
     
+        .container-8 .content-1 {
+            position: absolute;
+            z-index: 1;
+        }
+    
+            .container-8 .content-1 h3 {
+                color: var(--AzulOscuro);
+                margin-bottom: 2.4rem;
+            }
+    
+            .container-8 .content-1 .blue-line {
+                height: 4px;
+                width: 232px;
+            }
+    
+            .container-8 .content-2 {
+                position: absolute;
+                z-index: 1;
+                left: var(--PaddingHorizontal);
+                right: inherit;
+                top: 351px;
+                bottom: inherit;
+                padding: 32px;
+                height: 130px;
+                width: 474px;
+                background-color: var(--FeriaPpal);
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .asistentes .container-8 .content-2 p {
+                text-align: left;
+            }
+    
+        .container-8 img {
+            position: absolute;
+            top: 247px;
+            left: inherit;
+            right: 0;
+            width: 70.3vw !important;
+            height: 47vw !important;
+            transform: translate(0,0);
+        }
+
+
+    .container-9 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 100vh;
+        width: auto;
+        margin-left: calc(2 * var(--PaddingHorizontal));
+        padding: var(--PaddingVertical) var(--PaddingHorizontal);
+        padding-top: 40vw;
+        background-color: var(--AzulOscuro);
+    }
+
+        .container-9 h3 {
+            margin-bottom: 48px;
+        }
+    
+        .container-9 p {
+            font-weight: 200;
+            margin-bottom: 0;
+        }
+    
+        .container-9 div:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-left: 24px;
+            margin: var(--PaddingVertical) 0;
+            width: 100%;
+            height: 272px;
+        }
+    
+        .container-9 ul {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 0;
+            list-style: none;
+            height: 272px;
+        }
+    
+        .container-9 ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            width: 200px;
+        }
+    
+        .container-9 ul li::before {
+            content: "■";
+            color: var(--FeriaPpal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 18.39px;
+            margin: 0;
+            margin-right: 1rem;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .container-9 div:nth-child(4){
+            display: flex;
+            flex-direction: row;
+            gap: 88px;
+            width: 100%;
+        }
+    
+        .container-9 div h4 {
+            text-align: center;
+        }
+    
+        .container-9 div a, .container-9 div a:hover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 84px;
+            width: 360px;
+            margin-top: 0;
+            background-color: var(--FeriaPpal);
+            align-self: center;
+        }
+
+
 }

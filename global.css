@@ -24,7 +24,7 @@ html {
 
 /* Tipografias INICIO */
 
-h1 {
+h1, .h1 {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
