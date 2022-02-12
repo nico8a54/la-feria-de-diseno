@@ -23,13 +23,7 @@
     }
 
     h5, .h5, .h5:hover {
-        margin: 0;
-        padding: 0;
-        font-family: 'Nunito Sans', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 1.4rem;
-        color: white;
+        font-size: 1.8rem;
     }
 
     p, li {

@@ -5,10 +5,12 @@ section.hero {
 }
 
     header {
-        display: flex;
-        justify-content: space-between;
         position: absolute;
         z-index: 40;
+
+        display: flex;
+        justify-content: space-between;
+
         width: 100%;
         padding:  var(--PaddingHorizontal) var(--PaddingHorizontal) 0 var(--PaddingHorizontal);
         mix-blend-mode: difference;
@@ -34,23 +36,20 @@ section.hero {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-            height: 25vh;
             width: 100%;
 
             padding-left: var(--PaddingHorizontal);
             padding-right: var(--PaddingHorizontal);
-            padding-bottom: 64px;
-
-            /* background-color: yellow; */
+            padding-bottom: var(--PaddingVertical);
         }
 
             .slider-container .hero-controls .indicator-slider {
                 display: flex;
                 flex-direction: column;
+                align-items: flex-start;
                 justify-content: space-between;
+                gap: 5.0rem;
                 height: 100%;
-                /* background-color: greenyellow; */
-
             }
 
                 .slider-container .hero-controls .indicator-slider .indicator {
@@ -67,7 +66,7 @@ section.hero {
 
                 .line div {
                     width: 0%;
-                    height: 2px;
+                    height: 0.2rem;
                     transition: width 0.3s ease-in;
                     background-color: var(--FeriaPpal);
                 }
@@ -87,182 +86,106 @@ section.hero {
                     width: 3.2rem;
                 }
 
-        
-@media screen and (min-width: 540px) and (max-width: 959px) {
-    
-    section.hero {
-        position: relative;
-        height: 100%;
-    }
-    
-        header {
-            box-sizing: border-box;
-            position: absolute;
-            z-index: 40;
-    
-            display: flex;
-            justify-content: space-between;
-    
-            width: 100%;
-            padding: 9vw 7vw 0 7vw;
-            mix-blend-mode: difference;
-        }
-    
-        .identificador {
-            /* margin: 15px; */
-            width: 9vw;
-            min-width: 32px;
-            max-width: 88px;
-        }
-    
-        #bm-container {
-            position: fixed;
-            align-items: center;
-            justify-content: center;
-            z-index: 999;
-            top: 9vw;
-            right: 7vw;
-            width: 7vw;
-            height: 7vw;
-            -webkit-user-select: none;
-            user-select: none;
-            
-        }
-    
-        .bm-line1, .bm-line2 {
-            transform-box: fill-box;
-            transform-origin: center;
-        }
-        
-        @keyframes playLine1 {
-            0% {
-                transform: translateY(0px) rotate(0deg);
-            }
-            50% {
-                transform: translateY(7.82px) rotate(0deg);
-            }
-            100%{
-                transform: translateY(7.82px) rotate(45deg);
-            }
-        }
-        
-        @keyframes backLine1 {
-            0% {
-                transform: translateY(7.82px) rotate(45deg);
-            }
-            50% {
-                transform: translateY(7.82px) rotate(0deg);
-            }
-            100%{
-                transform: translateY(0px) rotate(0deg);
-            }
-        }
-        
-        @keyframes playLine2 {
-            0% {
-                transform: translateY(0px) rotate(0deg);
-            }
-            50% {
-                transform: translateY(-7.82px) rotate(0deg);
-            }
-            100%{
-                transform: translateY(-7.82px) rotate(-45deg);
-            }
-        }
-        
-        @keyframes backLine2 {
-            0% {
-                transform: translateY(-7.82px) rotate(-45deg);
-            }
-            50% {
-                transform: translateY(-7.82px) rotate(0deg);
-            }
-            100%{
-                transform: translateY(0px) rotate(0deg);
-            }
-        }
-    
-    
-        .slider-container {
-    
+        .slider-container ul {
             height: 100%;
-            overflow: hidden;
-            position: relative;
+            min-height: 100% !important;
         }
-    
-            .slider-container .hero-controls {
-    
-                position: absolute;
-                z-index: 10;
-                bottom: 0;
-                right: 0;
-    
-                display: flex;
-                align-items: flex-end;
-                justify-content: space-between;
-                height: 25vh;
-                width: 100%;
-    
-                padding-left: 7vw;
-                padding-right: 7vw;
-                padding-bottom: 12vw;
-    
-                /* background-color: yellow; */
-            }
-    
-                .slider-container .hero-controls .indicator-slider {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    height: 100%;
-                    /* background-color: greenyellow; */
-    
-                }
-    
-                    .slider-container .hero-controls .indicator-slider .indicator {
-                        display: flex;
-                        height: 2px;
-                        gap: 8px;
-                    }
-    
-                    .line {
-                        height: 2px;
-                        width: 30px;
-                        background-color: white;
-                    }
-    
-                    .line div {
-                        width: 0%;
-                        height: 2px;
-                        transition: width 0.3s ease-in;
-                        background-color: var(--FeriaPpal);
-                    }
-    
-                    img.logotipo-feria {
-                        height: 5vw;
-                        /* width: 15vw;
-                        max-width: 158px;
-                        min-width: 47px; */
-                    }
-                
-                .control-slider {
-                    /* position: absolute;
-                    z-index: 10;
-                    bottom: 50px;
-                    right: 24px; */
+
+        .slider-container ul li {
+            position: absolute;
+            z-index: 30;
+        }
+
+        .slider-container ul li div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding-left: var(--PaddingHorizontal);
+        }
+
         
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 4vw;
+@media screen and (min-width: 640px) and (max-width: 1279px) {
     
-                    /* margin-right: 24px;
-                    margin-bottom: 50px; */
+    .identificador {
+        width: 7.129rem;
+    }
+
+        .slider-container .hero-controls {
+            width: 100%;
+        }
+
+                .slider-container .hero-controls .indicator-slider .indicator {
+                    height: 0.3rem;
+                    gap: 1.2rem;
                 }
-    
-                    .arrow-left, .arrow-right {
-                        height: 8vw;
-                        width: 8vw;
-                    }
+
+                .line {
+                    height: 0.3rem;
+                    width: 4.2rem;
+                }
+
+                .line div {
+                    height: 0.3rem;
+                }
+
+                img.logotipo-feria {
+                    height: 4.2rem;
+                }
+            
+            .control-slider {
+                gap: 3.0rem;
+            }
+
+                .arrow-left, .arrow-right {
+                    height: 6.0rem;
+                    width: 6.0rem;
+                }
 
 }
+
+@media screen and (min-width: 1280px) {
+    .identificador {
+        width: 7.129rem;
+    }
+
+        .slider-container .hero-controls {
+            width: 100%;
+        }
+
+            .slider-container .hero-controls .indicator-slider {
+                gap: 2.5rem;
+            }
+
+                .slider-container .hero-controls .indicator-slider .indicator {
+                    height: 0.4rem;
+                    gap: 1.2rem;
+                    /* padding-left: calc(25vw - var(--PaddingHorizontal)); */
+                }
+
+                .line {
+                    height: 0.4rem;
+                    width: 6.0rem;
+                }
+
+                .line div {
+                    height: 0.4rem;
+                }
+
+                img.logotipo-feria {
+                    height: 6.0rem;
+                }
+            
+            .control-slider {
+                gap: 3.0rem;
+            }
+
+                .arrow-left, .arrow-right {
+                    height: 6.0rem;
+                    width: 6.0rem;
+                }
         
+        .slider-container ul li div {
+            padding-left: 25vw;
+        }
+}
