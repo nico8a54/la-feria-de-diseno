@@ -55,7 +55,7 @@
     height: 2.5rem;
     -webkit-user-select: none;
     user-select: none;
-    
+    cursor: pointer;
 }
 
 .bm-line1, .bm-line2 {
