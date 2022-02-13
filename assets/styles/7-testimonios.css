@@ -4,40 +4,46 @@
 }
 
     .testimonios .container-5 {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
         min-height: 100vh;
         height: auto;
         width: 100%;
-        padding: 56px 24px 50px 24px;
+        padding: var(--PaddingVertical) var(--PaddingHorizontal);
     }
 
-            .testimonios .container-5 .content-1{
-                margin-bottom: 6px;
+            .testimonios .container-5 .content-1 {
+                margin-bottom: 0;
+            }
+
+            .testimonios .container-5 .content-1 .blue-line {
+                height: 2px;
+                width: 80px;
+                margin-left: calc( 0rem - var(--PaddingHorizontal));
+                background-color: var(--FeriaPpal);
             }
 
             .testimonios .container-5 .content-1 h3 {
-                font-family: 'Nunito Sans', sans-serif;
-                font-size: 18px;
-                font-weight: 700;
                 color: var(--FeriaPpal);
                 margin-bottom: 16px;
             }
         
         .container-5 .scroll-x {
-            margin: 0px -24px;
-            padding: 24px 0;
+            margin: 0px calc( 0rem - var(--PaddingHorizontal));
+            padding: var(--PaddingHorizontal) 0;
             width: 100vw;
             
             overflow-x: scroll;
             overflow-y: hidden;
-            /* background-color: red; */
         }
 
             .container-5 .scroll-x .cards {
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
-                gap: 24px;
-                padding: 0 24px;
+                gap: var(--PaddingHorizontal);
+                padding: 0 var(--PaddingHorizontal);
                 height: max-content;
                 width: max-content;
             }
@@ -108,11 +114,8 @@
                             transform: rotate(0deg);
                         }
 
-                        .container-5 .scroll-x .cards .card .bodycard .title-control-container .card-title {
-                            font-family: 'Nunito Sans', sans-serif;
-                            font-size: 1.8rem;
-                            font-weight: 700;
-                            color: white;
+                        .container-5 .scroll-x .cards .card .bodycard div h5 {
+                            margin-bottom: 18px;
                         }
 
                         .container-5 .scroll-x .cards .card .bodycard  .white-line {
@@ -123,9 +126,56 @@
                         }
 
                         .container-5 .scroll-x .cards .card .bodycard p {
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1.4rem;
-                            font-weight: 300;
-                            font-style: italic;
                             color: white;
                         }
+
+
+@media screen and (min-width: 640px) {
+    
+    .testimonios .container-5 .content-1 .blue-line {
+        height: 3px;
+        width: 200px;
+    }
+
+    .container-5 .scroll-x .cards .card {
+        height: 88.4rem;
+        width: 42.0rem;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+
+        .container-5 .scroll-x .cards .card .img-container {
+            height: 42.0rem;
+        }
+
+        .container-5 .scroll-x .cards .card .bodycard {
+            padding: 4.8rem 4.0rem;
+            min-height: 46.4rem;
+            max-height: 46.4rem;
+        }
+
+        .container-5 .scroll-x .cards .card .bodycard div {
+            width: 100%;
+        }
+
+            .container-5 .scroll-x .cards .expand .bodycard {
+                max-height: 60rem;
+            }
+
+            .container-5 .scroll-x .cards .card .bodycard .title-control-container img {
+                width: 44px;
+            }
+
+            .container-5 .scroll-x .cards .card .bodycard div h5 {
+                margin-bottom: 38px;
+            }
+
+            .container-5 .scroll-x .cards .card .bodycard  .white-line {
+                width: 6.4rem;
+                height: 0.3rem;   
+                margin: 2.4rem 0 3.2rem 0;
+            }
+
+            .container-5 .scroll-x .cards .card .bodycard p {
+                width: 100%;
+            }
+}
