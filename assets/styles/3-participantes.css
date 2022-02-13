@@ -162,13 +162,22 @@
 }
 
 @media screen and (min-width: 1280px) {
+
+    .container-3 .content-1 {
+        position: absolute;
+        left: 0;
+        top: var(--PaddingVertical);
+    }
+    
     .container-3 .content-1 h3 {
-        margin-bottom: 2.4rem;
+        margin: 0 0 16px 0;
+        padding-left: var(--PaddingHorizontal);
     }
 
     .container-3 .content-1 .blue-line {
-        height: 4px;
-        width: 232px;
+        height: 2px;
+        width: 100%;
+        margin: 0;
     }
 
     .scroll-x .cards {

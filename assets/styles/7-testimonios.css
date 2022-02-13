@@ -188,6 +188,27 @@
 
 @media screen and (min-width: 1280px) {
 
+    .testimonios {
+        position: relative;
+    }
+
+    .testimonios .container-5 .content-1 {
+        position: absolute;
+        left: 0;
+        top: var(--PaddingVertical);
+    }
+
+    .testimonios .container-5 .content-1 h3 {
+        margin: 0 0 16px 0;
+        padding-left: var(--PaddingHorizontal);
+    }
+
+    .testimonios .container-5 .content-1 .blue-line {
+        height: 2px;
+        width: 100%;
+        margin: 0;
+    }
+
     .container-5 .scroll-x {
         display: none;
     }

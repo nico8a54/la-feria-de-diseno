@@ -140,6 +140,49 @@
 @media screen and (min-width: 1280px) {
 
     .navigator {
+        padding: 56px 72px;
+    }
+    
+    .navigator div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        width: max-content;
+    }
+    
+    .navigator .line-menu {
+        display: none;
+        height: 100%;
+        width: 4px;
+        background-color: white;
+    }
+    
+    .navigator img {
+        position: absolute;
+        left: var(--PaddingHorizontal);
+        bottom: var(--PaddingHorizontal);
+        width: 15vw;
+    }
+    
+    .navigator div a {
+        width: 20.0rem;
+    }
+    
+    #bm-container {
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        top: 56px;
+        right: 72px;
+        width: 4.0rem;
+        height: 4.0rem;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .navigator {
         flex-direction: row;
         gap: 4.8rem;
     }
@@ -169,11 +212,6 @@
 
     .navigator img {
         width: 15.8rem;
-    }
-
-    #bm-container {
-        width: 5.0rem;
-        height: 5.0rem;
     }
 
     .bm-line1, .bm-line2 {

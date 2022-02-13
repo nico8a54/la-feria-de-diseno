@@ -281,21 +281,8 @@
 
 @media screen and (min-width: 640px) {
     .preguntas {
-        position: relative;
         padding: var(--PaddingVertical) var(--PaddingHorizontal);
-        padding-top: 400px;
     }
-
-        .preguntas .lista-preguntas {
-            align-self: center;
-            padding: 200px 0;
-        }
-
-        .preguntas .content-1 {
-            position: absolute;
-            left: 0;
-            top: 400px;
-        }
     
         .preguntas .content-1 h3 {
             margin: 0 0 16px 0;
@@ -304,8 +291,7 @@
     
         .preguntas .content-1 .blue-line {
             height: 2px;
-            width: 100%;
-            margin: 0;
+            width: 200px;
         }
     
         .accordion {
@@ -545,6 +531,29 @@
 
 @media screen and (min-width: 1280px) {
     .preguntas {
-        /* flex-direction: row; */
+        position: relative;
+        padding-top: 400px;
     }
+
+        .preguntas .lista-preguntas {
+            align-self: center;
+            padding: 200px 0;
+        }
+
+        .preguntas .content-1 {
+            position: absolute;
+            left: 0;
+            top: 400px;
+        }
+    
+        .preguntas .content-1 h3 {
+            margin: 0 0 16px 0;
+            padding-left: var(--PaddingHorizontal);
+        }
+    
+        .preguntas .content-1 .blue-line {
+            height: 2px;
+            width: 100%;
+            margin: 0;
+        }
 }

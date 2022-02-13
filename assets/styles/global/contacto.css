@@ -491,12 +491,34 @@
     .contacto {
         position: relative;
     }
+
+    .contacto .content-1 {
+        position: absolute;
+        left: 0;
+        top: 96px;
+    }
+
+    .contacto  .content-1 h3 {
+        margin: 0 0 16px 0;
+        padding-left: var(--PaddingHorizontal);
+    }
+
+    .contacto .content-1 .blue-line {
+        height: 2px;
+        width: 100%;
+        margin: 0;
+    }
+
     .contacto .accordion-contact {
         position: absolute;
         right: 0;
         top: 0;
         height: 100%;
         width: 590px;
+    }
+
+    .contacto .info-contacto {
+        margin-top: 200px;
     }
 
     .contacto .info-contacto, .follow {
@@ -522,12 +544,12 @@
         /* background-color: white; */
         width: 100%;
         height: auto;
-        padding: var(--PaddingVertical) 0 61px var(--PaddingHorizontal);
+        padding: 96px 0 61px 96px;
     }
 
     .contacto .accordion-contact .form {
         display: block !important;
-        padding: 0 var(--PaddingHorizontal);
+        padding: 0 96px;
     }
 
     .contacto .accordion-contact .form form {
