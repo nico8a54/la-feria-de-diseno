@@ -115,8 +115,8 @@
     .container-4 .scroll-x-desktop {
         display: block;
         margin: 0;
-        padding: 0;
-        padding-right: var(--PaddingHorizontal);
+        margin-left: calc( 0rem - var(--PaddingHorizontal));
+        padding: 0 var(--PaddingHorizontal);
     }
 
     .scroll-x .cards {
