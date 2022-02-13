@@ -129,6 +129,10 @@
                             color: white;
                         }
 
+                        .container-5 .scroll-x-desktop {
+                            display: none;
+                        }
+
 
 @media screen and (min-width: 640px) {
     
@@ -178,4 +182,105 @@
             .container-5 .scroll-x .cards .card .bodycard p {
                 width: 100%;
             }
+
+    
+}
+
+@media screen and (min-width: 1280px) {
+
+    .container-5 .scroll-x {
+        display: none;
+    }
+
+    .container-5 .scroll-x-desktop {
+        display: block;
+        position: relative;
+    }
+
+    .container-5 .scroll-x-desktop .control-slider {
+        position: absolute;
+        left: 35%;
+        bottom: 0;
+        width: 144px;
+        height: 60px;
+        gap: 0;
+    }
+
+    .container-5 .scroll-x-desktop ul {
+        margin: 32px 0;
+        height: min-content;
+        min-height: 623px !important;
+    }
+
+    .container-5 .scroll-x-desktop ul li {
+        margin: 0;
+        padding: 0;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white; */
+    }
+
+    .container-5 .scroll-x-desktop ul li .ref{
+        position: relative;
+        height: 623px;
+        width: 1126px;
+        margin: 0 auto;
+        /* margin: 0 var(--PaddingHorizontal); */
+    }
+
+    .container-5 .scroll-x-desktop ul li .bodycard {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 64px 200px 0px 64px;
+
+        position: absolute;
+        width: 829px;
+        height: 543px;
+        left: 0;
+        top: 0;
+        background-color: var(--FeriaPpal);
+    }
+
+        .container-5 .scroll-x-desktop ul li .bodycard  .white-line {
+            width: 6.4rem;
+            height: 0.3rem;   
+            margin: 4.0rem 0 3.2rem 0;
+            background-color: white;
+        }
+
+        .container-5 .scroll-x-desktop ul li .bodycard h5 {
+            margin-bottom: 3rem;
+        }
+
+        .container-5 .scroll-x-desktop ul li .bodycard .p3 {
+            color: white;
+            width: 100%;
+        }
+
+    .container-5 .scroll-x-desktop ul li .ref .img {
+        width: 397.27px;
+        height: 533px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #img-1 {
+        background-image: url("../img/Foto_Testimonio_Duratex_001.jpg");
+    }
+
+    #img-2 {
+        background-image: url("../img/Foto_Testimonio_Bassico_Arquitectos_002.jpg");
+    }
+
+    #img-3 {
+        background-image: url("../img/Foto_Testimonio_Acabados_Formas_003.jpg");
+    }
 }

@@ -89,9 +89,9 @@
                         padding: 0.8rem 0;
                     }
 
-        .scroll-x-desktop {
-            display: none;
-        }
+    .container-4 .scroll-x-desktop {
+        display: none;
+    }
 
 @media screen and (min-width: 640px) {
     
