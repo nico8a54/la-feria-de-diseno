@@ -20,7 +20,7 @@
 
     .contacto .content-1 .blue-line {
         height: 2px;
-        width: 10.2rem;
+        width: 8.0rem;
         margin-left: calc( 0rem - var(--PaddingHorizontal) );
         background-color: white;
     }
@@ -180,7 +180,12 @@
     }
 
     .mdc-select__menu ul li span {
+        color: var(--FeriaPpal);
+    }
+
+    .mdc-select:not(.mdc-select--disabled) .mdc-select__selected-text {
         color: var(--AzulOscuro);
+        font-size: 1.5rem;
     }
 
     .checkbox-container {
@@ -245,7 +250,11 @@
     box-shadow: none;
 }
 
-@media screen and (min-width: 640px) and (max-width: 1279px) {
+.mdc-list-item {
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 640px) {
 
     .contacto {
         box-sizing: border-box;
@@ -263,7 +272,7 @@
         }
     
         .contacto .content-1 .blue-line {
-            height: 2px;
+            height: 3px;
             width: 20rem;
             margin-left: calc( 0rem - var(--PaddingHorizontal) );
             background-color: white;
@@ -474,6 +483,71 @@
         -moz-box-shadow: none;
         appearance: none;
         box-shadow: none;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .contacto {
+        position: relative;
+    }
+    .contacto .accordion-contact {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 590px;
+    }
+
+    .contacto .info-contacto, .follow {
+        width: calc(100% - var(--PaddingHorizontal) - 590px);
+    }
+
+    .contacto .follow {
+        align-self: flex-start;
+        align-items: center;
+    }
+
+    .contacto .accordion-contact a.btn-accordion {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: default;
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.0rem;
+        color: var(--FeriaPpal);
+        /* background-color: white; */
+        width: 100%;
+        height: auto;
+        padding: var(--PaddingVertical) 0 61px var(--PaddingHorizontal);
+    }
+
+    .contacto .accordion-contact .form {
+        display: block !important;
+        padding: 0 var(--PaddingHorizontal);
+    }
+
+    .contacto .accordion-contact .form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 0;
+        justify-content: flex-start;
+        /* background-color: red; */
+    }
+
+    .contacto .accordion-contact .form form div div div label, .mdc-select:not(.mdc-select--disabled) .mdc-floating-label {
+        font-size: 15px;
+        color: var(--AzulClaro);
+    }
+
+    .mdc-list-item {
+        padding: 0.5rem 1rem;
+        color: var(--FeriaPpal);
     }
 
 }

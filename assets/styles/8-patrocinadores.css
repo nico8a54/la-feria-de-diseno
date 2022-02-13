@@ -139,6 +139,7 @@
             .patrocinadores .logos div {
                 display: flex;
                 flex-direction: column-reverse;
+                justify-content: space-between;
                 gap: 36px;
             }
         
