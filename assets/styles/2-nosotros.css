@@ -200,7 +200,7 @@ section.nosotros {
     .container-2 {
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-evenly;
         width: 100%;
         /* gap: 128px; */
@@ -229,6 +229,7 @@ section.nosotros {
         .container-2 a {
             display: flex;
             align-items: center;
+            /* align-self: flex-end; */
             justify-content: center;
             height: 50px;
             width: 360px;

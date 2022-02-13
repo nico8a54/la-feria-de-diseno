@@ -222,7 +222,7 @@
         }
     
             .container-8 .content-1 h3 {
-                color: var(--AzulOscuro);
+                color: var(--FeriaPpal);
                 margin-bottom: 2.4rem;
             }
     
@@ -288,8 +288,9 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
-            padding-left: 24px;
-            margin: var(--PaddingVertical) 0;
+            padding-left: 0;
+            margin: 3.2rem 0;
+            margin-bottom: 12.8rem;
             width: 100%;
             height: 272px;
         }
@@ -302,6 +303,7 @@
             margin: 0;
             list-style: none;
             height: 272px;
+            padding-left: 16px;
         }
     
         .container-9 ul li {
@@ -326,8 +328,8 @@
 
         .container-9 div:nth-child(4){
             display: flex;
-            flex-direction: row;
-            gap: 88px;
+            flex-direction: column;
+            gap: 3.2rem;
             width: 100%;
         }
     

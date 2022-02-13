@@ -195,15 +195,18 @@
     .container-5 .scroll-x-desktop {
         display: block;
         position: relative;
+        transform: scale(0.75);
     }
 
     .container-5 .scroll-x-desktop .control-slider {
-        position: absolute;
+        justify-content: center;
+        position: static;
         left: 35%;
         bottom: 0;
-        width: 144px;
-        height: 60px;
-        gap: 0;
+        width: auto;
+        height: 40px;
+        gap: 16px;
+        margin-top: 64px;
     }
 
     .container-5 .scroll-x-desktop ul {

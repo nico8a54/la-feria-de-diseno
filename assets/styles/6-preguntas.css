@@ -34,7 +34,7 @@
     .accordion {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 24px;
         
         padding: 16px var(--PaddingHorizontal);
@@ -52,7 +52,7 @@
         background-color: white;
     }
     
-    .accordion:after {
+    .accordion::before {
         content: '\002B';
         color: var(--FeriaPpal);
         font-weight: 400;
@@ -60,7 +60,7 @@
         font-size: 24px;
     }
     
-    .active:after {
+    .active::before {
     content: "\2212";
     }
     
@@ -281,20 +281,38 @@
 
 @media screen and (min-width: 640px) {
     .preguntas {
+        position: relative;
         padding: var(--PaddingVertical) var(--PaddingHorizontal);
+        padding-top: 400px;
     }
+
+        .preguntas .lista-preguntas {
+            align-self: center;
+            padding: 200px 0;
+        }
+
+        .preguntas .content-1 {
+            position: absolute;
+            left: 0;
+            top: 400px;
+        }
     
         .preguntas .content-1 h3 {
             margin: 0 0 16px 0;
+            padding-left: var(--PaddingHorizontal);
         }
     
         .preguntas .content-1 .blue-line {
-            height: 3px;
-            width: 200px;
+            height: 2px;
+            width: 100%;
+            margin: 0;
         }
     
         .accordion {
-            padding: 32px 0;
+            padding: 64px 0;
+            padding-bottom: 1.6rem;
+            font-weight: 400;
+            font-size: 1.8rem;
         }
           
         .active, .accordion:hover {
@@ -527,6 +545,6 @@
 
 @media screen and (min-width: 1280px) {
     .preguntas {
-        flex-direction: row;
+        /* flex-direction: row; */
     }
 }
