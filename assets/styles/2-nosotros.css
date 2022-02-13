@@ -167,7 +167,7 @@ section.nosotros {
 @media screen and (min-width: 1280px) {
 
     .container-1 {
-        /* padding-right: var(--PaddingHorizontal); */
+        padding-right: 72px;
     }
     
     .nosotros .container-1 .content-1 {
