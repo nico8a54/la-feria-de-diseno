@@ -108,21 +108,22 @@
         padding-right: 0;
     }
 
-    .scroll-x {
+    .container-4 .scroll-x {
         display: none;
     }
 
-    .scroll-x-desktop {
+    .container-4 .scroll-x-desktop {
         display: block;
         margin: 0;
         padding: 0;
+        padding-right: var(--PaddingHorizontal);
     }
 
     .scroll-x .cards {
         gap: 4.1rem;
     }
 
-        .cards .card {
+        .hero .cards .card, .hero .card {
             width: 50rem;
         }
 
