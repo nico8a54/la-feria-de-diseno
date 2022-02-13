@@ -40,7 +40,7 @@ section.hero {
 
             padding-left: var(--PaddingHorizontal);
             padding-right: var(--PaddingHorizontal);
-            padding-bottom: var(--PaddingVertical);
+            padding-bottom: var(--PaddingHorizontal);
         }
 
             .slider-container .hero-controls .indicator-slider {

@@ -89,7 +89,11 @@
                         padding: 0.8rem 0;
                     }
 
-@media screen and (min-width: 640px) and (max-width: 1279px) {
+        .scroll-x-desktop {
+            display: none;
+        }
+
+@media screen and (min-width: 640px) {
     
     .container-3 .content-1 h3 {
         margin-bottom: 1.6rem;
@@ -98,6 +102,20 @@
     .container-3 .content-1 .blue-line {
         height: 3px;
         width: 200px;
+    }
+
+    .container-4 {
+        padding-right: 0;
+    }
+
+    .scroll-x {
+        display: none;
+    }
+
+    .scroll-x-desktop {
+        display: block;
+        margin: 0;
+        padding: 0;
     }
 
     .scroll-x .cards {
@@ -147,12 +165,11 @@
         width: 232px;
     }
 
-
     .scroll-x .cards {
         gap: 4.1rem;
     }
 
-        .cards .card {
+        .cards .card, .card {
             width: 50rem;
         }
 

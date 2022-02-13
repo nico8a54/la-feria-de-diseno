@@ -27,8 +27,8 @@
     transform-origin:center center;
     transform:translate(0, 0) scale(1);
     transition: transform 300ms;
-    bottom: 64px;
-    right: 24px;
+    bottom: var(--PaddingVertical);
+    right: var(--PaddingHorizontal);
     background-color: #B0BFFF;
 }
 
@@ -70,8 +70,8 @@
     cursor: pointer;
     position: absolute;
     z-index: 9;
-    bottom: 64px;
-    right: 24px;
+    bottom: var(--PaddingVertical);
+    right: var(--PaddingHorizontal);
     transition: transform 300ms;
 }
 
@@ -125,4 +125,23 @@
 
 .menu-active .menu-item:nth-child(4) {
     transform: translateX(-39vw);
+}
+
+@media screen and (min-width: 640px) {
+    .circle, .menu-item {
+        width: 72px;
+        height: 72px;
+    }
+
+    .menu-active .menu-item:nth-child(2) {
+        transform: translateY(-216px);
+    }
+    
+    .menu-active .menu-item:nth-child(3) {
+        transform: translate(-152.7px,-152.7px)
+    }
+    
+    .menu-active .menu-item:nth-child(4) {
+        transform: translateX(-216px);
+    }
 }
