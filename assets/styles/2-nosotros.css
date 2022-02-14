@@ -213,6 +213,11 @@ section.nosotros {
         z-index: 0;
     }
 
+    .container-1 .foto-nosotros img {
+        height: 100% !important;
+        width: auto !important;
+    }
+
 
     .container-2 {
         display: flex;
