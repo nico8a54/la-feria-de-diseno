@@ -48,7 +48,7 @@
     position: fixed;
     align-items: center;
     justify-content: center;
-    z-index: 999;
+    z-index: 31;
     top: var(--PaddingHorizontal);
     right: var(--PaddingHorizontal);
     width: 2.5rem;
@@ -56,6 +56,7 @@
     -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
+    mix-blend-mode: difference;
 }
 
 .bm-line1, .bm-line2 {
@@ -172,7 +173,7 @@
         position: fixed;
         align-items: center;
         justify-content: center;
-        z-index: 999;
+        z-index: 31;
         top: 56px;
         right: 72px;
         width: 4.0rem;

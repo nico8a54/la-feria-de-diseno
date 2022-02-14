@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>La Feria de Diseño</title>
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/0-index.css">
+    <link rel="stylesheet" href="./assets/styles/1-hero.css">
+    <link rel="stylesheet" href="./assets/styles/2-nosotros.css">
+    <link rel="stylesheet" href="./assets/styles/3-participantes.css">
+    <link rel="stylesheet" href="./assets/styles/4-servicios.css">
+    <link rel="stylesheet" href="./assets/styles/5-asistentes.css">
+    <link rel="stylesheet" href="./assets/styles/6-preguntas.css">
+    <link rel="stylesheet" href="./assets/styles/7-testimonios.css">
+    <link rel="stylesheet" href="./assets/styles/8-patrocinadores.css">
+    <link rel="stylesheet" href="./assets/styles/8-contacto.css">
+    <link rel="stylesheet" href="./index2.css">
+    <link rel="stylesheet" media="screen and (min-width: 640px) "href="./assets/styles/responsiveMedium.css">
+    <link rel="stylesheet" media="screen and (min-width: 1400px) "href="./assets/styles/responsiveLarge.css">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+
+    
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+</head>
+<body>
+    
+    <section id="hero" class="section_hero" >
+        <div class="scrollColor"></div>
+        <div class="hero">
+            <div id="navigator" class="navigator">
+                <a href="#hero" uk-scroll>Inicio</a>
+                <a href="#nosotros" uk-scroll>Nosotros</a>
+                <a href="#participantes-2021" uk-scroll>Participantes 2021</a>
+                <!-- <a href="#servicios" uk-scroll>Servicios</a> -->
+                <a href="#asistentes" uk-scroll>Asistentes</a>
+                <a href="#preguntas" uk-scroll>Preguntas</a>
+                <a href="#testimonios" uk-scroll>Testimonios</a>
+                <a href="#contacto" uk-scroll>Contacto</a>
+                <img class="logotipo-feria" src="./assets/img/logotipo-feria.svg" alt="" srcset="">
+            </div>
+    
+            <header id="header">
+                <div class="identificador">
+                    <svg width="88" height="60" viewBox="0 0 88 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H4.76794V27.5414H23.0497V31.7624H0V0Z" fill="white"/>
+                        <path d="M23.0498 0H69.9669V4.17127H27.8123V13.9282H69.9669V18.0111H27.8123V31.7624H23.0498V0Z" fill="white"/>
+                        <path d="M23.0498 27.4971H34.2598C43.8288 27.4971 51.0001 34.254 51.0001 43.4197C51.0001 52.4915 43.8785 59.254 34.2598 59.254H23.0498V27.4971ZM27.8123 31.7623V54.9667H34.3482C40.978 54.9667 46.0995 49.9335 46.0995 43.3976C46.1199 41.8531 45.8292 40.3204 45.2446 38.8907C44.6601 37.4609 43.7937 36.1635 42.6971 35.0757C41.6005 33.9879 40.2962 33.132 38.8618 32.5589C37.4275 31.9858 35.8924 31.7074 34.3482 31.7402L27.8123 31.7623Z" fill="white"/>
+                        <path d="M77.1325 13.9448H69.9502V34.6244H77.1325C83.3314 34.6244 87.9999 30.2045 87.9999 24.315C87.9999 18.4255 83.3314 13.9448 77.1325 13.9448ZM83.7623 24.315C83.7647 25.1753 83.5952 26.0275 83.2637 26.8214C82.9322 27.6153 82.4454 28.335 81.8319 28.9382C81.2184 29.5414 80.4906 30.0159 79.6912 30.3339C78.8918 30.652 78.0369 30.8071 77.1767 30.7901H74.0938V17.7846H77.1712C78.0391 17.759 78.9031 17.9099 79.7109 18.2281C80.5188 18.5463 81.2536 19.0252 81.8709 19.6358C82.4882 20.2464 82.9751 20.9759 83.3021 21.7802C83.6291 22.5846 83.7895 23.4469 83.7734 24.315H83.7623Z" fill="white"/>
+                    </svg>
+                </div>
+                <div id="bm-container">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 32.6416L47 32.6416" stroke="white" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" class="bm-line2"/>
+                        <path d="M3 17L47 17" stroke="white" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" class="bm-line1"/>
+                    </svg>
+                </div>
+            </header>
+    
+            <div id="slider-hero" class="slider-container" uk-slideshow="autoplay: true; autoplay-interval: 10000" uk-slideshow>
+    
+                <ul class="uk-slideshow-items" style="height: 100%;">
+                    <li style="position: absolute; z-index: 30;">
+                        <iframe id="iframe-1" src="https://player.vimeo.com/video/665719968?background=1" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen  allowfullscreen uk-cover></iframe>
+                        <div class="uk-position-center uk-text-center-left uk-light" style="width: 100%; display: flex; flex-direction: column; margin-left: 7vw;">
+                            <h2>
+                                SOMOS<br>
+                                MÁS QUE<br>
+                                <strong>INSPIRACIÓN</strong>
+                            </h2>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <iframe id="iframe-2" src="https://player.vimeo.com/video/665719898?background=1" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen uk-cover></iframe> -->
+                        <video src="./assets/videos/fondo_hero_002_inicio_desktop_filtro.mp4" autoplay loop muted playsinline uk-cover></video>
+                        <div class="uk-position-center uk-text-center-left uk-light" style="width: 100%; margin-left: 7vw;">
+                            <h2 class="uk-margin-remove">
+                                AQUÍ<br>
+                                TODO SE<br>
+                                <strong>DISEÑA</strong>
+                            </h2>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <iframe id="iframe-3" src="https://player.vimeo.com/video/665719799?background=1" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen uk-cover></iframe> -->
+                        <video src="./assets/videos/fondo_hero_003_inicio_desktop_filtro.mp4" autoplay loop muted playsinline uk-cover></video>
+                        <div class="uk-position-center uk-text-center-left uk-light" style="width: 100%; margin-left: 7vw;">
+                            <h2 class="uk-margin-remove">
+                                EL MEJOR<br>
+                                DISEÑO ES LA<br>
+                                <strong>EXPERIENCIA</strong>
+                            </h2>
+                        </div>
+                    </li>
+                </ul>
+    
+                <div class="hero-controls">
+                    <div class="indicator-slider">
+                        <div class="indicator">
+                            <div class="line">
+                                <div id="slider-1"></div>
+                            </div>
+                            <div class="line">
+                                <div id="slider-2"></div>
+                            </div>
+                            <div class="line">
+                                <div id="slider-3"></div>
+                            </div>
+                        </div>
+                        <img class="logotipo-feria" src="./assets/img/logotipo-feria.svg" alt="" srcset="">
+                    </div>
+    
+                    <div class="control-slider">
+                        <img class="arrow-left"  src="./assets/img/Arrow left - Icon.svg" alt="" uk-slideshow-item="previous">
+                        <img class="arrow-right"  src="./assets/img/Arrow Right - Icon.svg" alt="" uk-slideshow-item="next">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section class="scrollTrigger"></section>
+
+    <section class="section_nosotros">
+        <div class="bck_nosotros">
+            <div class="nosotros_img-container"> </div>
+        </div>
+        <div class="title_container">
+            <h2>NOSOTROS</h2>
+            <div class="title_line"></div>
+        </div>
+        <div class="legend_container">
+            <p>Somos una plataforma que conecta industrias del diseño en un solo lugar</p>
+        </div>
+    </section>
+
+    <section class="section_nosotros-white">
+        <div class="nosotros_container">
+            <div class="paragraph_container">
+                <div class="paragraph_1">
+                    <p>La Feria De Diseño es un escosistema que conecta oportunidades con personas dentro de una plataforma comercial e inspiradora generando un diálogo y conocimiento entre emprendedores, productores, marcas y expertos.</p>
+                </div>
+                <div class="paragraph_2">
+                    <p>Durante 3 días, los participantes se reúnen para conectarse, generar negocios y actualizarse en tendencias.</p>
+                </div>
+            </div>
+            <button class="button_main">
+                <a href="">Ver más</a>
+            </button>
+        </div>
+
+    </section>
+
+    <section class="section_participantes-1" id="1">
+        <!-- <div class="participantes-bck"></div> -->
+        <div class="title_container">
+            <h2>PARTICIPANTES 2021</h2>
+            <div class="title_line"></div>
+        </div>
+    </section>
+
+    <section class="section_participantes-2">
+        <div class="participantes2_container">
+            <p>Estos son los protagonistas de esta edición.</p>
+            <div class="scroll_container">
+                <div class="participantes_grid">
+                    <div class="participantes_card">
+                        <img class="img_testimonio" src="./assets/img/tarjeta_participantes_mobiliario_001_desktop.jpg" alt="">
+                        <div class="card_text">
+                            <div class="card_tittle">
+                                <h2>Mobiliario</h2>
+                                <div class="line-white"></div>
+                            </div>
+                            <div class="card_paragraph">
+                                <p>Residencial, institucional, exterior, urbano, cocinas, carpintería, arquitectónico.</p>
+                                <button>Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="./assets/js/scroll.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <script type="text/javascript" src="./assets/js/btn-support.js"></script>
+    <script type="text/javascript" src="./assets/js/menu.js"></script>
+    <script type="text/javascript" src="./assets/js/hero.js"></script>
+    <script type="text/javascript" src="./assets/js/contacto.js"></script>
+    <script type="text/javascript" src="./preguntas/assets/js/map.js"></script>
+</body>
+</html>
