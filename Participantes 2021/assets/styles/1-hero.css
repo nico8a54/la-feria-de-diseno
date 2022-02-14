@@ -1,7 +1,7 @@
 .hero {
     position: relative;
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 80vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,6 +9,18 @@
 
 .hero-1 {
     background-image: url("../../../assets/img/tarjeta_participantes_mobiliario_001_desktop.jpg");
+}
+.hero-2 {
+    background-image: url("../../../assets/img/tarjeta_participantes_industriascreativas_002_desktop.jpg");
+}
+.hero-3 {
+    background-image: url("../../../assets/img/tarjeta_participantes_interiorismo_003_desktop.jpg");
+}
+.hero-4 {
+    background-image: url("../../../assets/img/tarjeta_participantes_acabados_004_desktop.jpg");
+}
+.hero-5 {
+    background-image: url("../../../assets/img/tarjeta_participantes_arquitectura_005_desktop.jpg");
 }
 
 header {

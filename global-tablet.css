@@ -11,15 +11,15 @@
     }
 
     h2 {
-        font-size: 6.4rem;
+        font-size: 5.6rem;
     }
 
     h3 {
-        font-size: 3.6rem;
+        font-size: 2.4rem;
     }
 
     h4, .h4 {
-        font-size: 2.4rem;
+        font-size: 2.0rem;
     }
 
     h5, .h5, .h5:hover {
@@ -39,7 +39,7 @@
     }
 
     .btn-text, .btn-text:hover {
-        font-size: 2.4rem;
+        font-size: 2.0rem;
     }
 
     a {
