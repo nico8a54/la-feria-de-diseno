@@ -4,6 +4,7 @@
     align-items: center;
     font-size: 16px;
     /* background-color: red; */
+    background-color: #EAE9FB;
 }
 
 .atras, .atras:hover {
@@ -29,7 +30,7 @@
     box-sizing: border-box;
 }
 
-.participantes-mobiliario div button {
+.participantes-mobiliario div button, .participantes-mobiliario div button:hover {
     /* overflow: visible; */
     /* display: inline; */
     position: relative;
@@ -40,16 +41,16 @@
     margin: 0.75em;
     padding: 0;
     border: none;
-    background-color: var(--AzulOscuro);
 }
 
 .participantes-mobiliario div button .uk-cover-container {
     position: absolute;
     top: 0;
     border-radius: 50%;
-    border: 0.0625em solid var(--AzulOscuro);
+    /* border: 0.0625em solid var(--AzulOscuro); */
     width: 100%;
     height: 100%;
+    
 }
 
 .participantes-mobiliario div .uk-dropdown {
