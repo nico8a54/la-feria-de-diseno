@@ -6,7 +6,7 @@
     background-image: url("../img/fondo_participantes_001_desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-size: cover;
 }
 
@@ -162,6 +162,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+
+    .container-3 {
+        background-attachment: fixed;
+    }
 
     .container-3 .content-1 {
         position: absolute;
