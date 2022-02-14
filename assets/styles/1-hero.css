@@ -1,5 +1,8 @@
 section.hero {
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index:-1;
     height: 100%;
     background-color: var(--AzulOscuro);
 }
