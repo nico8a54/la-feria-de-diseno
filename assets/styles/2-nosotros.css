@@ -248,6 +248,10 @@ section.nosotros {
             color: var(--AzulOscuro);
         }
 
+        .container-2 div p:nth-child(1) {
+            text-align: left;
+        }
+
         .container-2 a {
             display: flex;
             align-items: center;

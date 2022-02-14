@@ -435,7 +435,7 @@
         }
 
         .panel .hotel-accordion {
-            padding: var(--PaddingVertical) var(--PaddingHorizontal);
+            padding: 155px 104px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -479,13 +479,13 @@
             background-color: white;
             width: 232px;
             height: 2px;
-            margin-left: calc( 0rem - var(--PaddingHorizontal));
+            margin-left: calc( 0rem - 104px);
         }
 
             .panel .hotel-2 .hotel-title .blue-line, .panel .hotel-4 .hotel-title .blue-line {
                 align-self: flex-end;
                 margin-left: 0;
-                margin-right: calc( 0rem - var(--PaddingHorizontal));
+                margin-right: calc( 0rem - 104px);
             }
     
         .panel .hotel-accordion a {
@@ -532,18 +532,18 @@
 @media screen and (min-width: 1280px) {
     .preguntas {
         position: relative;
-        padding-top: 400px;
+        padding: var(--PaddingVertical) var(--PaddingHorizontal);
     }
 
         .preguntas .lista-preguntas {
             align-self: center;
-            padding: 200px 0;
+            padding: var(--PaddingVertical) 0;
         }
 
         .preguntas .content-1 {
             position: absolute;
             left: 0;
-            top: 400px;
+            top: var(--PaddingVertical);
         }
     
         .preguntas .content-1 h3 {

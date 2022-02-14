@@ -159,8 +159,8 @@
     
     .navigator img {
         position: absolute;
-        left: var(--PaddingHorizontal);
-        bottom: var(--PaddingHorizontal);
+        left: 72px;
+        bottom: 56px;
         width: 15vw;
     }
     

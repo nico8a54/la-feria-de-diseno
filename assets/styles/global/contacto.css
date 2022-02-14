@@ -492,6 +492,11 @@
         position: relative;
     }
 
+    .contacto svg {
+        height: 6.1rem;
+        width: auto;
+    }
+
     .contacto .content-1 {
         position: absolute;
         left: 0;
@@ -522,7 +527,7 @@
     }
 
     .contacto .info-contacto, .follow {
-        width: calc(100% - var(--PaddingHorizontal) - 590px);
+        width: 590px;
     }
 
     .contacto .follow {
