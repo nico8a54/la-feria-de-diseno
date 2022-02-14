@@ -58,6 +58,7 @@ section.nosotros {
         width: 100%;
         height: auto;
         padding: var(--PaddingVertical) var(--PaddingHorizontal);
+        background-color: white;
     }
 
         .container-2 .blue-line {
