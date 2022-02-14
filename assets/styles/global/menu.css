@@ -48,7 +48,7 @@
     position: fixed;
     align-items: center;
     justify-content: center;
-    z-index: 999;
+    z-index: 31;
     top: var(--PaddingHorizontal);
     right: var(--PaddingHorizontal);
     width: 2.5rem;
@@ -172,7 +172,7 @@
         position: fixed;
         align-items: center;
         justify-content: center;
-        z-index: 999;
+        z-index: 31;
         top: 56px;
         right: 72px;
         width: 4.0rem;
