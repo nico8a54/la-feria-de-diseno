@@ -81,7 +81,7 @@ section.nosotros {
             color: var(--AzulOscuro);
         }
 
-        .container-2 a {
+        .container-2 a, .container-2 a:hover {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -152,7 +152,7 @@ section.nosotros {
             align-self: flex-start;
         }
 
-        .container-2 a {
+        .container-2 a, .container-2 a:hover {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -252,7 +252,7 @@ section.nosotros {
             text-align: left;
         }
 
-        .container-2 a {
+        .container-2 a, .container-2 a:hover {
             display: flex;
             align-items: center;
             /* align-self: flex-end; */

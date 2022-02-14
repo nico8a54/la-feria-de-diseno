@@ -25,7 +25,7 @@ let Inicio_contenido_Style = window.getComputedStyle(Inicio_contenido);
 
 // Boton WhatsApp FIN
 
-document.body.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
   let coords = Inicio_contenido.getBoundingClientRect();
   // console.log(coords);
   // let ContenidoRight = Inicio_contenido_Style.getPropertyValue('margin-right');

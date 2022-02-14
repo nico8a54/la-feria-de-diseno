@@ -35,6 +35,7 @@ body {
   scrollbar-color: #F2F2F2 #323232;
   scrollbar-width: none;
   color: white;
+  overflow-x: hidden;
 }
 
 #spinner {
@@ -102,7 +103,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 0 24px;
+  padding: 0 var(--PaddingHorizontal);
   background: #0A0926;
 }
 
@@ -171,7 +172,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    margin: 0 0 0px 24px;
+    margin: 0 0 0px var(--PaddingHorizontal);
     padding: 0;
     border-left: 2px solid white;
     transition: border-color 0.5s ease-in-out;
@@ -194,6 +195,11 @@ body {
     transition: height 0.3s ease-out, opacity 0.2s ease-out;
   }
   .nav__body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
     font-weight: 100;
     font-size: 18px;
     font-size: 18px;
@@ -203,6 +209,8 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease-out, opacity 0.2s ease-out;
     /* background-color: #9592EA; */
+    position: absolute;
+    top: 0;
   }
   .nav li {
     list-style-type: none;
@@ -268,10 +276,6 @@ body {
     overflow: visible;
   }
   .nav li.active .nav__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
     opacity: 1;
@@ -280,3 +284,60 @@ body {
   
   /*# sourceMappingURL=index.css.map */
   
+  @media screen and (min-width: 640px) {
+
+    .columnas-data {
+      display: flex;
+      gap: 56px;
+    }
+    
+    .columna-1, .columna-2{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .nav__wrapper p {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      transition: color 0.5s ease-in-out;
+    }
+    
+    .nav__wrapper .numeros-p {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      transition: color 0.5s ease-in-out;
+    }
+
+    /* .section5 {
+      height: 120vh;
+    } */
+  }
+
+  @media screen and (min-width: 1280px) {
+
+    .nav__body {
+      justify-content: flex-end;
+    }
+
+    .nav__body .img {
+      width: 1000px;
+      height: 80%;
+    }
+
+    .columnas-data {
+      display: flex;
+      justify-content: flex-end;
+      gap: 150px;
+      width: 100%;
+      /* background-color: red; */
+    }
+  }

@@ -6,7 +6,7 @@
     /* background-color: red; */
 }
 
-.atras {
+.atras, .atras:hover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +63,21 @@
     background-color: var(--FeriaPpal);
 }
 
+.participantes-mobiliario div .uk-dropdown div h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.participantes-mobiliario div .uk-dropdown ul li p, .participantes-mobiliario div .uk-dropdown ul li a, .participantes-mobiliario div .uk-dropdown ul li a:hover {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: white;
+}
+
 .participantes-mobiliario div .uk-dropdown div .white-line {
     width: 5em;
     height: 0.125em;
@@ -116,18 +131,78 @@ button[aria-expanded="true"] .triangle {
     border-bottom: 0.75em solid var(--FeriaPpal);
 }
 
-@media screen and (min-width: 540px) and (max-width: 959px) {
+
+@media screen and (min-width: 640px) {
     .participantes-mobiliario {
         font-size: 32px;
     }
 
-    .atras {
+    .participantes-mobiliario div .uk-dropdown {
+        padding: 1.5em;
+    }
+
+    .participantes-mobiliario div .uk-dropdown ul {
+        margin-top: 6em;
+        gap: 4em;
+    }
+
+    .participantes-mobiliario div .uk-dropdown div .white-line {
+        margin-top: 0.5em;
+    }
+
+    .participantes-mobiliario div .uk-dropdown div h4 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+    
+    .participantes-mobiliario div .uk-dropdown ul li p, .participantes-mobiliario div .uk-dropdown ul li a, .participantes-mobiliario div .uk-dropdown ul li a:hover {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.8rem;
+        color: white;
+    }
+
+    .atras, .atras:hover {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 50px;
         width: 500px;
+        font-size: 1.8rem;
         margin: 0 24px 64px 24px;
         color: white;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .participantes-mobiliario {
+        font-size: 32px;
+    }
+
+    .participantes-mobiliario div .uk-dropdown {
+        /* display: flex; */
+        align-items: center;
+        gap: 140px;
+    }
+
+    .uk-dropdown.uk-open {
+        display: flex;
+    }
+    .participantes-mobiliario div .uk-dropdown ul {
+        margin: 0;
+    }
+    .participantes-mobiliario div .uk-dropdown div h4 {
+        width: max-content;
+    }
+
+    .participantes-mobiliario .uk-panel {
+        width: 25em;
+    }
+
+    .participantes-mobiliario div .uk-dropdown {
+        margin: 0.75em calc(12.5em - 50vw);
     }
 }
