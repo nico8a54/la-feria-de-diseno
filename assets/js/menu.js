@@ -11,6 +11,7 @@ const openMenu = () => {
         line1.style.animation = "playLine1 300ms forwards";
         line2.style.animation = "playLine2 300ms forwards";
         header.style.mixBlendMode = "normal";
+        nav.style.mixBlendMode = "normal";
         menu.style.display = "flex";
         menu.style.transitionDuration = "0.6s";
         setTimeout(()=>{
@@ -25,6 +26,7 @@ const closeMenu = () => {
         line1.style.animation = "backLine1 300ms forwards";
         line2.style.animation = "backLine2 300ms forwards";
         header.style.mixBlendMode = "difference";
+        nav.style.mixBlendMode = "difference";
         menu.style.opacity = 0;
         menu.style.transitionDuration = "0.2s";
         setTimeout(()=>{
