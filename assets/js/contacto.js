@@ -25,10 +25,32 @@ acc[0].addEventListener("click", function() {
   }
 });
 
+
+const modalForm = document.getElementById("modal-form");
+const modalSVG = document.getElementById("modalSVG");
+const modalTitle = document.getElementById("modal-title");
+const modalMessage = document.getElementById("modal-message");
+
+const showModal = (type, title, message) => {
+  if (type == "error") {
+    modalSVG.src = "./assets/img/modal-form-error.svg";
+  }
+  else {
+    modalSVG.src = "./assets/img/modal-form-ok.svg";
+  }
+  modalTitle.innerHTML = title;
+  modalMessage.innerHTML = message;
+  modalForm.style.display = "flex";
+}
+
+const closeModal = () => {
+  modalForm.style.display = "none";
+}
+
 // Enviar formulario a MailJet
 const sendForm = async () => {
   // console.log(nombre.value, empresa.value, ciudad.value, correo.value, celular.value, instagram.value, categoria.value, politica.checked);
-  if ((politica.checked) && (nombre.value) && (correo.value)) {
+  if ((nombre.value) && (empresa.value) && (ciudad.value) && (correo.value) && (celular.value) && (instagram.value) && (categoria.value) && (politica.checked)) {
 
     const formObject = {
       IsExcludedFromCampaigns: "true",
@@ -60,20 +82,22 @@ const sendForm = async () => {
       let responseBody = JSON.parse(responseCreateContactJSON.body);
 
       if (responseBody.StatusCode == 400) {
+        showModal("error", "¡Ups!", "Hay un problema, inténtalo nuevamente");
         console.log("Ups, ha ocurrido un error");
       }
       else {
+        showModal("log", "¡Excelente!", "Los datos se enviaron correctamente");
         console.log("Te has registrado correctamente!");
       }
 
     } catch (err) {
-
+      showModal("error", "¡Ups!", "Hay un problema, inténtalo nuevamente");
       console.log(err);
-
     }
   }
 
   else {
+    showModal("error", "¡Ups!", "Rellena los espacios requeridos");
     alert("Rellena los espacios requeridos.");
   }
 }

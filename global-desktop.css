@@ -1,7 +1,7 @@
 @media screen and (min-width: 1280px) {
     :root {
         --PaddingVertical: 12.8rem;
-        --PaddingHorizontal: calc((100vw - 1300px)/2);
+        --PaddingHorizontal: calc((100vw - 1000px)/2);
     }
 
     /* Tipografias INICIO */
@@ -15,19 +15,19 @@
     }
 
     h3 {
-        font-size: 3.0rem;
+        font-size: 2.4rem;
     }
 
     h4, .h4 {
-        font-size: 2.0rem;
+        font-size: 1.8rem;
     }
 
     h5, .h5, .h5:hover {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     p, li {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .p2, .p2:hover {
@@ -43,11 +43,11 @@
     }
 
     a {
-        font-size: 3.6rem;
+        font-size: 3.0rem;
     }
     
     a:hover {
-        font-size: 3.6rem;
+        font-size: 3.0rem;
     }
 
     /* Tipografias FIN */

@@ -20,8 +20,8 @@
 .circle {
     width: 13vw;
     height: 13vw;
-    max-width: 72px;
-    max-height: 72px;
+    max-width: 50px;
+    max-height: 50px;
     position: absolute;
     border-radius: 50%;
     transform-origin:center center;
@@ -59,8 +59,8 @@
 .menu-item {
     width: 13vw;
     height: 13vw;
-    max-width: 72px;
-    max-height: 72px;
+    max-width: 50px;
+    max-height: 50px;
     background: white;
     display: flex;
     justify-content: center;
@@ -129,20 +129,20 @@
 
 @media screen and (min-width: 640px) {
     .circle, .menu-item {
-        width: 72px;
-        height: 72px;
+        width: 50px;
+        height: 50px;
     }
 
     .menu-active .menu-item:nth-child(2) {
-        transform: translateY(-216px);
+        transform: translateY(-150px);
     }
     
     .menu-active .menu-item:nth-child(3) {
-        transform: translate(-152.7px,-152.7px)
+        transform: translate(-106.06px,-106.06px)
     }
     
     .menu-active .menu-item:nth-child(4) {
-        transform: translateX(-216px);
+        transform: translateX(-150px);
     }
 }
 

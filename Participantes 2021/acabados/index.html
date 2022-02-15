@@ -18,13 +18,13 @@
 
     <link rel="stylesheet" href="../../assets/styles/normalize.css">
     <link rel="stylesheet" href="../../assets/styles/0-index.css">
+
     <link rel="stylesheet" href="../assets/styles/1-hero.css">
-    
+    <link rel="stylesheet" href="../assets/styles/3-participantes.css">
+
     <link rel="stylesheet" href="../../global.css">
     <link rel="stylesheet" media="screen and (min-width: 640px) "href="../../global-tablet.css">
     <link rel="stylesheet" media="screen and (min-width: 1280px) "href="../../global-desktop.css">
-    <link rel="stylesheet" href="../assets/styles/3-participantes.css">
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -39,7 +39,17 @@
 
 <body data-spy="scroll" data-target="#navbar-example">
 
-    <section id="hero" class="hero">
+    <div id="modal-form">
+        <div class="modal-card">
+            <img id="modalSVG" src="./assets/img/modal-form-ok.svg">
+            <div class="message">
+                <h4 id="modal-title">¡Excelente!</h4>
+                <P id="modal-message">Los datos se enviaron correctamente</P>
+            </div>
+            <div class="modal-button btn-text" onclick="closeModal()">Continuar</div>
+        </div>
+    </div>
+    <section id="hero" class="hero hero-4 btn-support-ref">
 
         <div id="navigator" class="navigator">
             <div>
@@ -76,18 +86,26 @@
             </div>
         </header>
 
-        <div id="slider-hero" class="slider-container" uk-slideshow="autoplay: true" uk-slideshow>
-            <ul class="uk-slideshow-items" style="height: 100%;">
-                <li style="position: absolute; z-index: 30;">
-                    <img src="../../assets/img/tarjeta_participantes_acabados_004_desktop.jpg" alt="" uk-cover>
-                    <div class="hero-title-content uk-position-center uk-text-center-left uk-light">
-                        <h2>LOS<br>
-                            PROTAGONISTAS EN <strong>ACABADOS</strong><br>
-                            ESTE AÑO
-                        </h2>
-                    </div>
-                </li>
-            </ul>
+        <div class="slider-container">
+            <h2>PARTICIPANTES EN<br>
+                <strong>ACABADOS</strong>
+            </h2>
+        </div>
+        <div class="menu-content">
+          <span class="menu-item" id="menu"></span>
+          <a href="../../#preguntas" class="menu-item">
+              <img src="../../assets/img/icon-questions.svg" alt="Preguntas Frecuentes">
+          </a>
+          <a href="mailto:juana.montoya@laferiadediseno.com" target="_blank" class="menu-item">
+              <img src="../../assets/img/icon-mail.svg" alt="Correo electronico">
+          </a>
+          <a href="https://wa.me/573136373318" target="_blank" class="menu-item">
+              <img src="../../assets/img/icon-whatsapp.svg" alt="Whatsapp">
+          </a>
+          <div class="blur" id="menuBlur"></div>
+          <div class="circle" id="menuCircle1"></div>
+          <div class="circle" id="menuCircle2"></div>
+          <div class="circle" id="menuCircle3"></div>
         </div>
     </section>
 
@@ -98,7 +116,7 @@
                 <img src="./assets/img/Acabados_Y_Formas_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Acabados y Formas</h4>
                 <div class="white-line"></div>
@@ -122,7 +140,7 @@
                 <img src="./assets/img/Altea_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Altea Stone</h4>
                 <div class="white-line"></div>
@@ -146,7 +164,7 @@
                 <img src="./assets/img/D_Y_D_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>DyD Colombia</h4>
                 <div class="white-line"></div>
@@ -170,7 +188,7 @@
                 <img src="./assets/img/Dicehogar_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Dicehogar</h4>
                 <div class="white-line"></div>
@@ -194,7 +212,7 @@
                 <img src="./assets/img/Divisiones_y_Proyectos_Acabdos.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Divisiones y Proyectos</h4>
                 <div class="white-line"></div>
@@ -218,7 +236,7 @@
                 <img src="./assets/img/Innolution_Acabados-8.png" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Innolution</h4>
                 <div class="white-line"></div>
@@ -242,7 +260,7 @@
                 <img src="./assets/img/Montecarlo_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Montecarlo</h4>
                 <div class="white-line"></div>
@@ -266,7 +284,7 @@
                 <img src="./assets/img/Neolith_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Neolith</h4>
                 <div class="white-line"></div>
@@ -290,7 +308,7 @@
                 <img src="./assets/img/Pintuco_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Pintuco</h4>
                 <div class="white-line"></div>
@@ -314,7 +332,7 @@
                 <img src="./assets/img/Primaco_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Primaco</h4>
                 <div class="white-line"></div>
@@ -338,7 +356,7 @@
                 <img src="./assets/img/Purezza_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Purezza</h4>
                 <div class="white-line"></div>
@@ -362,7 +380,7 @@
                 <img src="./assets/img/Quimico_Plasticos_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Químico Plásticos</h4>
                 <div class="white-line"></div>
@@ -386,7 +404,7 @@
                 <img src="./assets/img/Socoda_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Socoda</h4>
                 <div class="white-line"></div>
@@ -410,7 +428,7 @@
                 <img src="./assets/img/Titanium_Acabados.svg" alt="" srcset="" uk-cover>
             </div>
             <div class="triangle"></div>
-        </button><div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        </button><div uk-dropdown="mode: click; pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
             <div>
                 <h4>Titanium</h4>
                 <div class="white-line"></div>
@@ -615,8 +633,8 @@
         </div>
 
     </section>
-    
-    <script type="text/javascript" src="../../assets/js/contacto.js"></script>
     <script type="text/javascript" src="../../assets/js/menu.js"></script>
+    <script type="text/javascript" src="../../assets/js/btn-support.js"></script>
+    <script type="text/javascript" src="../../assets/js/contacto.js"></script>
 </body>
 </html>

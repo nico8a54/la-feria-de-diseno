@@ -3,6 +3,70 @@
     --mdc-theme-secondary: #3A37E0;
 }
 
+#modal-form {
+    display: none;/* apagar ahora */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 25;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.modal-card {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px;
+    width: 100%;
+    max-width: 272px;
+    min-height: 365px;
+    max-height: 365px;
+    gap: 32px;
+    background-color: white;
+    /* border-radius: 10px; */
+    cursor: inherit;
+}
+
+.modal-card .message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5rem;
+    height: 100%;
+}
+
+.modal-card .message h4 {
+    color: var(--FeriaPpal);
+    text-align: center;
+}
+
+.modal-card .message p {
+    color: var(--AzulOscuro);
+    text-align: center;
+}
+
+.modal-card .modal-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+    width: 224px;
+    height: 48px;
+    /* Blanco */
+    cursor: pointer;
+    background: #FFFFFF;
+    /* Feria ppal */
+    color: var(--FeriaPpal);
+    border: 2px solid var(--FeriaPpal);
+    box-sizing: border-box;
+}
+
 .contacto {
     box-sizing: border-box;
     display: flex;

@@ -38,25 +38,6 @@ body {
   overflow-x: hidden;
 }
 
-#spinner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 50;
-  background-color: var(--FeriaPpal);
-  opacity: 1;
-  transition: opacity 2s;
-}
-#spinner .lottie {
-  width: 150px;
-  height: 150px;
-}
-
 .nav__wrapper p {
   box-sizing: border-box;
   margin: 0;
@@ -114,7 +95,9 @@ body {
 }
 
 .section0 p {
+  max-width: 850px;
   margin: 16px 0;
+  align-self: flex-start;
 }
 
 .section1 {
@@ -328,9 +311,9 @@ body {
       justify-content: flex-end;
     }
 
-    .nav__body .img {
-      width: 605px;
-      height: 80%;
+    .nav__body img {
+      /* max-width: 605px; */
+      max-height: 100%;
     }
 
     .columnas-data {

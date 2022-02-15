@@ -190,6 +190,7 @@
 
         .cards .card, .card {
             width: 50rem;
+            transform: scale(0.9);
         }
 
             .card .img-container {

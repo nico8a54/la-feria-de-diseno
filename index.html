@@ -47,6 +47,16 @@
     <div id="spinner">
         <lottie-player class="lottie" src="https://assets8.lottiefiles.com/packages/lf20_gsmmiunf.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
     </div>
+    <div id="modal-form">
+        <div class="modal-card">
+            <img id="modalSVG" src="./assets/img/modal-form-ok.svg">
+            <div class="message">
+                <h4 id="modal-title">¡Excelente!</h4>
+                <P id="modal-message">Los datos se enviaron correctamente</P>
+            </div>
+            <div class="modal-button btn-text" onclick="closeModal()">Continuar</div>
+        </div>
+    </div>
     <div id="bm-container">
         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 32.6416L47 32.6416" stroke="white" stroke-width="5" stroke-linecap="square" stroke-linejoin="round" class="bm-line2"/>
@@ -275,11 +285,26 @@
 
                         <div class="bodycard">
                             <div>
-                                <h4>5. DISEÑO DIGITAL</h4>
+                                <h4>5. SERVICIOS</h4>
                                 <div class="white-line"></div>
                                 <p class="p2">Diseño gráfico, audiovisual, diseño publicitaro, fotografía, marketing digital, 3D.</p>
                             </div>
                             <a class="btn-text" href="./Participantes 2021/diseno-digital/">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="uk-cover-container img-container">
+                            <img src="./assets/img/tarjeta_participantes_academia_006.jpg" alt="" uk-cover>
+                        </div>
+
+                        <div class="bodycard">
+                            <div>
+                                <h4>6. ACADEMIA</h4>
+                                <div class="white-line"></div>
+                                <p class="p2">Universidades con oferta de programas relacionados con diseño gráfico, arquitectura, publicidad, diseño de espacios, entre otros.</p>
+                            </div>
+                            <a class="btn-text" href="./Participantes 2021/academia/">Ver más</a>
                         </div>
                     </div>
 
@@ -360,11 +385,27 @@
         
                                 <div class="bodycard">
                                     <div>
-                                        <h4>5. DISEÑO DIGITAL</h4>
+                                        <h4>5. SERVICIOS</h4>
                                         <div class="white-line"></div>
                                         <p class="p2">Diseño gráfico, audiovisual, diseño publicitaro, fotografía, marketing digital, 3D.</p>
                                     </div>
                                     <a class="btn-text" href="./Participantes 2021/diseno-digital/">Ver más</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <div class="uk-cover-container img-container">
+                                    <img src="./assets/img/tarjeta_participantes_academia_006.jpg" alt="" uk-cover>
+                                </div>
+        
+                                <div class="bodycard">
+                                    <div>
+                                        <h4>6. ACADEMIA</h4>
+                                        <div class="white-line"></div>
+                                        <p class="p2">Universidades con oferta de programas relacionados con diseño gráfico, arquitectura, publicidad, diseño de espacios, entre otros.</p>
+                                    </div>
+                                    <a class="btn-text" href="./Participantes 2021/academia/">Ver más</a>
                                 </div>
                             </div>
                         </li>
@@ -507,6 +548,10 @@
                     <li>
                         <strong>Diseño Digital</strong><br></br>
                         Diseño grafico, audiovisual, renderización, diseño digital, diseño publicitario, diseño interior, diseño arquitectónico.
+                    </li>
+                    <li>
+                        <strong>Academia</strong><br></br>
+                        universidades con oferta de programas relacionados con diseño gráfico, arquitectura, publicidad, diseño de espacios, entre otros.
                     </li>
                 </ul>
             </div>
@@ -699,28 +744,28 @@
                         <h4>Hotel Dan Carlton Medellin</h4>
                         <div class="blue-line"></div>
                     </div>
-                    <a class="btn-text" href="">Ir al sitio</a>
+                    <a class="btn-text" href="https://danncarlton.com/" target="_blank">Ir al sitio</a>
                 </div>
                 <div class="hotel-2 hotel-accordion">
                     <div class="hotel-title">
                         <h4>Hotel Dan Carlton Belfort</h4>
                         <div class="blue-line"></div>
                     </div>
-                    <a class="btn-text" href="">Ir al sitio</a>
+                    <a class="btn-text" href="https://www.hoteldanncarltonbelfort.com/" target="_blank">Ir al sitio</a>
                 </div>
                 <div class="hotel-3 hotel-accordion">
                     <div class="hotel-title">
                         <h4>Hotel San Fernando plaza</h4>
                         <div class="blue-line"></div>
                     </div>
-                    <a class="btn-text"  href="">Ir al sitio</a>
+                    <a class="btn-text"  href="https://www.hotelsanfernandoplaza.com/" target="_blank">Ir al sitio</a>
                 </div>
                 <div class="hotel-4 hotel-accordion">
                     <div class="hotel-title">
                         <h4>The Click Clack hotel</h4>
                         <div class="blue-line"></div>
                     </div>
-                    <a class="btn-text"  href="">Ir al sitio</a>
+                    <a class="btn-text"  href="https://clickclackhotel.com/" target="_blank">Ir al sitio</a>
                 </div>
             </div>
         </div>
@@ -749,56 +794,89 @@
                 </a>
             </div>
             <div>
-                <a href="">
+                <a href="./assets/img/galeria/_O5A3026.jpeg">
                     <img src="./assets/img/galeria/_O5A3026.jpeg" alt="">
                 </a>
             </div>
             <div>
-                <a href="">
+                <a href="./assets/img/galeria/_O5A3132.jpeg">
                     <img src="./assets/img/galeria/_O5A3132.jpeg" alt="">
                 </a>
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3256.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3256.jpeg">
+                    <img src="./assets/img/galeria/_O5A3256.jpeg" alt="">
+                </a>
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3316.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3316.jpeg">
+                    <img src="./assets/img/galeria/_O5A3316.jpeg" alt="">
+                </a>
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3331.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3331.jpeg">
+                    <img src="./assets/img/galeria/_O5A3331.jpeg" alt="">
+                </a>
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3337.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3337.jpeg">
+                    <img src="./assets/img/galeria/_O5A3337.jpeg" alt="">
+                </a>
+                
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3428.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3428.jpeg">
+                    <img src="./assets/img/galeria/_O5A3428.jpeg" alt="">
+                </a>
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3457.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3457.jpeg">
+                    <img src="./assets/img/galeria/_O5A3457.jpeg" alt="">
+                </a>
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3573.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3573.jpeg">
+                    <img src="./assets/img/galeria/_O5A3573.jpeg" alt="">
+                </a>
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3604.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3604.jpeg">
+                    <img src="./assets/img/galeria/_O5A3604.jpeg" alt="">
+                </a>
+                
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3683.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3683.jpeg">
+                    <img src="./assets/img/galeria/_O5A3683.jpeg" alt="">
+                </a>
+                
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3686.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3686.jpeg">
+                    <img src="./assets/img/galeria/_O5A3686.jpeg" alt="">
+                </a>
+                
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3964.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3964.jpeg">
+                    <img src="./assets/img/galeria/_O5A3964.jpeg" alt="">
+                </a>
+                
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A3973.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A3973.jpeg">
+                    <img src="./assets/img/galeria/_O5A3973.jpeg" alt="">
+                </a>
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A4316.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A4316.jpeg">
+                    <img src="./assets/img/galeria/_O5A4316.jpeg" alt="">
+                </a>
             </div>
             <div>
-                <img src="./assets/img/galeria/_O5A4386.jpeg" alt="">
+                <a href="./assets/img/galeria/_O5A4386.jpeg">
+                    <img src="./assets/img/galeria/_O5A4386.jpeg" alt="">
+                </a>
             </div>
         </div>
     </section>

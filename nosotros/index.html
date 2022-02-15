@@ -37,8 +37,15 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navbar-example">
-  <div id="spinner">
-    <lottie-player class="lottie" src="https://assets8.lottiefiles.com/packages/lf20_gsmmiunf.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+  <div id="modal-form">
+    <div class="modal-card">
+        <img id="modalSVG" src="./assets/img/modal-form-ok.svg">
+        <div class="message">
+            <h4 id="modal-title">¡Excelente!</h4>
+            <P id="modal-message">Los datos se enviaron correctamente</P>
+        </div>
+        <div class="modal-button btn-text" onclick="closeModal()">Continuar</div>
+    </div>
   </div>
     <section id="hero" class="hero btn-support-ref">
 
@@ -178,9 +185,10 @@
                         Con 30 marcas en la primera edición en un solo pabellón y 70 marcas en la segunda edición.
                       </p>
                     </div>
-                    <div class="img uk-cover-container">
-                      <img src="./assets/2021.jpg" alt="" uk-cover>
-                    </div>
+                    <img src="./assets/2013-2014.jpg" alt="">
+                    <!-- <div class="img uk-cover-container">
+                      <img src="./assets/2013-2014.jpg" alt="" uk-cover>
+                    </div> -->
                 </div>
               </li>
       
@@ -238,9 +246,10 @@
                       Para 2016, La Feria abarcó la industria del diseño en general: arquitectura, diseño industrial, gráfico, diseño interior y mobiliario.
                     </p>
                   </div>
-                  <div class="img uk-cover-container">
+                  <img src="./assets/2015_2016.jpg" alt="">
+                  <!-- <div class="img uk-cover-container">
                     <img src="./assets/2015_2016.jpg" alt="" uk-cover>
-                  </div>
+                  </div> -->
                 </div>
               </li>
       
@@ -298,9 +307,10 @@
                       Nos convertimos en la primera feria comercial especializada en diseño realizada en Colombia, con 180 marcas participantes.
                     </p>
                   </div>
-                  <div class="img uk-cover-container">
+                  <img src="./assets/2017_2018.jpg" alt="">
+                  <!-- <div class="img uk-cover-container">
                     <img src="./assets/2017_2018.jpg" alt="" uk-cover>
-                  </div>
+                  </div> -->
                 </div>
               </li>
               
@@ -358,9 +368,10 @@
                       210 marcas mostraron sus nuevos diseños a 18.000 visitantes.
                     </p>
                   </div>
-                  <div class="img uk-cover-container">
+                  <img src="./assets/2019.jpg" alt="">
+                  <!-- <div class="img uk-cover-container">
                     <img src="./assets/2019.jpg" alt="" uk-cover>
-                  </div>
+                  </div> -->
                 </div>
               </li>
               
@@ -412,9 +423,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="img uk-cover-container">
+                  <img src="./assets/2021.jpg" alt="">
+                  <!-- <div class="img uk-cover-container">
                     <img src="./assets/2021.jpg" alt="" uk-cover>
-                  </div>
+                  </div> -->
                 </div>
               </li>
             </ul>
@@ -614,8 +626,6 @@
       </div>
 
     </section>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script type="text/javascript" src="../assets/js/spinner-2.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="../assets/js/menu.js"></script>
     <script type="text/javascript" src="../assets/js/btn-support-2.js"></script>

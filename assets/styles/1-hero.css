@@ -150,7 +150,7 @@ section.hero {
                 }
 
                 img.logotipo-feria {
-                    height: 4.2rem;
+                    height: 3.0rem;
                 }
             
             .control-slider {
@@ -217,7 +217,7 @@ section.hero {
                 }
 
                 img.logotipo-feria {
-                    height: 6.0rem;
+                    height: 5.0rem;
                 }
             
             .control-slider {
@@ -225,8 +225,8 @@ section.hero {
             }
 
                 .arrow-left, .arrow-right {
-                    height: 6.0rem;
-                    width: 6.0rem;
+                    height: 5.0rem;
+                    width: 5.0rem;
                 }
         
         .slider-container ul li div {
