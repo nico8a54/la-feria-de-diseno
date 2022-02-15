@@ -195,6 +195,12 @@ body {
     position: absolute;
     top: 0;
   }
+
+  .nav__body img {
+    display: none;
+    /* max-width: 605px; */
+    max-height: 100%;
+  }
   .nav li {
     list-style-type: none;
     text-decoration: none;
@@ -312,6 +318,7 @@ body {
     }
 
     .nav__body img {
+      display: block;
       /* max-width: 605px; */
       max-height: 100%;
     }
