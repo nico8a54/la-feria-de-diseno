@@ -26,6 +26,7 @@
         align-self: center;
         gap: 42px;
         width: 100%;
+        /* background-color: yellowgreen; */
     }
 
     .patrocinadores .logos div {
@@ -42,7 +43,14 @@
     }
 
     .patrocinadores .logos div div img {
-        width: 60px;
+        max-height: 20px;
+        max-width: 110px;
+    }
+
+    .patrocinadores .logos div:nth-child(1) div img {
+        max-height: none;
+        max-width: none;
+        height: 120px;
     }
 
     .patrocinadores .logos div p {
@@ -93,9 +101,16 @@
                 justify-content: center;
                 width: 100%;
             }
-        
+
             .patrocinadores .logos div div img {
-                width: 120px;
+                max-height: 24px;
+                max-width: 200px;
+            }
+        
+            .patrocinadores .logos div:nth-child(1) div img {
+                max-height: none;
+                max-width: none;
+                height: 120px;
             }
         
             .patrocinadores .logos div p {
@@ -139,28 +154,44 @@
                 display: flex;
                 flex-direction: row;
                 align-self: center;
-                justify-content: space-evenly;
+                justify-content: flex-start;
                 margin-top: 200px;
-                gap: 100px;
+                gap: 36px;
                 width: 100%;
+                padding: 0;
+                /* background-color: yellow; */
             }
         
             .patrocinadores .logos div {
                 display: flex;
                 flex-direction: column-reverse;
-                justify-content: space-between;
+                justify-content: flex-start;
                 gap: 36px;
+                width: 100%;
+                padding: 0;
+                /* background-color: red; */
+            }
+            .patrocinadores .logos div:nth-child(1) {
+                width: auto;
             }
         
             .patrocinadores .logos div div {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                width: 100%;
+                width: auto;
+                /* background-color: yellowgreen; */
+            }
+
+            .patrocinadores .logos div div img {
+                max-height: 24px;
+                max-width: 200px;
             }
         
-            .patrocinadores .logos div div img {
-                width: 120px;
+            .patrocinadores .logos div:nth-child(1) div img {
+                max-height: none;
+                max-width: none;
+                height: 120px;
             }
         
             .patrocinadores .logos div p {

@@ -15,3 +15,7 @@ var iframe1 = document.getElementById('iframe-1');
 var player1 = new Vimeo.Player(iframe1);
 
 player1.on('play', showSpinner);
+
+window.addEventListener('load', () => {
+  setTimeout(showSpinner, 5000);
+})

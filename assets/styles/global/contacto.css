@@ -92,7 +92,7 @@
 
     .contacto .accordion-contact {
         background-color: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
     }
 
     .contacto a.btn-accordion {
@@ -331,7 +331,7 @@
     
         .contacto .accordion-contact {
             background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
         }
     
         .contacto a.btn-accordion {
