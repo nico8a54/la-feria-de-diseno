@@ -173,6 +173,7 @@
             }
             .patrocinadores .logos div:nth-child(1) {
                 width: auto;
+                flex-shrink: 0;
             }
         
             .patrocinadores .logos div div {
@@ -191,7 +192,7 @@
             .patrocinadores .logos div:nth-child(1) div img {
                 max-height: none;
                 max-width: none;
-                height: 120px;
+                height: 60px;
             }
         
             .patrocinadores .logos div p {
