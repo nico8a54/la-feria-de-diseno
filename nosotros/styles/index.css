@@ -270,6 +270,30 @@ body {
     opacity: 1;
     overflow: visible;
   }
+
+  .volver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: var(--PaddingVertical);
+    background-color: var(--FeriaPpal);
+  }
+
+  .atras, .atras:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 70%;
+    margin: 0;
+    color: var(--FeriaPpal);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    align-self: center;
+}
   
   /*# sourceMappingURL=index.css.map */
   

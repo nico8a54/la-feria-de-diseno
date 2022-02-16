@@ -8,6 +8,16 @@
     background-color: white;
 }
 
+.galeria {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: var(--PaddingHorizontal);
+    min-height: 100vh;
+    padding: var(--PaddingVertical) var(--PaddingHorizontal);
+    background-color: var(--PurpuraClaro);
+}
+
 #map a {
     display: none;
     font-family: inherit;
@@ -15,12 +25,12 @@
     font-weight: inherit;
 }
 
-    .preguntas .content-1 h3 {
+    .preguntas .content-1 h3, .galeria .content-1 h3 {
         margin: 0 0 16px var(--PaddingHorizontal);
         color: var(--FeriaPpal);
     }
 
-    .preguntas .content-1 .blue-line {
+    .preguntas .content-1 .blue-line, .galeria .content-1 .blue-line {
         height: 2px;
         width: 80px;
         margin-left: calc( 0rem - var(--PaddingHorizontal));
@@ -283,13 +293,13 @@
     .preguntas {
         padding: var(--PaddingVertical) var(--PaddingHorizontal);
     }
-    
-        .preguntas .content-1 h3 {
+
+        .preguntas .content-1 h3, .galeria .content-1 h3 {
             margin: 0 0 16px 0;
-            padding-left: var(--PaddingHorizontal);
+            padding-left: 0;
         }
-    
-        .preguntas .content-1 .blue-line {
+
+        .preguntas .content-1 .blue-line, .galeria .content-1 .blue-line {
             height: 2px;
             width: 200px;
         }
@@ -333,7 +343,7 @@
             height: 0px;
             width: 96px;
             position: absolute;
-            top: 50%;
+            top: 0.8rem;
             left: -96px;
         }
 
@@ -530,28 +540,32 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .preguntas {
+    .preguntas, .galeria {
         position: relative;
         padding: var(--PaddingVertical) var(--PaddingHorizontal);
     }
+
+        .galeria .fotos {
+            padding: var(--PaddingVertical) 0;
+        }
 
         .preguntas .lista-preguntas {
             align-self: center;
             padding: var(--PaddingVertical) 0;
         }
 
-        .preguntas .content-1 {
+        .preguntas .content-1, .galeria .content-1 {
             position: absolute;
             left: 0;
             top: var(--PaddingVertical);
         }
-    
-        .preguntas .content-1 h3 {
+
+        .preguntas .content-1 h3, .galeria .content-1 h3 {
             margin: 0 0 16px 0;
             padding-left: var(--PaddingHorizontal);
         }
-    
-        .preguntas .content-1 .blue-line {
+
+        .preguntas .content-1 .blue-line, .galeria .content-1 .blue-line {
             height: 2px;
             width: 100%;
             margin: 0;
