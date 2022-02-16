@@ -98,6 +98,6 @@ const sendForm = async () => {
 
   else {
     showModal("error", "¡Ups!", "Rellena los espacios requeridos");
-    alert("Rellena los espacios requeridos.");
+    // alert("Rellena los espacios requeridos.");
   }
 }
