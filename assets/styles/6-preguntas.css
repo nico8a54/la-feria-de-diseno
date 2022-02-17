@@ -93,6 +93,11 @@
         border-left: 2px solid white;
     }
 
+    .panel ul li ul li {
+        border-left: none;
+        padding-left: 0;
+    }
+
     .panel p {
         font-weight: 200;
     }

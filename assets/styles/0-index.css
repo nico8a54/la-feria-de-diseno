@@ -16,3 +16,7 @@ body {
     /* scrollbar-color: #F2F2F2 #323232; */
     /* scrollbar-width: 4px; */
 }
+
+section {
+    position: relative;
+}

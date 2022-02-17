@@ -1,6 +1,7 @@
 .testimonios {
     background-color: var(--PurpuraClaro);
     /* box-shadow: inset 0px 11px 20px rgba(0, 0, 0, 0.1); */
+    overflow-x: hidden;
 }
 
     .testimonios .container-5 {

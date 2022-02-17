@@ -2,7 +2,7 @@ section.hero {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index:-1;
+    z-index: 0;
     height: 100%;
     background-color: var(--AzulOscuro);
 }
@@ -17,11 +17,12 @@ section.hero {
     height: 100%;
     background-color: transparent;
     transition: all 1s ease-out;
-    z-index: 1;
+    z-index: -1;
 }
 .scrollBlue {
     opacity: 1;
     background-color: #0A0926;
+    z-index: 1;
 }
 
     header {
@@ -49,7 +50,7 @@ section.hero {
         .slider-container .hero-controls {
 
             position: absolute;
-            z-index: 10;
+            z-index: 0;
             bottom: 0;
             right: 0;
 
