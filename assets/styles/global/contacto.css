@@ -31,6 +31,11 @@
     cursor: inherit;
 }
 
+#modalSVG {
+    max-height: 85px;
+    width: 100%;
+}
+
 .modal-card .message {
     display: flex;
     flex-direction: column;
