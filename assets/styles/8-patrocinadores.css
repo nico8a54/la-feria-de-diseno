@@ -177,8 +177,8 @@
                 /* background-color: red; */
             }
             .patrocinadores .logos div:nth-child(1) {
-                width: auto;
-                flex-shrink: 0;
+                width: 100%;
+                /* flex-shrink: 0; */
             }
         
             .patrocinadores .logos div div {

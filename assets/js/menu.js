@@ -25,8 +25,8 @@ const closeMenu = () => {
     return new Promise((resolve, reject) => {
         line1.style.animation = "backLine1 300ms forwards";
         line2.style.animation = "backLine2 300ms forwards";
-        header.style.mixBlendMode = "difference";
-        nav.style.mixBlendMode = "difference";
+        // header.style.mixBlendMode = "difference";
+        // nav.style.mixBlendMode = "difference";
         menu.style.opacity = 0;
         menu.style.transitionDuration = "0.2s";
         setTimeout(()=>{

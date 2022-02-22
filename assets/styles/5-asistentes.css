@@ -239,8 +239,8 @@
                 z-index: 1;
                 left: var(--PaddingHorizontal);
                 right: inherit;
-                top: 351px;
-                bottom: inherit;
+                top: inherit;
+                bottom: -351px;
                 padding: 32px;
                 height: 130px;
                 width: 474px;

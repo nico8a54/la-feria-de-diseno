@@ -34,7 +34,7 @@ section.hero {
 
         width: 100%;
         padding:  var(--PaddingHorizontal) var(--PaddingHorizontal) 0 var(--PaddingHorizontal);
-        mix-blend-mode: difference;
+        mix-blend-mode: normal;
     }
 
     .identificador {
@@ -105,6 +105,7 @@ section.hero {
                 .arrow-left, .arrow-right {
                     height: 3.2rem;
                     width: 3.2rem;
+                    cursor: pointer;
                 }
 
         .slider-container ul {

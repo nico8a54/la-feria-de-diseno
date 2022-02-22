@@ -56,7 +56,7 @@
     -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
 }
 
 .bm-line1, .bm-line2 {

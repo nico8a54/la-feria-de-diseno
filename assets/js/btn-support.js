@@ -40,6 +40,8 @@ document.body.addEventListener('scroll', () => {
     menuCircles.item(1).style.position = "fixed";
     menuCircles.item(2).style.position = "fixed";
     menuBlur.style.position = "fixed";
+    document.getElementById("header").style.mixBlendMode = "difference";
+    document.getElementById("bm-container").style.mixBlendMode = "difference";
   }
   else {
     btnMenu.style.position = "absolute";
@@ -50,6 +52,8 @@ document.body.addEventListener('scroll', () => {
     menuCircles.item(1).style.position = "absolute";
     menuCircles.item(2).style.position = "absolute";
     menuBlur.style.position = "absolute";
+    document.getElementById("header").style.mixBlendMode = "normal";
+    document.getElementById("bm-container").style.mixBlendMode = "normal";
   }
 });
 // Menu para moviles, scroll FIN
