@@ -556,7 +556,7 @@
 
         .preguntas .lista-preguntas {
             align-self: center;
-            padding: var(--PaddingVertical) 0;
+            padding: var(--PaddingVertical) 0 0 0;
         }
 
         .preguntas .content-1, .galeria .content-1 {

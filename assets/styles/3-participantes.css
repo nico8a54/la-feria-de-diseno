@@ -237,9 +237,15 @@
         padding: var(--PaddingVertical) var(--PaddingHorizontal);
     }
 
+    .container-4 p:nth-child(1) {
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+
     .container-4 .scroll-x {
         margin: 0px;
-        padding: var(--PaddingHorizontal) 0;
+        padding: 0;
+        padding-top: var(--PaddingVertical);
         width: 100%;
         height: auto;
         overflow-x: hidden;
@@ -263,7 +269,8 @@
 @media screen and (min-width: 1900px) {
 
     .container-4 .scroll-x {
-        padding: var(--PaddingVertical) 0;
+        padding: 0;
+        padding-top: var(--PaddingVertical);
     }
 
         .container-4 .scroll-x .cards {
