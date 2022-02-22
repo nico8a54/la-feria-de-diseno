@@ -207,7 +207,7 @@
 
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 800px) {
 
     .container-8 {
         position: relative;
@@ -240,7 +240,7 @@
                 left: var(--PaddingHorizontal);
                 right: inherit;
                 top: inherit;
-                bottom: -351px;
+                bottom: -250px;
                 padding: 32px;
                 height: 130px;
                 width: 474px;

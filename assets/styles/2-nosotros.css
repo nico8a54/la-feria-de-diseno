@@ -165,7 +165,7 @@ section.nosotros {
         }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1150px) {
 
     .container-1 {
         padding-right: 72px;
@@ -229,7 +229,7 @@ section.nosotros {
         /* gap: 128px; */
         /* min-height: 100vh; */
         height: auto;
-        padding: 250px 0;
+        padding: calc(1 * var(--PaddingVertical)) var(--PaddingHorizontal);
     }
 
         .container-2 .blue-line {
@@ -244,6 +244,7 @@ section.nosotros {
             justify-content: center;
             gap: 88px;
             width: 604px;
+            padding: 0;
         }
 
         .container-2 div p {

@@ -60,3 +60,10 @@
         --PaddingHorizontal: calc((100vw - 1200px)/2);
     }
 }
+
+@media screen and (min-width: 1900px) {
+    :root {
+        --PaddingVertical: 12.8rem;
+        --PaddingHorizontal: calc((100vw - 1400px)/2);
+    }
+}
