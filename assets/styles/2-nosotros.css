@@ -168,7 +168,7 @@ section.nosotros {
 @media screen and (min-width: 1150px) {
 
     .container-1 {
-        padding-right: 72px;
+        padding: 0 var(--PaddingHorizontal);
     }
     
     .nosotros .container-1 .content-1 {
@@ -190,7 +190,7 @@ section.nosotros {
     
     .container-1 .blue-comment {
         left: inherit;
-        right: 96px;
+        right: var(--PaddingHorizontal);
         bottom: 164px;
         padding: 24px 64px;
         height: 130px;
@@ -211,6 +211,7 @@ section.nosotros {
         left: 0;
         right: inherit;
         width: 66%;
+        height: 80%;
         z-index: 0;
     }
 
@@ -224,12 +225,12 @@ section.nosotros {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
         /* gap: 128px; */
         /* min-height: 100vh; */
         height: auto;
-        padding: calc(1 * var(--PaddingVertical)) var(--PaddingHorizontal);
+        /* padding: calc(1 * var(--PaddingVertical)) var(--PaddingHorizontal); */
     }
 
         .container-2 .blue-line {
@@ -243,7 +244,7 @@ section.nosotros {
             align-items: center;
             justify-content: center;
             gap: 40px;
-            width: 604px;
+            width: 40%;
             padding: 0;
         }
 

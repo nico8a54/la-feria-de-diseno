@@ -346,10 +346,10 @@
             display: block;
             border-top: 2px solid white;
             height: 0px;
-            width: 96px;
+            width: 64px;
             position: absolute;
             top: 0.8rem;
-            left: -96px;
+            left: -72px;
         }
 
         .panel ul li ul li::before {
@@ -371,7 +371,13 @@
             flex-direction: column;
             gap: 32px;
             margin: 0;
-            padding: 64px 27px 64px 96px;
+            padding: 64px 72px;
+        }
+
+        .panel .container .parrafo {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
     
         .panel ul ul {
@@ -521,6 +527,15 @@
             /* background-color: greenyellow;s */
             padding-left: 14px;
             border-left: 2px solid white;
+        }
+
+        .preguntas .list ul {
+            gap: 16px;
+        }
+
+        .preguntas .list ul li {
+            border-left: none;
+            padding-left: 24px;
         }
     
         .preguntas ul li div div h4 {

@@ -212,7 +212,7 @@
     .container-8 {
         position: relative;
         overflow: visible;
-        height: 481px;
+        height: 350px;
         width: 100%;
         padding: var(--PaddingVertical) var(--PaddingHorizontal);
     }
@@ -243,7 +243,7 @@
                 bottom: -250px;
                 padding: 32px;
                 height: 130px;
-                width: 474px;
+                width: 30%;
                 background-color: var(--FeriaPpal);
     
                 display: flex;
