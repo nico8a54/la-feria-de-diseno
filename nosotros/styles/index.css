@@ -327,7 +327,8 @@ body {
 .columna-data .filas-data div div {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: flex-end;
+  gap: 0px;
   width: auto;
 }
   
@@ -372,7 +373,7 @@ body {
       display: flex;
       align-items: flex-end;
       flex-direction: column;
-      gap: 48px;
+      gap: 32px;
     }
 
     .columna-data .filas-data div {
@@ -385,7 +386,7 @@ body {
     .columna-data .filas-data div div {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 0px;
       width: auto;
     }
 
@@ -432,9 +433,13 @@ body {
       margin: 0 auto;
     }
 
+    .section0 p {
+      margin: 16px auto;
+    }
+
     .nav li.active .nav__body {
       height: 100%;
-      width: 100%;
+      width: fit-content;
       opacity: 1;
       overflow: hidden;
       padding: 0;
@@ -459,6 +464,7 @@ body {
       gap: 48px;
       /* width: 100%; */
       margin: 0 auto;
+      padding-left: 40px;
       /* background-color: red; */
     }
 
@@ -486,6 +492,7 @@ body {
     .columna-data .filas-data div div {
       display: flex;
       flex-direction: column;
+      align-items: flex-end;
       gap: 0px;
       width: auto;
     }
