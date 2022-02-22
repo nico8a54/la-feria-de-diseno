@@ -614,6 +614,8 @@
     .contacto .follow {
         align-self: flex-start;
         align-items: center;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .contacto .accordion-contact a.btn-accordion {
