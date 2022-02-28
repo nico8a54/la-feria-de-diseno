@@ -31,6 +31,11 @@
     cursor: inherit;
 }
 
+#modalSVG {
+    max-height: 85px;
+    width: 100%;
+}
+
 .modal-card .message {
     display: flex;
     flex-direction: column;
@@ -352,7 +357,7 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: center;
-            gap: 10rem;
+            /* gap: 10rem; */
             width: 100%;
         }
     
@@ -554,6 +559,11 @@
 @media screen and (min-width: 1280px) {
     .contacto {
         position: relative;
+        flex-direction: row;
+        gap: 0;
+        min-height: 800px;
+        height: 100%;
+        padding: 0;
     }
 
     .contacto svg {
@@ -579,24 +589,33 @@
     }
 
     .contacto .accordion-contact {
-        position: absolute;
+        /* position: absolute;
         right: 0;
-        top: 0;
+        top: 0; */
         height: 100%;
-        width: 590px;
+        /* width: 590px; */
+        width: 50%;
+        padding-right: var(--PaddingHorizontal);
     }
 
     .contacto .info-contacto {
-        margin-top: 200px;
+        /* margin-top: 200px; */
+        margin: auto 0;
+        align-items: flex-start;
     }
 
     .contacto .info-contacto, .follow {
-        width: 590px;
+        /* width: 590px; */
+        width: 50%;
+        padding-left: var(--PaddingHorizontal);
+        padding-right: 96px;
     }
 
     .contacto .follow {
         align-self: flex-start;
         align-items: center;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .contacto .accordion-contact a.btn-accordion {
@@ -619,6 +638,7 @@
     .contacto .accordion-contact .form {
         display: block !important;
         padding: 0 96px;
+        padding-right: 0;
     }
 
     .contacto .accordion-contact .form form {
@@ -639,6 +659,13 @@
     .mdc-list-item {
         padding: 0.5rem 1rem;
         color: var(--FeriaPpal);
+    }
+
+    .contacto .follow .redes-sociales {
+        display: flex;
+        justify-content: center;
+        gap: 2.2rem;
+        width: 80px;
     }
 
 }

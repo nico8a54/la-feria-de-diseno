@@ -50,7 +50,7 @@
     .patrocinadores .logos div:nth-child(1) div img {
         max-height: none;
         max-width: none;
-        height: 120px;
+        height: 60px;
     }
 
     .patrocinadores .logos div p {
@@ -99,6 +99,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                align-items: center;
                 width: 100%;
             }
 
@@ -110,12 +111,16 @@
             .patrocinadores .logos div:nth-child(1) div img {
                 max-height: none;
                 max-width: none;
-                height: 120px;
+                height: 60px;
             }
         
             .patrocinadores .logos div p {
                 text-align: center;
                 color: var(--AzulClaro);
+            }
+            .patrocinadores .logos div:nth-child(3) div img:nth-child(2) {
+                /* background-color: red; */
+                height: 10px;
             }
     }
 
@@ -155,7 +160,7 @@
                 flex-direction: row;
                 align-self: center;
                 justify-content: flex-start;
-                margin-top: 200px;
+                margin: 120px 0;
                 gap: 36px;
                 width: 100%;
                 padding: 0;
@@ -172,14 +177,15 @@
                 /* background-color: red; */
             }
             .patrocinadores .logos div:nth-child(1) {
-                width: auto;
-                flex-shrink: 0;
+                width: 100%;
+                /* flex-shrink: 0; */
             }
         
             .patrocinadores .logos div div {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                align-items: center;
                 width: auto;
                 /* background-color: yellowgreen; */
             }
@@ -194,7 +200,12 @@
                 max-width: none;
                 height: 60px;
             }
-        
+
+            .patrocinadores .logos div:nth-child(3) div img:nth-child(2) {
+                /* background-color: red; */
+                height: 40%;
+            }
+
             .patrocinadores .logos div p {
                 text-align: center;
                 color: var(--AzulClaro);

@@ -1,6 +1,7 @@
 .testimonios {
-    background-color: var(--PurpuraClaro);
+    background-color: white;
     /* box-shadow: inset 0px 11px 20px rgba(0, 0, 0, 0.1); */
+    overflow-x: hidden;
 }
 
     .testimonios .container-5 {
@@ -142,19 +143,20 @@
     }
 
     .container-5 .scroll-x .cards .card {
-        height: 88.4rem;
-        width: 42.0rem;
+        font-size: 7px;
+        height: 88.4em;
+        width: 42.0em;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     }
 
         .container-5 .scroll-x .cards .card .img-container {
-            height: 42.0rem;
+            height: 42.0em;
         }
 
         .container-5 .scroll-x .cards .card .bodycard {
-            padding: 4.8rem 4.0rem;
-            min-height: 46.4rem;
-            max-height: 46.4rem;
+            padding: 4.8em 4.0em;
+            min-height: 46.4em;
+            max-height: 46.4em;
         }
 
         .container-5 .scroll-x .cards .card .bodycard div {
@@ -162,31 +164,37 @@
         }
 
             .container-5 .scroll-x .cards .expand .bodycard {
-                max-height: 60rem;
+                max-height: 60em;
+            }
+
+            .container-5 .scroll-x .cards .card .bodycard .title-control-container h3 {
+                font-size: 2.4em;
             }
 
             .container-5 .scroll-x .cards .card .bodycard .title-control-container img {
-                width: 44px;
+                width: 4.4em;
             }
 
             .container-5 .scroll-x .cards .card .bodycard div h5 {
-                margin-bottom: 38px;
+                font-size: 1.8em;
+                margin-bottom: 3.8em;
             }
 
             .container-5 .scroll-x .cards .card .bodycard  .white-line {
-                width: 6.4rem;
-                height: 0.3rem;   
-                margin: 2.4rem 0 3.2rem 0;
+                width: 6.4em;
+                height: 0.3em;   
+                margin: 2.4em 0 3.2em 0;
             }
 
             .container-5 .scroll-x .cards .card .bodycard p {
+                font-size: 1.6em;
                 width: 100%;
             }
 
     
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1100px) {
 
     .testimonios {
         position: relative;
@@ -308,5 +316,21 @@
 
     #img-3 {
         background-image: url("../img/Foto_Testimonio_Acabados_Formas_003.jpg");
+    }
+}
+
+@media screen and (min-width: 1900px) {
+
+    .container-5 {
+        justify-content: center;
+    }
+
+    .container-5 .scroll-x-desktop ul li .ref{
+        position: relative;
+        height: 623px;
+        width: 1126px;
+        margin: 0 auto;
+        transform: scale(1);
+        /* margin: 0 var(--PaddingHorizontal); */
     }
 }

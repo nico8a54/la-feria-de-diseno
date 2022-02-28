@@ -114,11 +114,11 @@
     }
 
     .container-4 .scroll-x {
-        display: none;
+        /* display: none; */
     }
 
     .container-4 .scroll-x-desktop {
-        display: block;
+        /* display: block; */
         margin: 0;
         margin-left: calc( 0rem - var(--PaddingHorizontal));
         padding: 0 var(--PaddingHorizontal);
@@ -161,10 +161,10 @@
 
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 640px) {
 
     .container-3 {
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
     }
 
     .container-3 .content-1 {
@@ -184,22 +184,24 @@
         margin: 0;
     }
 
+
+
     .scroll-x .cards {
         gap: 4.1rem;
         
     }
 
-        .cards .card, .card {
+        .container-4 .scroll-x .cards .card, .container-4 .scroll-x-desktop .card {
             font-size: 6.5px;
             width: 50em;
             /* transform: scale(0.9); */
         }
 
-            .card .img-container {
+            .container-4 .card .img-container {
                 height: 35em;
             }
 
-            .card .bodycard {
+            .container-4 .card .bodycard {
                 flex-direction: row;
                 justify-content: space-between;
                 padding: 4.8em 3.2em;
@@ -207,7 +209,7 @@
                 height: 23em;
             }
 
-            .card .bodycard div p {
+            .container-4 .card .bodycard div p {
                 font-size: 11px;
                 width: 175px;
             }
@@ -227,4 +229,66 @@
             margin-bottom: 6.4rem;
             font-weight: 300;
         }
+}
+
+@media screen and (min-width: 1080px) {
+    
+}
+
+@media screen and (min-width: 1280px) {
+
+    .container-4 {
+        padding: var(--PaddingVertical) var(--PaddingHorizontal);
+    }
+
+    .container-4 p:nth-child(1) {
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+
+    .container-4 .scroll-x {
+        margin: 0px;
+        padding: 0;
+        padding-top: var(--PaddingVertical);
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: inherit;
+    }
+
+        .container-4 .scroll-x .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* flex-direction: row;
+            align-items: center;
+            justify-content: center; */
+            /* gap: 2.4rem; */
+            /* flex-wrap: wrap; */
+            padding: 0;
+            height: max-content;
+            /* width: auto; */
+            width: 100%;
+        }
+
+        .container-4 .scroll-x .cards .card, .container-4 .scroll-x-desktop .card {
+            width: 100%;
+        }
+        
+}
+
+@media screen and (min-width: 1900px) {
+
+    .container-4 .scroll-x {
+        padding: 0;
+        padding-top: var(--PaddingVertical);
+    }
+
+        .container-4 .scroll-x .cards {
+            gap: 4.8rem;
+        }
+
+            .container-4 .scroll-x .cards .card, .container-4 .scroll-x-desktop .card {
+                font-size: 8px;
+            }
+        
 }

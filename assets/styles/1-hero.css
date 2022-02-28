@@ -2,7 +2,7 @@ section.hero {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index:-1;
+    z-index: 0;
     height: 100%;
     background-color: var(--AzulOscuro);
 }
@@ -17,11 +17,12 @@ section.hero {
     height: 100%;
     background-color: transparent;
     transition: all 1s ease-out;
-    z-index: 1;
+    z-index: -1;
 }
 .scrollBlue {
     opacity: 1;
     background-color: #0A0926;
+    z-index: 1;
 }
 
     header {
@@ -33,7 +34,7 @@ section.hero {
 
         width: 100%;
         padding:  var(--PaddingHorizontal) var(--PaddingHorizontal) 0 var(--PaddingHorizontal);
-        mix-blend-mode: difference;
+        mix-blend-mode: normal;
     }
 
     .identificador {
@@ -49,7 +50,7 @@ section.hero {
         .slider-container .hero-controls {
 
             position: absolute;
-            z-index: 10;
+            z-index: 0;
             bottom: 0;
             right: 0;
 
@@ -68,14 +69,14 @@ section.hero {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-between;
-                gap: 1.6rem;
+                gap: 1.2rem;
                 height: 100%;
             }
 
                 .slider-container .hero-controls .indicator-slider .indicator {
                     display: flex;
-                    height: 0.2rem;
-                    gap: 0.4rem;
+                    height: 0.3rem;
+                    gap: 0.8rem;
                 }
 
                 .line {
@@ -98,12 +99,13 @@ section.hero {
             .control-slider {
                 display: flex;
                 justify-content: space-between;
-                gap: 0.8rem;
+                gap: 1.2rem;
             }
 
                 .arrow-left, .arrow-right {
-                    height: 2.4rem;
-                    width: 2.4rem;
+                    height: 2.8rem;
+                    width: 2.8rem;
+                    cursor: pointer;
                 }
 
         .slider-container ul {
@@ -124,9 +126,10 @@ section.hero {
             padding-left: var(--PaddingHorizontal);
         }
 
-    .hero_titles {
-        font-size: 2.8rem;
-        line-height: 110%;
+    .hero_title {
+        font-size: 3.2rem;
+        line-height: 105%;
+
     }
 
         
@@ -167,9 +170,10 @@ section.hero {
                     width: 3.2rem;
                 }
 
-    .hero_titles {
-        font-size: 4rem;
-        line-height: 110%;
+    .hero_title {
+        font-size: 3.2rem;
+        line-height: 105%;
+
     }
 
 }
@@ -183,7 +187,7 @@ section.hero {
     }
 
     .identificador {
-        width: 5.6rem;
+        width: 4.8rem;
     }
 
         .slider-container .hero-controls {
@@ -212,18 +216,18 @@ section.hero {
             }
 
                 .slider-container .hero-controls .indicator-slider .indicator {
-                    height: 0.4rem;
-                    gap: 1.2rem;
+                    height: 0.3rem;
+                    gap: 0.8rem;
                     /* padding-left: calc(25vw - var(--PaddingHorizontal)); */
                 }
 
                 .line {
-                    height: 0.4rem;
+                    height: 0.3rem;
                     width: 6.0rem;
                 }
 
                 .line div {
-                    height: 0.4rem;
+                    height: 0.3rem;
                 }
 
                 img.logotipo-feria {
@@ -238,13 +242,18 @@ section.hero {
                     height: 3.2rem;
                     width: 3.2rem;
                 }
+            
+
         
         .slider-container ul li div {
             padding-left: 25vw;
         }
 
-        .hero_titles {
-            font-size: 4.8rem;
-            line-height: 110%;
+        .hero_title {
+            font-size: 4.0rem;
+            line-height: 105%;
         }
+
+        
+
 }
