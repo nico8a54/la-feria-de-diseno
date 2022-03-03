@@ -272,3 +272,9 @@ section.nosotros {
             background-color: var(--FeriaPpal);
         }
 }
+
+@media screen and (min-width: 1900px) {
+    .nosotros .container-1 {
+        min-height: 979px;
+    }
+}

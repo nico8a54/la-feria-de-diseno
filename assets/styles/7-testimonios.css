@@ -321,8 +321,9 @@
 
 @media screen and (min-width: 1900px) {
 
-    .container-5 {
+    .testimonios .container-5 {
         justify-content: center;
+        min-height: 1200px;
     }
 
     .container-5 .scroll-x-desktop ul li .ref{
