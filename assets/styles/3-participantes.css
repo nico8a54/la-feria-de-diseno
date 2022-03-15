@@ -6,7 +6,7 @@
     background-image: url("../img/fondo_participantes_001_desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: inherit;
+    background-attachment: fixed;
     background-size: cover;
 }
 
